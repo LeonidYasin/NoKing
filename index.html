@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NoKing — протокол честного обмена</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">
+                    <span class="logo__icon">⚡</span>
+                    <span class="logo__text">NoKing</span>
+                </div>
+                <div class="header__actions">
+                    <div id="walletInfo" class="wallet-info">
+                        <span id="walletStatus" class="wallet-status">Не подключён</span>
+                        <button id="connectWalletBtn" class="btn btn--primary">Подключить кошелёк</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="main">
+        <div class="container">
+
+            <!-- Онбординг (показывается, если кошелёк не подключён) -->
+            <section id="onboarding" class="onboarding">
+                <div class="onboarding__content">
+                    <h1 class="onboarding__title">Добро пожаловать в NoKing</h1>
+                    <p class="onboarding__subtitle">Децентрализованный протокол честного обмена ценностями</p>
+                    <div class="onboarding__steps">
+                        <div class="step">
+                            <span class="step__number">1</span>
+                            <span class="step__text">Подключите кошелёк</span>
+                        </div>
+                        <div class="step">
+                            <span class="step__number">2</span>
+                            <span class="step__text">Создайте профиль</span>
+                        </div>
+                        <div class="step">
+                            <span class="step__number">3</span>
+                            <span class="step__text">Примите Кодекс чести</span>
+                        </div>
+                    </div>
+                    <button id="startBtn" class="btn btn--large btn--primary">Начать</button>
+                </div>
+            </section>
+
+            <!-- Дашборд (показывается после подключения) -->
+            <section id="dashboard" class="dashboard" style="display:none;">
+                <div class="dashboard__header">
+                    <div class="dashboard__greeting">
+                        <h2 id="userGreeting">Здравствуйте, <span id="userName">Участник</span></h2>
+                        <span id="userRating" class="rating-badge">⭐ 0.0</span>
+                    </div>
+                    <button id="createAgreementBtn" class="btn btn--primary">➕ Создать соглашение</button>
+                </div>
+
+                <!-- Активные соглашения -->
+                <div class="section">
+                    <h3 class="section__title">📋 Активные соглашения</h3>
+                    <div id="activeAgreements" class="agreements-list">
+                        <p class="empty-state">Нет активных соглашений</p>
+                    </div>
+                </div>
+
+                <!-- Быстрый поиск -->
+                <div class="section">
+                    <h3 class="section__title">🔍 Найти обмен</h3>
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Что ищете? Товар, услуга, аренда..." />
+                        <button id="searchBtn" class="btn btn--secondary">Поиск</button>
+                    </div>
+                    <div id="searchResults" class="agreements-list"></div>
+                </div>
+
+                <!-- DAO -->
+                <div class="section">
+                    <h3 class="section__title">⚖️ Активные голосования DAO</h3>
+                    <div id="daoVotes" class="dao-list">
+                        <p class="empty-state">Нет активных голосований</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Модалка создания соглашения -->
+            <div id="agreementModal" class="modal" style="display:none;">
+                <div class="modal__overlay"></div>
+                <div class="modal__content">
+                    <button class="modal__close" id="closeModalBtn">✕</button>
+                    <h2>Создание соглашения</h2>
+                    <form id="agreementForm">
+                        <div class="form-group">
+                            <label>Тип обмена</label>
+                            <select id="exchangeType" required>
+                                <option value="goods">Товар</option>
+                                <option value="service">Услуга</option>
+                                <option value="rental">Аренда</option>
+                                <option value="subscription">Подписка</option>
+                                <option value="barter">Бартер</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Что вы отдаёте?</label>
+                            <input type="text" id="valueA" placeholder="Например: Ремонт iPhone" required />
+                        </div>
+                        <div class="form-group">
+                            <label>Что вы получаете взамен?</label>
+                            <input type="text" id="valueB" placeholder="Например: 50 USDC" required />
+                        </div>
+                        <div class="form-group">
+                            <label>Сумма (USDC) — если обмен за деньги</label>
+                            <input type="number" id="amountB" placeholder="0" value="0" step="0.01" />
+                        </div>
+                        <div class="form-group">
+                            <label>Срок исполнения (дни)</label>
+                            <input type="number" id="deadline" placeholder="7" value="7" min="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label>Описание / условия</label>
+                            <textarea id="description" placeholder="Опишите условия обмена..." rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" id="acceptHonor" required />
+                                Я принимаю <a href="#" onclick="alert('Кодекс чести: честность, уважение, ответственность, прозрачность')">Кодекс чести</a>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--large">Создать соглашение</button>
+                    </form>
+                    <p class="modal__note">💡 Комиссия протокола: 0.5%</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">NoKing — открытый протокол честного обмена. <a href="#" onclick="alert('Репозиторий: github.com/noking')">GitHub</a></p>
+        </div>
+    </footer>
+
+    <script src="js/web3.js"></script>
+    <script src="js/agreement.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
