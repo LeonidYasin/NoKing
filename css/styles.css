@@ -1,0 +1,497 @@
+/* ============================================================
+   Базовые стили
+   ============================================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #0a1a2f;
+    --primary-light: #1a3a5c;
+    --accent: #00b8a9;
+    --accent-hover: #009b8e;
+    --gold: #f6b83d;
+    --white: #ffffff;
+    --gray: #f0f4f8;
+    --gray-dark: #64748b;
+    --radius: 12px;
+    --shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    --transition: 0.25s ease;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--gray);
+    color: var(--primary);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ============================================================
+   Шапка
+   ============================================================ */
+.header {
+    background: var(--primary);
+    color: var(--white);
+    padding: 14px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.logo__icon {
+    font-size: 28px;
+    color: var(--gold);
+}
+
+.logo__text {
+    letter-spacing: -0.5px;
+}
+
+.wallet-info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.wallet-status {
+    font-size: 14px;
+    color: var(--gray-dark);
+}
+
+.btn {
+    border: none;
+    border-radius: var(--radius);
+    padding: 10px 20px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background var(--transition), transform var(--transition);
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn--primary {
+    background: var(--accent);
+    color: var(--white);
+}
+
+.btn--primary:hover {
+    background: var(--accent-hover);
+}
+
+.btn--secondary {
+    background: var(--gray-dark);
+    color: var(--white);
+}
+
+.btn--secondary:hover {
+    background: #4a5a6a;
+}
+
+.btn--large {
+    padding: 14px 36px;
+    font-size: 16px;
+}
+
+/* ============================================================
+   Онбординг
+   ============================================================ */
+.onboarding {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    text-align: center;
+}
+
+.onboarding__title {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.onboarding__subtitle {
+    font-size: 18px;
+    color: var(--gray-dark);
+    margin-bottom: 32px;
+}
+
+.onboarding__steps {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.step__number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* ============================================================
+   Дашборд
+   ============================================================ */
+.dashboard {
+    padding: 28px 0 40px;
+}
+
+.dashboard__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.dashboard__greeting {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 20px;
+}
+
+.rating-badge {
+    background: var(--gold);
+    color: var(--primary);
+    padding: 2px 12px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.section {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: var(--shadow);
+}
+
+.section__title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.empty-state {
+    color: var(--gray-dark);
+    font-size: 14px;
+    padding: 12px 0;
+}
+
+/* ============================================================
+   Соглашения (карточки)
+   ============================================================ */
+.agreements-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.agreement-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    background: var(--gray);
+    border-radius: 8px;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.agreement-card__info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.agreement-card__status {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 2px 10px;
+    border-radius: 100px;
+}
+
+.status-active { background: #fef3c7; color: #92400e; }
+.status-fulfilled { background: #dbeafe; color: #1e40af; }
+.status-completed { background: #d1fae5; color: #065f46; }
+.status-disputed { background: #fee2e2; color: #991b1b; }
+
+.agreement-card__actions {
+    display: flex;
+    gap: 8px;
+}
+
+.btn--small {
+    padding: 4px 12px;
+    font-size: 12px;
+}
+
+/* ============================================================
+   Поиск
+   ============================================================ */
+.search-box {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: var(--radius);
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.search-box input:focus {
+    outline: 2px solid var(--accent);
+    border-color: transparent;
+}
+
+/* ============================================================
+   DAO
+   ============================================================ */
+.dao-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.dao-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background: var(--gray);
+    border-radius: 8px;
+}
+
+.dao-item__progress {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.progress-bar {
+    width: 120px;
+    height: 6px;
+    background: #e2e8f0;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.progress-bar__fill {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 100px;
+}
+
+/* ============================================================
+   Модалка
+   ============================================================ */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+}
+
+.modal__content {
+    position: relative;
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 32px 36px;
+    max-width: 520px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: var(--shadow);
+}
+
+.modal__close {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--gray-dark);
+}
+
+.modal__close:hover {
+    color: var(--primary);
+}
+
+.modal h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.modal__note {
+    font-size: 13px;
+    color: var(--gray-dark);
+    margin-top: 16px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #e2e8f0;
+    border-radius: var(--radius);
+    font-family: inherit;
+    font-size: 14px;
+    transition: border var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: 2px solid var(--accent);
+    border-color: transparent;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 72px;
+}
+
+.form-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+/* ============================================================
+   Подвал
+   ============================================================ */
+.footer {
+    margin-top: auto;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #e2e8f0;
+    font-size: 14px;
+    color: var(--gray-dark);
+}
+
+.footer a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* ============================================================
+   Адаптивность
+   ============================================================ */
+@media (max-width: 640px) {
+    .onboarding__steps {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .dashboard__header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .modal__content {
+        margin: 16px;
+        padding: 24px;
+    }
+
+    .onboarding__title {
+        font-size: 28px;
+    }
+
+    .logo__text {
+        font-size: 20px;
+    }
+}
