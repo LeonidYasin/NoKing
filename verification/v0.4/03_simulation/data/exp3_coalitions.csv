@@ -1,0 +1,28 @@
+f_mal,adversary_mode,wrong_mean,wrong_ci95
+0.1,Independent (noisy mal),0.0,0.0
+0.1,Coordinated Coalition Block,0.0,0.0
+0.1,p+epsilon Dark DAO (funded),1.0,0.0
+0.15,Independent (noisy mal),0.0,0.0
+0.15,Coordinated Coalition Block,0.0,0.0
+0.15,p+epsilon Dark DAO (funded),1.0,0.0
+0.2,Independent (noisy mal),0.0008,0.0007194477414180817
+0.2,Coordinated Coalition Block,0.0006000000000000001,0.0006422355691767542
+0.2,p+epsilon Dark DAO (funded),1.0,0.0
+0.25,Independent (noisy mal),0.0038000000000000004,0.0015550518014725932
+0.25,Coordinated Coalition Block,0.004000000000000001,0.00278640912097877
+0.25,p+epsilon Dark DAO (funded),1.0,0.0
+0.3,Independent (noisy mal),0.013400000000000004,0.0033781021143146107
+0.3,Coordinated Coalition Block,0.018600000000000005,0.00395184956031583
+0.3,p+epsilon Dark DAO (funded),1.0,0.0
+0.35,Independent (noisy mal),0.0422,0.004531485732888101
+0.35,Coordinated Coalition Block,0.0568,0.008214789025704926
+0.35,p+epsilon Dark DAO (funded),1.0,0.0
+0.4,Independent (noisy mal),0.10840000000000002,0.008337915124992514
+0.4,Coordinated Coalition Block,0.12620000000000003,0.011239212409192529
+0.4,p+epsilon Dark DAO (funded),1.0,0.0
+0.45,Independent (noisy mal),0.20700000000000002,0.013942200687122529
+0.45,Coordinated Coalition Block,0.23160000000000003,0.010172937639174156
+0.45,p+epsilon Dark DAO (funded),1.0,0.0
+0.5,Independent (noisy mal),0.35159999999999997,0.007734063220244377
+0.5,Coordinated Coalition Block,0.39120000000000005,0.009338974856397302
+0.5,p+epsilon Dark DAO (funded),1.0,0.0

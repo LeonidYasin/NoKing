@@ -1,0 +1,4 @@
+p_honest_A,avg_bribes_needed_leaked_v03,leaked_ci95,worst_case_bribes_F3,guaranteed_flip_budget2_leaked_v03,win_leaked_ci95,guaranteed_flip_budget2_F3,win_F3_ci95
+0.7,2.642,0.012,3.0,0.326,0.01,0.0,0.0
+0.85,2.822,0.007,3.0,0.171,0.007,0.0,0.0
+0.95,2.942,0.005,3.0,0.058,0.005,0.0,0.0
