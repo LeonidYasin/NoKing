@@ -1,0 +1,16 @@
+lambda_unrev,p_honest_disconnect,honest_arb_ev_usd,sabotage_cost_1attempt_pctV,sabotage_cost_2attempts_pctV,deters_dishonest_buyer_50pct
+0.25,0.02,2.93,7.5,15.0,False
+0.25,0.05,2.07,7.5,15.0,False
+0.25,0.1,0.65,7.5,15.0,False
+0.4,0.02,2.63,12.0,24.0,False
+0.4,0.05,1.32,12.0,24.0,False
+0.4,0.1,-0.85,12.0,24.0,False
+0.5,0.02,2.43,15.0,30.0,False
+0.5,0.05,0.82,15.0,30.0,False
+0.5,0.1,-1.85,15.0,30.0,False
+0.75,0.02,1.93,22.5,45.0,False
+0.75,0.05,-0.43,22.5,45.0,False
+0.75,0.1,-4.35,22.5,45.0,False
+1.0,0.02,1.43,30.0,60.0,True
+1.0,0.05,-1.68,30.0,60.0,True
+1.0,0.1,-6.85,30.0,60.0,True
