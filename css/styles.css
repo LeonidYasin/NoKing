@@ -495,3 +495,170 @@ body {
         font-size: 20px;
     }
 }
+
+/* ===== НАУЧНО-ПОПУЛЯРНОЕ ОБЪЯСНЕНИЕ ===== */
+.explainer {
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 36px 32px;
+    margin-top: 28px;
+    color: var(--primary);
+}
+
+.explainer__title {
+    font-size: 26px;
+    line-height: 1.3;
+    color: var(--primary);
+    margin-bottom: 16px;
+}
+
+.explainer__lead {
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--primary-light);
+    margin-bottom: 12px;
+    max-width: 72ch;
+}
+
+.explainer__subtitle {
+    font-size: 19px;
+    color: var(--primary);
+    margin: 28px 0 14px;
+}
+
+.explainer__steps {
+    display: grid;
+    gap: 10px;
+    padding-left: 22px;
+    color: var(--primary-light);
+}
+
+.explainer__steps li {
+    line-height: 1.6;
+}
+
+.explainer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+.explainer-compare {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+}
+
+.explainer-card {
+    container-type: inline-size;
+    display: grid;
+    gap: 10px;
+    align-content: start;
+    background: var(--gray);
+    border: 1px solid #dbe4ee;
+    border-radius: var(--radius);
+    padding: 20px;
+}
+
+.explainer-card--accent {
+    border-color: var(--accent);
+    background: #f2fbfa;
+}
+
+.explainer-card__num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    background: var(--primary);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.explainer-card__title {
+    font-size: 17px;
+    color: var(--primary);
+    align-self: center;
+}
+
+.explainer-card__text,
+.explainer-card__list {
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--primary-light);
+}
+
+.explainer-card__list {
+    padding-left: 20px;
+    display: grid;
+    gap: 6px;
+}
+
+@container (min-width: 24rem) {
+    .explainer-card:has(.explainer-card__num) {
+        grid-template-columns: auto 1fr;
+    }
+
+    .explainer-card:has(.explainer-card__num) > .explainer-card__text {
+        grid-column: 1 / -1;
+    }
+}
+
+.explainer__verdict {
+    margin-top: 24px;
+    padding: 16px 20px;
+    background: #fef9ec;
+    border-left: 4px solid var(--gold);
+    border-radius: 6px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--primary);
+}
+
+.explainer-details {
+    margin-top: 16px;
+    border: 1px solid #dbe4ee;
+    border-radius: 8px;
+    padding: 12px 16px;
+    background: var(--white);
+}
+
+.explainer-details__summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--primary);
+    list-style-position: inside;
+}
+
+.explainer-details__summary:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+.explainer-details__body {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--primary-light);
+}
+
+.explainer-details__body a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+    .explainer {
+        padding: 24px 18px;
+    }
+
+    .explainer__title {
+        font-size: 22px;
+    }
+}
