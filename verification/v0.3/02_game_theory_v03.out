@@ -1,0 +1,43 @@
+=== W3.1: E1 50/50 SPLIT INCENTIVES FOR ALL 4 PARTICIPANT TYPES ===
+Type 1 (Honest Seller, w=A):   Honest = +1.090V (0.99V + 0.10V dep) | E1 = +0.550V (0.50V + 0.05V dep) => Gain = -0.540V
+Type 2 (Honest Buyer, w=B):    Honest = +1.100V (V + 0.05V pen + 0.05V D) | E1 = +0.450V (0.50V - 0.05V D) => Gain = -0.650V
+Type 3 (Dishonest Buyer, w=A): Honest = -1.050V (keeps goods) | E1 = -0.550V (keeps goods + 0.50V refund) => Gross Stalling Gain = +0.500V
+Type 4 (Dishonest Seller,w=B): Honest =  0.000V (loses 0.10V dep) | E1 = +0.550V (0.50V + 0.05V dep) => Gross Stalling Gain = +0.550V
+  (Even if seller forfeits 100% of seller_deposit in E1, Dishonest Seller still gains +0.500V from 50/50 split!)
+
+--- Sabotage Cost Thresholds for E1 Round 1 (Cat + Parent Pool Escalation) ---
+Q=3(break=3), beta=0.10, lam_unrev=0.25: C_sab(2 att)=0.150V | C_sab(4 att w/ esc)=0.300V | Deters Buyer(+0.50V)? False | Deters Seller(+0.55V)? False
+Q=3(break=3), beta=0.10, lam_unrev=0.50: C_sab(2 att)=0.300V | C_sab(4 att w/ esc)=0.600V | Deters Buyer(+0.50V)? True | Deters Seller(+0.55V)? True
+Q=3(break=3), beta=0.10, lam_unrev=0.75: C_sab(2 att)=0.450V | C_sab(4 att w/ esc)=0.900V | Deters Buyer(+0.50V)? True | Deters Seller(+0.55V)? True
+Q=3(break=3), beta=0.10, lam_unrev=1.00: C_sab(2 att)=0.600V | C_sab(4 att w/ esc)=1.200V | Deters Buyer(+0.50V)? True | Deters Seller(+0.55V)? True
+Q=3(break=3), beta=0.20, lam_unrev=0.25: C_sab(2 att)=0.300V | C_sab(4 att w/ esc)=0.600V | Deters Buyer(+0.50V)? True | Deters Seller(+0.55V)? True
+Q=3(break=3), beta=0.20, lam_unrev=0.50: C_sab(2 att)=0.600V | C_sab(4 att w/ esc)=1.200V | Deters Buyer(+0.50V)? True | Deters Seller(+0.55V)? True
+Q=3(break=3), beta=0.20, lam_unrev=0.75: C_sab(2 att)=0.900V | C_sab(4 att w/ esc)=1.800V | Deters Buyer(+0.50V)? True | Deters Seller(+0.55V)? True
+Q=3(break=3), beta=0.20, lam_unrev=1.00: C_sab(2 att)=1.200V | C_sab(4 att w/ esc)=2.400V | Deters Buyer(+0.50V)? True | Deters Seller(+0.55V)? True
+Q=4(break=2), beta=0.10, lam_unrev=0.25: C_sab(2 att)=0.100V | C_sab(4 att w/ esc)=0.200V | Deters Buyer(+0.50V)? False | Deters Seller(+0.55V)? False
+Q=4(break=2), beta=0.10, lam_unrev=0.50: C_sab(2 att)=0.200V | C_sab(4 att w/ esc)=0.400V | Deters Buyer(+0.50V)? False | Deters Seller(+0.55V)? False
+Q=4(break=2), beta=0.10, lam_unrev=0.75: C_sab(2 att)=0.300V | C_sab(4 att w/ esc)=0.600V | Deters Buyer(+0.50V)? True | Deters Seller(+0.55V)? True
+Q=4(break=2), beta=0.10, lam_unrev=1.00: C_sab(2 att)=0.400V | C_sab(4 att w/ esc)=0.800V | Deters Buyer(+0.50V)? True | Deters Seller(+0.55V)? True
+Q=4(break=2), beta=0.20, lam_unrev=0.25: C_sab(2 att)=0.200V | C_sab(4 att w/ esc)=0.400V | Deters Buyer(+0.50V)? False | Deters Seller(+0.55V)? False
+Q=4(break=2), beta=0.20, lam_unrev=0.50: C_sab(2 att)=0.400V | C_sab(4 att w/ esc)=0.800V | Deters Buyer(+0.50V)? True | Deters Seller(+0.55V)? True
+Q=4(break=2), beta=0.20, lam_unrev=0.75: C_sab(2 att)=0.600V | C_sab(4 att w/ esc)=1.200V | Deters Buyer(+0.50V)? True | Deters Seller(+0.55V)? True
+Q=4(break=2), beta=0.20, lam_unrev=1.00: C_sab(2 att)=0.800V | C_sab(4 att w/ esc)=1.600V | Deters Buyer(+0.50V)? True | Deters Seller(+0.55V)? True
+
+=== W3.2: DIRECT BRIBERY BOUND V_safe_max UNDER S_arb_max & TIERS (E2) ===
+Tier 1 (k=5, k'=17), S_max=$ 250 => m1+m2*lam= 5.25 => V_safe_max=$  1312.5 (R1 lock=$ 1250, R2 lock=$  4250)
+Tier 1 (k=5, k'=17), S_max=$ 500 => m1+m2*lam= 5.25 => V_safe_max=$  2625.0 (R1 lock=$ 2500, R2 lock=$  8500)
+Tier 1 (k=5, k'=17), S_max=$1000 => m1+m2*lam= 5.25 => V_safe_max=$  5250.0 (R1 lock=$ 5000, R2 lock=$ 17000)
+Tier 1 (k=5, k'=17), S_max=$2500 => m1+m2*lam= 5.25 => V_safe_max=$ 13125.0 (R1 lock=$12500, R2 lock=$ 42500)
+Tier 2 (k=7, k'=23), S_max=$ 250 => m1+m2*lam= 7.00 => V_safe_max=$  1750.0 (R1 lock=$ 1750, R2 lock=$  5750)
+Tier 2 (k=7, k'=23), S_max=$ 500 => m1+m2*lam= 7.00 => V_safe_max=$  3500.0 (R1 lock=$ 3500, R2 lock=$ 11500)
+Tier 2 (k=7, k'=23), S_max=$1000 => m1+m2*lam= 7.00 => V_safe_max=$  7000.0 (R1 lock=$ 7000, R2 lock=$ 23000)
+Tier 2 (k=7, k'=23), S_max=$2500 => m1+m2*lam= 7.00 => V_safe_max=$ 17500.0 (R1 lock=$17500, R2 lock=$ 57500)
+Tier 3 (k=9, k'=29), S_max=$ 250 => m1+m2*lam= 8.75 => V_safe_max=$  2187.5 (R1 lock=$ 2250, R2 lock=$  7250)
+Tier 3 (k=9, k'=29), S_max=$ 500 => m1+m2*lam= 8.75 => V_safe_max=$  4375.0 (R1 lock=$ 4500, R2 lock=$ 14500)
+Tier 3 (k=9, k'=29), S_max=$1000 => m1+m2*lam= 8.75 => V_safe_max=$  8750.0 (R1 lock=$ 9000, R2 lock=$ 29000)
+Tier 3 (k=9, k'=29), S_max=$2500 => m1+m2*lam= 8.75 => V_safe_max=$ 21875.0 (R1 lock=$22500, R2 lock=$ 72500)
+
+=== W3.3: FOCAL THRESHOLD p* BEFORE VS AFTER REWARD SYMMETRIZATION ===
+V=$1000, beta=0.05, S_arb=$   50: p*_before=0.3092 (bias=+0.1908) -> p*_after=0.5000 (bias=+0.0000)
+V=$1000, beta=0.10, S_arb=$  100: p*_before=0.3786 (bias=+0.1214) -> p*_after=0.5000 (bias=+0.0000)
+V=$1000, beta=0.20, S_arb=$  200: p*_before=0.4298 (bias=+0.0702) -> p*_after=0.5000 (bias=+0.0000)

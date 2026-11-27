@@ -1,0 +1,194 @@
+{
+  "seeds": [
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119
+  ],
+  "w01_N60_f30": [
+    {
+      "N_pool": 60,
+      "f_mal": 0.3,
+      "version": "v0.1",
+      "wrong_mean": 0.16883333333333334,
+      "wrong_ci95": 0.008574611102292367,
+      "fallback_mean": 0.0,
+      "fallback_ci95": 0.0,
+      "blocked_app_mean": 0.0,
+      "blocked_app_ci95": 0.0
+    },
+    {
+      "N_pool": 60,
+      "f_mal": 0.3,
+      "version": "v0.2",
+      "wrong_mean": 0.017,
+      "wrong_ci95": 0.0033144574322467066,
+      "fallback_mean": 0.005333333333333333,
+      "fallback_ci95": 0.0016690481231608932,
+      "blocked_app_mean": 0.0,
+      "blocked_app_ci95": 0.0
+    },
+    {
+      "N_pool": 60,
+      "f_mal": 0.3,
+      "version": "v0.3",
+      "wrong_mean": 0.017333333333333333,
+      "wrong_ci95": 0.0029826727681905134,
+      "fallback_mean": 0.0,
+      "fallback_ci95": 0.0,
+      "blocked_app_mean": 0.0001666666666666667,
+      "blocked_app_ci95": 0.0003266666666666666
+    }
+  ],
+  "w01_N36_f30": [
+    {
+      "N_pool": 36,
+      "f_mal": 0.3,
+      "version": "v0.1",
+      "wrong_mean": 0.41666666666666663,
+      "wrong_ci95": 0.010911788785663144,
+      "fallback_mean": 0.0,
+      "fallback_ci95": 0.0,
+      "blocked_app_mean": 0.41666666666666663,
+      "blocked_app_ci95": 0.010911788785663144
+    },
+    {
+      "N_pool": 36,
+      "f_mal": 0.3,
+      "version": "v0.2",
+      "wrong_mean": 0.0,
+      "wrong_ci95": 0.0,
+      "fallback_mean": 0.2368333333333333,
+      "fallback_ci95": 0.008431944133552178,
+      "blocked_app_mean": 0.2308333333333333,
+      "blocked_app_ci95": 0.008503576818812789
+    },
+    {
+      "N_pool": 36,
+      "f_mal": 0.3,
+      "version": "v0.3",
+      "wrong_mean": 0.0003333333333333334,
+      "wrong_ci95": 0.0004496548383863011,
+      "fallback_mean": 0.0,
+      "fallback_ci95": 0.0,
+      "blocked_app_mean": 0.0,
+      "blocked_app_ci95": 0.0
+    }
+  ],
+  "w02_ablation_f30": [
+    {
+      "f_mal": 0.3,
+      "config": "0. Bare v0.1 (R1 only, Open, Def5.2 bug)",
+      "wrong_mean": 0.41466666666666663,
+      "wrong_ci95": 0.012226422925118354,
+      "no_decision_mean": 0.0,
+      "no_decision_ci95": 0.0
+    },
+    {
+      "f_mal": 0.3,
+      "config": "1. +Appeal only (Open, Def5.2 bug)",
+      "wrong_mean": 0.18216666666666664,
+      "wrong_ci95": 0.010267665820599575,
+      "no_decision_mean": 0.0,
+      "no_decision_ci95": 0.0
+    },
+    {
+      "f_mal": 0.3,
+      "config": "2. +Commit-Reveal only (R1, Def5.2 bug)",
+      "wrong_mean": 0.29799999999999993,
+      "wrong_ci95": 0.014190867337462975,
+      "no_decision_mean": 0.0,
+      "no_decision_ci95": 0.0
+    },
+    {
+      "f_mal": 0.3,
+      "config": "3. +Quorum Q=3 only (R1, Open)",
+      "wrong_mean": 0.371,
+      "wrong_ci95": 0.009504407595567966,
+      "no_decision_mean": 0.035666666666666666,
+      "no_decision_ci95": 0.004548705618856593
+    },
+    {
+      "f_mal": 0.3,
+      "config": "4. +CR + Quorum + Redraw (R1 only)",
+      "wrong_mean": 0.2351666666666667,
+      "wrong_ci95": 0.01028078534784289,
+      "no_decision_mean": 0.0041666666666666675,
+      "no_decision_ci95": 0.001242780320079381
+    },
+    {
+      "f_mal": 0.3,
+      "config": "5. Full Stack (Appeal+CR+Quorum+Redraw)",
+      "wrong_mean": 0.014666666666666666,
+      "wrong_ci95": 0.003086319938087093,
+      "no_decision_mean": 0.003666666666666666,
+      "no_decision_ci95": 0.0016350517276364023
+    }
+  ],
+  "w04_keeper_p30": [
+    {
+      "A_min": 10.0,
+      "review_timeout_rate": 0.3,
+      "deficit_10pct_split_mean": 28.97987383889827,
+      "deficit_10pct_ci95": 3.7558865650507705,
+      "deficit_100pct_on_timeout_mean": -261.7395170405467,
+      "deficit_100pct_ci95": 9.26652999938674
+    },
+    {
+      "A_min": 25.0,
+      "review_timeout_rate": 0.3,
+      "deficit_10pct_split_mean": 28.335311503866972,
+      "deficit_10pct_ci95": 3.7433732263934596,
+      "deficit_100pct_on_timeout_mean": -264.13027988139936,
+      "deficit_100pct_ci95": 9.316643560351261
+    },
+    {
+      "A_min": 50.0,
+      "review_timeout_rate": 0.3,
+      "deficit_10pct_split_mean": 23.746661158479235,
+      "deficit_10pct_ci95": 3.6927924159824324,
+      "deficit_100pct_on_timeout_mean": -280.99654303001154,
+      "deficit_100pct_ci95": 9.549434811010046
+    },
+    {
+      "A_min": 100.0,
+      "review_timeout_rate": 0.3,
+      "deficit_10pct_split_mean": 2.49590733471547,
+      "deficit_10pct_ci95": 3.5846739576782225,
+      "deficit_100pct_on_timeout_mean": -359.6877966033839,
+      "deficit_100pct_ci95": 9.964952265884648
+    },
+    {
+      "A_min": 250.0,
+      "review_timeout_rate": 0.3,
+      "deficit_10pct_split_mean": -104.55324082891222,
+      "deficit_10pct_ci95": 3.5187041018715175,
+      "deficit_100pct_on_timeout_mean": -758.4238039854166,
+      "deficit_100pct_ci95": 14.19924547775272
+    },
+    {
+      "A_min": 500.0,
+      "review_timeout_rate": 0.3,
+      "deficit_10pct_split_mean": -319.3796436966055,
+      "deficit_10pct_ci95": 3.5041148688704835,
+      "deficit_100pct_on_timeout_mean": -1556.1649918748099,
+      "deficit_100pct_ci95": 27.21280103590216
+    }
+  ]
+}
