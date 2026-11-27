@@ -1,0 +1,56 @@
+=== 1. ASYMMETRIC FOCAL THRESHOLD p* UNDER D4 PROPORTIONAL STAKE ===
+V=  100, beta=0.05, S_arb=    5.0 => p* = 0.3092 (bias = +0.1908)
+V=  100, beta=0.10, S_arb=   10.0 => p* = 0.3786 (bias = +0.1214)
+V=  100, beta=0.20, S_arb=   20.0 => p* = 0.4298 (bias = +0.0702)
+V=  100, beta=0.30, S_arb=   30.0 => p* = 0.4506 (bias = +0.0494)
+V= 1000, beta=0.05, S_arb=   50.0 => p* = 0.3092 (bias = +0.1908)
+V= 1000, beta=0.10, S_arb=  100.0 => p* = 0.3786 (bias = +0.1214)
+V= 1000, beta=0.20, S_arb=  200.0 => p* = 0.4298 (bias = +0.0702)
+V= 1000, beta=0.30, S_arb=  300.0 => p* = 0.4506 (bias = +0.0494)
+V=10000, beta=0.05, S_arb=  500.0 => p* = 0.3092 (bias = +0.1908)
+V=10000, beta=0.10, S_arb= 1000.0 => p* = 0.3786 (bias = +0.1214)
+V=10000, beta=0.20, S_arb= 2000.0 => p* = 0.4298 (bias = +0.0702)
+V=10000, beta=0.30, S_arb= 3000.0 => p* = 0.4506 (bias = +0.0494)
+
+=== 2. DIRECT BRIBERY THRESHOLD & TOTAL ARBITRATOR CAPITAL LOCKED ===
+Critical proportional stake ratio beta_crit (k=5, k'=17, lam=0.25): 0.1905 (19.05% of V per arb)
+beta=0.05: C_direct/V=0.263, R1_locked=0.25V, R2_locked=0.85V, Total_locked=1.10V | Bribe_profitable? YES (net profit 73.8% of V)
+beta=0.10: C_direct/V=0.525, R1_locked=0.50V, R2_locked=1.70V, Total_locked=2.20V | Bribe_profitable? YES (net profit 47.5% of V)
+beta=0.15: C_direct/V=0.787, R1_locked=0.75V, R2_locked=2.55V, Total_locked=3.30V | Bribe_profitable? YES (net profit 21.3% of V)
+beta=0.20: C_direct/V=1.050, R1_locked=1.00V, R2_locked=3.40V, Total_locked=4.40V | Bribe_profitable? NO (C_direct > V for all V)
+beta=0.25: C_direct/V=1.312, R1_locked=1.25V, R2_locked=4.25V, Total_locked=5.50V | Bribe_profitable? NO (C_direct > V for all V)
+beta=0.30: C_direct/V=1.575, R1_locked=1.50V, R2_locked=5.10V, Total_locked=6.60V | Bribe_profitable? NO (C_direct > V for all V)
+
+=== 3. p + epsilon ATTACK: CAPITAL LOCKUP VS REALIZED COST ===
+V= 1000, beta=0.10: DarkDAO_escrow=$   969.0 (0.97x V), Realized_cost_on_success≈$12
+V= 1000, beta=0.20: DarkDAO_escrow=$  1894.0 (1.89x V), Realized_cost_on_success≈$12
+V=10000, beta=0.10: DarkDAO_escrow=$  9492.0 (0.95x V), Realized_cost_on_success≈$12
+V=10000, beta=0.20: DarkDAO_escrow=$ 18742.0 (1.87x V), Realized_cost_on_success≈$12
+
+=== 4. D3 COMPROMISE MANIPULATION INCENTIVES VS SABOTAGE COST ===
+k=5, Q_arb=3 (break=3 seats), beta=0.05, redraws=1: Sabotage_cost=0.038V | Buyer_EV=+1.012V | Seller_EV=+0.062V
+k=5, Q_arb=3 (break=3 seats), beta=0.05, redraws=2: Sabotage_cost=0.075V | Buyer_EV=+0.975V | Seller_EV=+0.025V
+k=5, Q_arb=3 (break=3 seats), beta=0.10, redraws=1: Sabotage_cost=0.075V | Buyer_EV=+0.975V | Seller_EV=+0.025V
+k=5, Q_arb=3 (break=3 seats), beta=0.10, redraws=2: Sabotage_cost=0.150V | Buyer_EV=+0.900V | Seller_EV=-0.050V
+k=5, Q_arb=3 (break=3 seats), beta=0.20, redraws=1: Sabotage_cost=0.150V | Buyer_EV=+0.900V | Seller_EV=-0.050V
+k=5, Q_arb=3 (break=3 seats), beta=0.20, redraws=2: Sabotage_cost=0.300V | Buyer_EV=+0.750V | Seller_EV=-0.200V
+k=5, Q_arb=4 (break=2 seats), beta=0.05, redraws=1: Sabotage_cost=0.025V | Buyer_EV=+1.025V | Seller_EV=+0.075V
+k=5, Q_arb=4 (break=2 seats), beta=0.05, redraws=2: Sabotage_cost=0.050V | Buyer_EV=+1.000V | Seller_EV=+0.050V
+k=5, Q_arb=4 (break=2 seats), beta=0.10, redraws=1: Sabotage_cost=0.050V | Buyer_EV=+1.000V | Seller_EV=+0.050V
+k=5, Q_arb=4 (break=2 seats), beta=0.10, redraws=2: Sabotage_cost=0.100V | Buyer_EV=+0.950V | Seller_EV=+0.000V
+k=5, Q_arb=4 (break=2 seats), beta=0.20, redraws=1: Sabotage_cost=0.100V | Buyer_EV=+0.950V | Seller_EV=+0.000V
+k=5, Q_arb=4 (break=2 seats), beta=0.20, redraws=2: Sabotage_cost=0.200V | Buyer_EV=+0.850V | Seller_EV=-0.100V
+k=5, Q_arb=5 (break=1 seats), beta=0.05, redraws=1: Sabotage_cost=0.013V | Buyer_EV=+1.038V | Seller_EV=+0.088V
+k=5, Q_arb=5 (break=1 seats), beta=0.05, redraws=2: Sabotage_cost=0.025V | Buyer_EV=+1.025V | Seller_EV=+0.075V
+k=5, Q_arb=5 (break=1 seats), beta=0.10, redraws=1: Sabotage_cost=0.025V | Buyer_EV=+1.025V | Seller_EV=+0.075V
+k=5, Q_arb=5 (break=1 seats), beta=0.10, redraws=2: Sabotage_cost=0.050V | Buyer_EV=+1.000V | Seller_EV=+0.050V
+k=5, Q_arb=5 (break=1 seats), beta=0.20, redraws=1: Sabotage_cost=0.050V | Buyer_EV=+1.000V | Seller_EV=+0.050V
+k=5, Q_arb=5 (break=1 seats), beta=0.20, redraws=2: Sabotage_cost=0.100V | Buyer_EV=+0.950V | Seller_EV=+0.000V
+
+=== 5. ARBITRATOR CAPITAL CONSTRAINT FOR LARGE DEALS (V=$10,000-$50,000) ===
+V=$ 1000, beta=0.10 => S_arb=$    100/arb | R1_locked=$    500, R2_locked=$    1700, Eligible_pool_liquidity(51 arbs)=$     5100
+V=$ 1000, beta=0.20 => S_arb=$    200/arb | R1_locked=$   1000, R2_locked=$    3400, Eligible_pool_liquidity(51 arbs)=$    10200
+V=$10000, beta=0.10 => S_arb=$   1000/arb | R1_locked=$   5000, R2_locked=$   17000, Eligible_pool_liquidity(51 arbs)=$    51000
+V=$10000, beta=0.20 => S_arb=$   2000/arb | R1_locked=$  10000, R2_locked=$   34000, Eligible_pool_liquidity(51 arbs)=$   102000
+V=$50000, beta=0.10 => S_arb=$   5000/arb | R1_locked=$  25000, R2_locked=$   85000, Eligible_pool_liquidity(51 arbs)=$   255000
+V=$50000, beta=0.20 => S_arb=$  10000/arb | R1_locked=$  50000, R2_locked=$  170000, Eligible_pool_liquidity(51 arbs)=$   510000
