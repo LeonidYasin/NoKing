@@ -1,0 +1,1840 @@
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Warning: Please run the Java VM which executes TLC with a throughput optimized garbage collector by passing the "-XX:+UseParallelGC" property.
+(Use the -nowarning option to disable this warning.)
+Running breadth-first search Model-Checking with fp 106 and seed 8971700904204083062 with 2 workers on 2 cores with 2914MB heap and 64MB offheap memory [pid: 23875] (Linux 6.2.1-PRoot-Distro aarch64, Debian 17.0.21.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file /workspace/NoKing/verification/v0.5/01_fsm/NoKingV05_Mutants.tla
+Parsing file /workspace/NoKing/verification/v0.5/01_fsm/NoKingV05.tla
+Parsing file /tmp/Integers.tla
+Parsing file /tmp/FiniteSets.tla
+Parsing file /tmp/Naturals.tla
+Parsing file /tmp/Sequences.tla
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module NoKingV05
+Semantic processing of module NoKingV05_Mutants
+Starting... (2026-11-27 12:37:08)
+Computing initial states...
+Computed 2 initial states...
+Computed 4 initial states...
+Finished computing initial states: 8 distinct states generated at 2026-11-27 12:37:10.
+Progress(11) at 2026-11-27 12:37:13: 2,349 states generated (2,349 s/min), 1,846 distinct states found (1,846 ds/min), 602 states left on queue.
+Error: Invariant Inv_G2DisjointR2Pool is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ escrowArbCurr = 0
+/\ r1_verdict = "NONE"
+/\ balKeeper = 0
+/\ balA = 190
+/\ balB = 200
+/\ panel_formed = FALSE
+/\ dispute_open_t = -1
+/\ attempt_open_t = -1
+/\ r1_pool = -1
+/\ f4_keeper_paid_dispute = FALSE
+/\ balArb = 400
+/\ r2_pool_disjoint = TRUE
+/\ state = "DRAFT"
+/\ escrowArbR1 = 0
+/\ esc_level = 0
+/\ f4_review_fee_to_keeper = FALSE
+/\ balTreasury = 0
+/\ escrowBuyer = 0
+/\ cancel_req_t = -1
+/\ t_now = 0
+/\ n04_delay_paid = FALSE
+/\ panel_l2_formed = FALSE
+/\ seats_drawn = 0
+/\ payout_count = 0
+/\ seller_delivered = FALSE
+/\ escrowAppeal = 0
+/\ submit_time = -1
+/\ votesUnrevealed = 0
+/\ escrowSeller = 10
+/\ pool_l2_ok = TRUE
+/\ escrowDispute = 0
+/\ failed_attempts = 0
+/\ deadline_defaults = 0
+/\ tally_sealed = TRUE
+/\ curr_reward = 0
+/\ g3_party_paid_keeper = FALSE
+/\ votesA = 0
+/\ votesB = 0
+/\ committed = FALSE
+/\ voted = FALSE
+/\ buyer_honest = TRUE
+/\ resolve_time = -1
+/\ pool_l1_ok = FALSE
+/\ cap_reserved = 80
+/\ tally_leaked = FALSE
+/\ round = 0
+/\ g3_review_keeper_payout = 0
+/\ verdict = "NONE"
+/\ escrowArbReward = 0
+/\ r2_pool = -1
+/\ escReserve = 50
+/\ attempt = 0
+/\ pool_l0_ok = TRUE
+
+State 2: <Accept line 222, col 3 to line 237, col 103 of module NoKingV05>
+/\ escrowArbCurr = 0
+/\ r1_verdict = "NONE"
+/\ balKeeper = 0
+/\ balA = 190
+/\ balB = 100
+/\ panel_formed = FALSE
+/\ dispute_open_t = -1
+/\ attempt_open_t = -1
+/\ r1_pool = -1
+/\ f4_keeper_paid_dispute = FALSE
+/\ balArb = 400
+/\ r2_pool_disjoint = TRUE
+/\ state = "LOCKED"
+/\ escrowArbR1 = 0
+/\ esc_level = 0
+/\ f4_review_fee_to_keeper = FALSE
+/\ balTreasury = 0
+/\ escrowBuyer = 100
+/\ cancel_req_t = -1
+/\ t_now = 0
+/\ n04_delay_paid = FALSE
+/\ panel_l2_formed = FALSE
+/\ seats_drawn = 0
+/\ payout_count = 0
+/\ seller_delivered = FALSE
+/\ escrowAppeal = 0
+/\ submit_time = -1
+/\ votesUnrevealed = 0
+/\ escrowSeller = 10
+/\ pool_l2_ok = TRUE
+/\ escrowDispute = 0
+/\ failed_attempts = 0
+/\ deadline_defaults = 0
+/\ tally_sealed = TRUE
+/\ curr_reward = 0
+/\ g3_party_paid_keeper = FALSE
+/\ votesA = 0
+/\ votesB = 0
+/\ committed = FALSE
+/\ voted = FALSE
+/\ buyer_honest = TRUE
+/\ resolve_time = -1
+/\ pool_l1_ok = FALSE
+/\ cap_reserved = 80
+/\ tally_leaked = FALSE
+/\ round = 0
+/\ g3_review_keeper_payout = 0
+/\ verdict = "NONE"
+/\ escrowArbReward = 0
+/\ r2_pool = -1
+/\ escReserve = 50
+/\ attempt = 0
+/\ pool_l0_ok = TRUE
+
+State 3: <Start line 298, col 3 to line 311, col 60 of module NoKingV05>
+/\ escrowArbCurr = 0
+/\ r1_verdict = "NONE"
+/\ balKeeper = 0
+/\ balA = 190
+/\ balB = 100
+/\ panel_formed = FALSE
+/\ dispute_open_t = -1
+/\ attempt_open_t = -1
+/\ r1_pool = -1
+/\ f4_keeper_paid_dispute = FALSE
+/\ balArb = 400
+/\ r2_pool_disjoint = TRUE
+/\ state = "IN_PROGRESS"
+/\ escrowArbR1 = 0
+/\ esc_level = 0
+/\ f4_review_fee_to_keeper = FALSE
+/\ balTreasury = 0
+/\ escrowBuyer = 100
+/\ cancel_req_t = -1
+/\ t_now = 0
+/\ n04_delay_paid = FALSE
+/\ panel_l2_formed = FALSE
+/\ seats_drawn = 0
+/\ payout_count = 0
+/\ seller_delivered = FALSE
+/\ escrowAppeal = 0
+/\ submit_time = -1
+/\ votesUnrevealed = 0
+/\ escrowSeller = 10
+/\ pool_l2_ok = TRUE
+/\ escrowDispute = 0
+/\ failed_attempts = 0
+/\ deadline_defaults = 0
+/\ tally_sealed = TRUE
+/\ curr_reward = 0
+/\ g3_party_paid_keeper = FALSE
+/\ votesA = 0
+/\ votesB = 0
+/\ committed = FALSE
+/\ voted = FALSE
+/\ buyer_honest = TRUE
+/\ resolve_time = -1
+/\ pool_l1_ok = FALSE
+/\ cap_reserved = 80
+/\ tally_leaked = FALSE
+/\ round = 0
+/\ g3_review_keeper_payout = 0
+/\ verdict = "NONE"
+/\ escrowArbReward = 0
+/\ r2_pool = -1
+/\ escReserve = 50
+/\ attempt = 0
+/\ pool_l0_ok = TRUE
+
+State 4: <Submit line 337, col 3 to line 352, col 60 of module NoKingV05>
+/\ escrowArbCurr = 0
+/\ r1_verdict = "NONE"
+/\ balKeeper = 0
+/\ balA = 190
+/\ balB = 100
+/\ panel_formed = FALSE
+/\ dispute_open_t = -1
+/\ attempt_open_t = -1
+/\ r1_pool = -1
+/\ f4_keeper_paid_dispute = FALSE
+/\ balArb = 400
+/\ r2_pool_disjoint = TRUE
+/\ state = "REVIEW"
+/\ escrowArbR1 = 0
+/\ esc_level = 0
+/\ f4_review_fee_to_keeper = FALSE
+/\ balTreasury = 0
+/\ escrowBuyer = 100
+/\ cancel_req_t = -1
+/\ t_now = 0
+/\ n04_delay_paid = FALSE
+/\ panel_l2_formed = FALSE
+/\ seats_drawn = 0
+/\ payout_count = 0
+/\ seller_delivered = FALSE
+/\ escrowAppeal = 0
+/\ submit_time = 0
+/\ votesUnrevealed = 0
+/\ escrowSeller = 10
+/\ pool_l2_ok = TRUE
+/\ escrowDispute = 0
+/\ failed_attempts = 0
+/\ deadline_defaults = 0
+/\ tally_sealed = TRUE
+/\ curr_reward = 0
+/\ g3_party_paid_keeper = FALSE
+/\ votesA = 0
+/\ votesB = 0
+/\ committed = FALSE
+/\ voted = FALSE
+/\ buyer_honest = TRUE
+/\ resolve_time = -1
+/\ pool_l1_ok = FALSE
+/\ cap_reserved = 80
+/\ tally_leaked = FALSE
+/\ round = 0
+/\ g3_review_keeper_payout = 0
+/\ verdict = "NONE"
+/\ escrowArbReward = 0
+/\ r2_pool = -1
+/\ escReserve = 50
+/\ attempt = 0
+/\ pool_l0_ok = TRUE
+
+State 5: <OpenDispute line 430, col 3 to line 461, col 84 of module NoKingV05>
+/\ escrowArbCurr = 0
+/\ r1_verdict = "NONE"
+/\ balKeeper = 0
+/\ balA = 190
+/\ balB = 95
+/\ panel_formed = FALSE
+/\ dispute_open_t = 0
+/\ attempt_open_t = 0
+/\ r1_pool = -1
+/\ f4_keeper_paid_dispute = FALSE
+/\ balArb = 400
+/\ r2_pool_disjoint = TRUE
+/\ state = "DISPUTE"
+/\ escrowArbR1 = 0
+/\ esc_level = 0
+/\ f4_review_fee_to_keeper = FALSE
+/\ balTreasury = 0
+/\ escrowBuyer = 100
+/\ cancel_req_t = -1
+/\ t_now = 0
+/\ n04_delay_paid = FALSE
+/\ panel_l2_formed = FALSE
+/\ seats_drawn = 0
+/\ payout_count = 0
+/\ seller_delivered = FALSE
+/\ escrowAppeal = 0
+/\ submit_time = 0
+/\ votesUnrevealed = 0
+/\ escrowSeller = 10
+/\ pool_l2_ok = TRUE
+/\ escrowDispute = 5
+/\ failed_attempts = 0
+/\ deadline_defaults = 0
+/\ tally_sealed = TRUE
+/\ curr_reward = 2
+/\ g3_party_paid_keeper = FALSE
+/\ votesA = 0
+/\ votesB = 0
+/\ committed = FALSE
+/\ voted = FALSE
+/\ buyer_honest = TRUE
+/\ resolve_time = -1
+/\ pool_l1_ok = FALSE
+/\ cap_reserved = 80
+/\ tally_leaked = FALSE
+/\ round = 1
+/\ g3_review_keeper_payout = 0
+/\ verdict = "NONE"
+/\ escrowArbReward = 2
+/\ r2_pool = -1
+/\ escReserve = 48
+/\ attempt = 1
+/\ pool_l0_ok = TRUE
+
+State 6: <Tick line 199, col 3 to line 219, col 60 of module NoKingV05>
+/\ escrowArbCurr = 0
+/\ r1_verdict = "NONE"
+/\ balKeeper = 0
+/\ balA = 190
+/\ balB = 95
+/\ panel_formed = FALSE
+/\ dispute_open_t = 0
+/\ attempt_open_t = 0
+/\ r1_pool = -1
+/\ f4_keeper_paid_dispute = FALSE
+/\ balArb = 400
+/\ r2_pool_disjoint = TRUE
+/\ state = "DISPUTE"
+/\ escrowArbR1 = 0
+/\ esc_level = 0
+/\ f4_review_fee_to_keeper = FALSE
+/\ balTreasury = 0
+/\ escrowBuyer = 100
+/\ cancel_req_t = -1
+/\ t_now = 1
+/\ n04_delay_paid = FALSE
+/\ panel_l2_formed = FALSE
+/\ seats_drawn = 0
+/\ payout_count = 0
+/\ seller_delivered = FALSE
+/\ escrowAppeal = 0
+/\ submit_time = 0
+/\ votesUnrevealed = 0
+/\ escrowSeller = 10
+/\ pool_l2_ok = TRUE
+/\ escrowDispute = 5
+/\ failed_attempts = 0
+/\ deadline_defaults = 0
+/\ tally_sealed = TRUE
+/\ curr_reward = 2
+/\ g3_party_paid_keeper = FALSE
+/\ votesA = 0
+/\ votesB = 0
+/\ committed = FALSE
+/\ voted = FALSE
+/\ buyer_honest = TRUE
+/\ resolve_time = -1
+/\ pool_l1_ok = FALSE
+/\ cap_reserved = 80
+/\ tally_leaked = FALSE
+/\ round = 1
+/\ g3_review_keeper_payout = 0
+/\ verdict = "NONE"
+/\ escrowArbReward = 2
+/\ r2_pool = -1
+/\ escReserve = 48
+/\ attempt = 1
+/\ pool_l0_ok = TRUE
+
+State 7: <FormPanel line 464, col 3 to line 482, col 101 of module NoKingV05>
+/\ escrowArbCurr = 100
+/\ r1_verdict = "NONE"
+/\ balKeeper = 0
+/\ balA = 190
+/\ balB = 95
+/\ panel_formed = TRUE
+/\ dispute_open_t = 0
+/\ attempt_open_t = 0
+/\ r1_pool = -1
+/\ f4_keeper_paid_dispute = FALSE
+/\ balArb = 300
+/\ r2_pool_disjoint = TRUE
+/\ state = "DISPUTE"
+/\ escrowArbR1 = 0
+/\ esc_level = 0
+/\ f4_review_fee_to_keeper = FALSE
+/\ balTreasury = 0
+/\ escrowBuyer = 100
+/\ cancel_req_t = -1
+/\ t_now = 1
+/\ n04_delay_paid = FALSE
+/\ panel_l2_formed = FALSE
+/\ seats_drawn = 5
+/\ payout_count = 0
+/\ seller_delivered = FALSE
+/\ escrowAppeal = 0
+/\ submit_time = 0
+/\ votesUnrevealed = 0
+/\ escrowSeller = 10
+/\ pool_l2_ok = TRUE
+/\ escrowDispute = 5
+/\ failed_attempts = 0
+/\ deadline_defaults = 0
+/\ tally_sealed = TRUE
+/\ curr_reward = 2
+/\ g3_party_paid_keeper = FALSE
+/\ votesA = 0
+/\ votesB = 0
+/\ committed = FALSE
+/\ voted = FALSE
+/\ buyer_honest = TRUE
+/\ resolve_time = -1
+/\ pool_l1_ok = FALSE
+/\ cap_reserved = 80
+/\ tally_leaked = FALSE
+/\ round = 1
+/\ g3_review_keeper_payout = 0
+/\ verdict = "NONE"
+/\ escrowArbReward = 2
+/\ r2_pool = -1
+/\ escReserve = 48
+/\ attempt = 1
+/\ pool_l0_ok = TRUE
+
+State 8: <CommitVotes line 521, col 3 to line 538, col 60 of module NoKingV05>
+/\ escrowArbCurr = 100
+/\ r1_verdict = "NONE"
+/\ balKeeper = 0
+/\ balA = 190
+/\ balB = 95
+/\ panel_formed = TRUE
+/\ dispute_open_t = 0
+/\ attempt_open_t = 0
+/\ r1_pool = -1
+/\ f4_keeper_paid_dispute = FALSE
+/\ balArb = 300
+/\ r2_pool_disjoint = TRUE
+/\ state = "DISPUTE"
+/\ escrowArbR1 = 0
+/\ esc_level = 0
+/\ f4_review_fee_to_keeper = FALSE
+/\ balTreasury = 0
+/\ escrowBuyer = 100
+/\ cancel_req_t = -1
+/\ t_now = 1
+/\ n04_delay_paid = FALSE
+/\ panel_l2_formed = FALSE
+/\ seats_drawn = 5
+/\ payout_count = 0
+/\ seller_delivered = FALSE
+/\ escrowAppeal = 0
+/\ submit_time = 0
+/\ votesUnrevealed = 0
+/\ escrowSeller = 10
+/\ pool_l2_ok = TRUE
+/\ escrowDispute = 5
+/\ failed_attempts = 0
+/\ deadline_defaults = 0
+/\ tally_sealed = TRUE
+/\ curr_reward = 2
+/\ g3_party_paid_keeper = FALSE
+/\ votesA = 0
+/\ votesB = 0
+/\ committed = TRUE
+/\ voted = FALSE
+/\ buyer_honest = TRUE
+/\ resolve_time = -1
+/\ pool_l1_ok = FALSE
+/\ cap_reserved = 80
+/\ tally_leaked = FALSE
+/\ round = 1
+/\ g3_review_keeper_payout = 0
+/\ verdict = "NONE"
+/\ escrowArbReward = 2
+/\ r2_pool = -1
+/\ escReserve = 48
+/\ attempt = 1
+/\ pool_l0_ok = TRUE
+
+State 9: <Tick line 199, col 3 to line 219, col 60 of module NoKingV05>
+/\ escrowArbCurr = 100
+/\ r1_verdict = "NONE"
+/\ balKeeper = 0
+/\ balA = 190
+/\ balB = 95
+/\ panel_formed = TRUE
+/\ dispute_open_t = 0
+/\ attempt_open_t = 0
+/\ r1_pool = -1
+/\ f4_keeper_paid_dispute = FALSE
+/\ balArb = 300
+/\ r2_pool_disjoint = TRUE
+/\ state = "DISPUTE"
+/\ escrowArbR1 = 0
+/\ esc_level = 0
+/\ f4_review_fee_to_keeper = FALSE
+/\ balTreasury = 0
+/\ escrowBuyer = 100
+/\ cancel_req_t = -1
+/\ t_now = 2
+/\ n04_delay_paid = FALSE
+/\ panel_l2_formed = FALSE
+/\ seats_drawn = 5
+/\ payout_count = 0
+/\ seller_delivered = FALSE
+/\ escrowAppeal = 0
+/\ submit_time = 0
+/\ votesUnrevealed = 0
+/\ escrowSeller = 10
+/\ pool_l2_ok = TRUE
+/\ escrowDispute = 5
+/\ failed_attempts = 0
+/\ deadline_defaults = 0
+/\ tally_sealed = TRUE
+/\ curr_reward = 2
+/\ g3_party_paid_keeper = FALSE
+/\ votesA = 0
+/\ votesB = 0
+/\ committed = TRUE
+/\ voted = FALSE
+/\ buyer_honest = TRUE
+/\ resolve_time = -1
+/\ pool_l1_ok = FALSE
+/\ cap_reserved = 80
+/\ tally_leaked = FALSE
+/\ round = 1
+/\ g3_review_keeper_payout = 0
+/\ verdict = "NONE"
+/\ escrowArbReward = 2
+/\ r2_pool = -1
+/\ escReserve = 48
+/\ attempt = 1
+/\ pool_l0_ok = TRUE
+
+State 10: <MutantNext line 461, col 6 to line 461, col 59 of module NoKingV05_Mutants>
+/\ escrowArbCurr = 100
+/\ r1_verdict = "NONE"
+/\ balKeeper = 0
+/\ balA = 190
+/\ balB = 95
+/\ panel_formed = TRUE
+/\ dispute_open_t = 0
+/\ attempt_open_t = 0
+/\ r1_pool = -1
+/\ f4_keeper_paid_dispute = FALSE
+/\ balArb = 300
+/\ r2_pool_disjoint = TRUE
+/\ state = "DISPUTE"
+/\ escrowArbR1 = 0
+/\ esc_level = 0
+/\ f4_review_fee_to_keeper = FALSE
+/\ balTreasury = 0
+/\ escrowBuyer = 100
+/\ cancel_req_t = -1
+/\ t_now = 2
+/\ n04_delay_paid = FALSE
+/\ panel_l2_formed = FALSE
+/\ seats_drawn = 5
+/\ payout_count = 0
+/\ seller_delivered = FALSE
+/\ escrowAppeal = 0
+/\ submit_time = 0
+/\ votesUnrevealed = 0
+/\ escrowSeller = 10
+/\ pool_l2_ok = TRUE
+/\ escrowDispute = 5
+/\ failed_attempts = 0
+/\ deadline_defaults = 0
+/\ tally_sealed = FALSE
+/\ curr_reward = 2
+/\ g3_party_paid_keeper = FALSE
+/\ votesA = 5
+/\ votesB = 0
+/\ committed = TRUE
+/\ voted = TRUE
+/\ buyer_honest = TRUE
+/\ resolve_time = -1
+/\ pool_l1_ok = FALSE
+/\ cap_reserved = 80
+/\ tally_leaked = FALSE
+/\ round = 1
+/\ g3_review_keeper_payout = 0
+/\ verdict = "FOR_A"
+/\ escrowArbReward = 2
+/\ r2_pool = -1
+/\ escReserve = 48
+/\ attempt = 1
+/\ pool_l0_ok = TRUE
+
+State 11: <ResolveRound1ToAppealable line 691, col 3 to line 717, col 71 of module NoKingV05>
+/\ escrowArbCurr = 0
+/\ r1_verdict = "FOR_A"
+/\ balKeeper = 0
+/\ balA = 190
+/\ balB = 95
+/\ panel_formed = TRUE
+/\ dispute_open_t = 0
+/\ attempt_open_t = 0
+/\ r1_pool = 0
+/\ f4_keeper_paid_dispute = FALSE
+/\ balArb = 302
+/\ r2_pool_disjoint = TRUE
+/\ state = "APPEALABLE"
+/\ escrowArbR1 = 100
+/\ esc_level = 0
+/\ f4_review_fee_to_keeper = FALSE
+/\ balTreasury = 0
+/\ escrowBuyer = 100
+/\ cancel_req_t = -1
+/\ t_now = 2
+/\ n04_delay_paid = FALSE
+/\ panel_l2_formed = FALSE
+/\ seats_drawn = 5
+/\ payout_count = 0
+/\ seller_delivered = FALSE
+/\ escrowAppeal = 0
+/\ submit_time = 0
+/\ votesUnrevealed = 0
+/\ escrowSeller = 10
+/\ pool_l2_ok = TRUE
+/\ escrowDispute = 5
+/\ failed_attempts = 0
+/\ deadline_defaults = 0
+/\ tally_sealed = FALSE
+/\ curr_reward = 2
+/\ g3_party_paid_keeper = FALSE
+/\ votesA = 5
+/\ votesB = 0
+/\ committed = TRUE
+/\ voted = TRUE
+/\ buyer_honest = TRUE
+/\ resolve_time = 2
+/\ pool_l1_ok = FALSE
+/\ cap_reserved = 80
+/\ tally_leaked = FALSE
+/\ round = 1
+/\ g3_review_keeper_payout = 0
+/\ verdict = "FOR_A"
+/\ escrowArbReward = 0
+/\ r2_pool = -1
+/\ escReserve = 48
+/\ attempt = 1
+/\ pool_l0_ok = TRUE
+
+State 12: <MutantNext line 466, col 6 to line 466, col 55 of module NoKingV05_Mutants>
+/\ escrowArbCurr = 0
+/\ r1_verdict = "FOR_A"
+/\ balKeeper = 0
+/\ balA = 190
+/\ balB = 80
+/\ panel_formed = FALSE
+/\ dispute_open_t = 2
+/\ attempt_open_t = 2
+/\ r1_pool = 0
+/\ f4_keeper_paid_dispute = FALSE
+/\ balArb = 302
+/\ r2_pool_disjoint = FALSE
+/\ state = "DISPUTE"
+/\ escrowArbR1 = 100
+/\ esc_level = 0
+/\ f4_review_fee_to_keeper = FALSE
+/\ balTreasury = 0
+/\ escrowBuyer = 100
+/\ cancel_req_t = -1
+/\ t_now = 2
+/\ n04_delay_paid = FALSE
+/\ panel_l2_formed = FALSE
+/\ seats_drawn = 0
+/\ payout_count = 0
+/\ seller_delivered = FALSE
+/\ escrowAppeal = 15
+/\ submit_time = 0
+/\ votesUnrevealed = 0
+/\ escrowSeller = 10
+/\ pool_l2_ok = TRUE
+/\ escrowDispute = 5
+/\ failed_attempts = 0
+/\ deadline_defaults = 0
+/\ tally_sealed = TRUE
+/\ curr_reward = 2
+/\ g3_party_paid_keeper = FALSE
+/\ votesA = 0
+/\ votesB = 0
+/\ committed = FALSE
+/\ voted = FALSE
+/\ buyer_honest = TRUE
+/\ resolve_time = 2
+/\ pool_l1_ok = FALSE
+/\ cap_reserved = 80
+/\ tally_leaked = FALSE
+/\ round = 2
+/\ g3_review_keeper_payout = 0
+/\ verdict = "NONE"
+/\ escrowArbReward = 0
+/\ r2_pool = 0
+/\ escReserve = 48
+/\ attempt = 1
+/\ pool_l0_ok = TRUE
+
+The coverage statistics at 2026-11-27 12:37:16
+<MutantInit line 436, col 1 to line 436, col 10 of module NoKingV05_Mutants>: 16:16
+  line 437, col 6 to line 437, col 17 of module NoKingV05_Mutants: 2
+  line 438, col 11 to line 438, col 22 of module NoKingV05_Mutants: 2
+  line 439, col 11 to line 439, col 22 of module NoKingV05_Mutants: 2
+  line 140, col 6 to line 140, col 15 of module NoKingV05: 2
+  line 141, col 6 to line 141, col 24 of module NoKingV05: 2
+  line 142, col 6 to line 142, col 15 of module NoKingV05: 2
+  line 143, col 6 to line 143, col 24 of module NoKingV05: 2
+  line 146, col 6 to line 146, col 22 of module NoKingV05: 2
+  line 147, col 6 to line 147, col 21 of module NoKingV05: 2
+  line 148, col 6 to line 148, col 22 of module NoKingV05: 2
+  line 149, col 6 to line 149, col 24 of module NoKingV05: 2
+  line 150, col 6 to line 150, col 24 of module NoKingV05: 2
+  line 156, col 6 to line 156, col 25 of module NoKingV05: 2
+  line 157, col 6 to line 157, col 28 of module NoKingV05: 2
+  line 158, col 6 to line 158, col 33 of module NoKingV05: 2
+  line 159, col 6 to line 159, col 33 of module NoKingV05: 4
+  line 160, col 6 to line 160, col 22 of module NoKingV05: 8
+  line 161, col 6 to line 161, col 26 of module NoKingV05: 8
+  line 162, col 6 to line 162, col 17 of module NoKingV05: 8
+  line 163, col 6 to line 163, col 17 of module NoKingV05: 8
+  line 164, col 6 to line 164, col 28 of module NoKingV05: 8
+  line 165, col 6 to line 165, col 22 of module NoKingV05: 8
+  line 166, col 6 to line 166, col 18 of module NoKingV05: 8
+  line 167, col 6 to line 167, col 24 of module NoKingV05: 8
+  line 168, col 6 to line 168, col 25 of module NoKingV05: 8
+  line 175, col 6 to line 175, col 29 of module NoKingV05: 8
+  line 176, col 6 to line 176, col 35 of module NoKingV05: 8
+  line 178, col 6 to line 178, col 27 of module NoKingV05: 16
+  line 180, col 6 to line 180, col 35 of module NoKingV05: 16
+  line 181, col 6 to line 181, col 36 of module NoKingV05: 16
+  line 183, col 6 to line 183, col 33 of module NoKingV05: 16
+  line 184, col 6 to line 184, col 38 of module NoKingV05: 16
+  line 185, col 6 to line 185, col 21 of module NoKingV05: 16
+  line 186, col 6 to line 186, col 21 of module NoKingV05: 16
+  line 189, col 6 to line 189, col 29 of module NoKingV05: 16
+  line 191, col 6 to line 191, col 33 of module NoKingV05: 16
+  line 196, col 6 to line 196, col 24 of module NoKingV05: 16
+<MutantNext line 442, col 1 to line 442, col 10 of module NoKingV05_Mutants (453 6 456 23)>: 160:240
+  line 453, col 9 to line 453, col 20 of module NoKingV05_Mutants: 2439
+  line 241, col 6 to line 241, col 22 of module NoKingV05_Mutants: 0
+  line 242, col 6 to line 242, col 22 of module NoKingV05_Mutants: 0
+  line 243, col 6 to line 243, col 36 of module NoKingV05_Mutants: 0
+  line 244, col 6 to line 244, col 43 of module NoKingV05_Mutants: 0
+  line 245, col 6 to line 245, col 62 of module NoKingV05_Mutants: 0
+  line 246, col 6 to line 246, col 41 of module NoKingV05_Mutants: 0
+  line 247, col 6 to line 247, col 21 of module NoKingV05_Mutants: 0
+  line 248, col 6 to line 248, col 22 of module NoKingV05_Mutants: 0
+  line 249, col 6 to line 249, col 37 of module NoKingV05_Mutants: 0
+  line 250, col 6 to line 258, col 89 of module NoKingV05_Mutants: 0
+  line 454, col 14 to line 454, col 25 of module NoKingV05_Mutants: 2439
+  line 264, col 6 to line 264, col 22 of module NoKingV05_Mutants: 0
+  line 265, col 6 to line 265, col 22 of module NoKingV05_Mutants: 0
+  line 266, col 6 to line 266, col 36 of module NoKingV05_Mutants: 0
+  line 267, col 6 to line 267, col 47 of module NoKingV05_Mutants: 0
+  line 268, col 6 to line 268, col 33 of module NoKingV05_Mutants: 0
+  line 269, col 6 to line 269, col 80 of module NoKingV05_Mutants: 0
+  line 270, col 6 to line 270, col 65 of module NoKingV05_Mutants: 0
+  line 271, col 6 to line 271, col 21 of module NoKingV05_Mutants: 0
+  line 272, col 6 to line 272, col 22 of module NoKingV05_Mutants: 0
+  line 273, col 6 to line 273, col 37 of module NoKingV05_Mutants: 0
+  line 274, col 6 to line 282, col 89 of module NoKingV05_Mutants: 0
+  line 455, col 14 to line 455, col 26 of module NoKingV05_Mutants: 2439
+  line 385, col 6 to line 385, col 22 of module NoKingV05_Mutants: 0
+  line 386, col 6 to line 386, col 22 of module NoKingV05_Mutants: 0
+  line 387, col 6 to line 387, col 47 of module NoKingV05_Mutants: 0
+  line 388, col 6 to line 388, col 36 of module NoKingV05_Mutants: 0
+  line 389, col 6 to line 389, col 47 of module NoKingV05_Mutants: 0
+  line 390, col 6 to line 390, col 62 of module NoKingV05_Mutants: 0
+  line 391, col 6 to line 391, col 45 of module NoKingV05_Mutants: 0
+  line 392, col 6 to line 392, col 65 of module NoKingV05_Mutants: 0
+  line 393, col 6 to line 393, col 21 of module NoKingV05_Mutants: 0
+  line 394, col 6 to line 394, col 22 of module NoKingV05_Mutants: 0
+  line 395, col 6 to line 395, col 37 of module NoKingV05_Mutants: 0
+  line 396, col 6 to line 404, col 89 of module NoKingV05_Mutants: 0
+  line 403, col 6 to line 403, col 21 of module NoKingV05: 2519
+  |line 403, col 6 to line 403, col 10 of module NoKingV05: 2439
+  line 404, col 6 to line 404, col 36 of module NoKingV05: 80
+  |line 404, col 6 to line 404, col 10 of module NoKingV05: 241
+  |line 404, col 15 to line 404, col 36 of module NoKingV05: 241
+  line 409, col 11 to line 409, col 27 of module NoKingV05: 240
+  line 410, col 11 to line 410, col 27 of module NoKingV05: 240
+  line 411, col 11 to line 411, col 56 of module NoKingV05: 240
+  line 412, col 11 to line 412, col 41 of module NoKingV05: 240
+  |line 412, col 38 to line 412, col 41 of module NoKingV05: 240
+  ||line 406, col 20 to line 406, col 67 of module NoKingV05: 240
+  |||line 406, col 23 to line 406, col 39 of module NoKingV05: 240
+  |||line 406, col 46 to line 406, col 60 of module NoKingV05: 80
+  line 413, col 11 to line 413, col 67 of module NoKingV05: 240
+  line 414, col 11 to line 414, col 39 of module NoKingV05: 240
+  |line 414, col 24 to line 414, col 39 of module NoKingV05: 240
+  ||line 414, col 24 to line 414, col 32 of module NoKingV05: 240
+  ||line 414, col 36 to line 414, col 39 of module NoKingV05: 240
+  |||line 406, col 20 to line 406, col 67 of module NoKingV05: 240
+  ||||line 406, col 23 to line 406, col 39 of module NoKingV05: 240
+  ||||line 406, col 46 to line 406, col 60 of module NoKingV05: 80
+  line 415, col 11 to line 415, col 43 of module NoKingV05: 240
+  |line 415, col 26 to line 415, col 43 of module NoKingV05: 240
+  ||line 415, col 26 to line 415, col 36 of module NoKingV05: 240
+  ||line 415, col 40 to line 415, col 43 of module NoKingV05: 240
+  |||line 407, col 20 to line 407, col 37 of module NoKingV05: 240
+  ||||line 407, col 20 to line 407, col 30 of module NoKingV05: 240
+  ||||line 407, col 34 to line 407, col 37 of module NoKingV05: 240
+  |||||line 406, col 20 to line 406, col 67 of module NoKingV05: 240
+  ||||||line 406, col 23 to line 406, col 39 of module NoKingV05: 240
+  ||||||line 406, col 46 to line 406, col 60 of module NoKingV05: 80
+  line 416, col 11 to line 416, col 26 of module NoKingV05: 240
+  line 417, col 11 to line 417, col 27 of module NoKingV05: 240
+  line 418, col 11 to line 418, col 42 of module NoKingV05: 240
+  line 405, col 20 to line 405, col 51 of module NoKingV05: 80:320
+  line 419, col 6 to line 427, col 89 of module NoKingV05: 240
+<MutantNext line 442, col 1 to line 442, col 10 of module NoKingV05_Mutants (459 6 459 66)>: 431:691
+  line 459, col 9 to line 459, col 20 of module NoKingV05_Mutants: 2437
+  line 290, col 6 to line 290, col 24 of module NoKingV05_Mutants: 0
+  line 291, col 6 to line 291, col 29 of module NoKingV05_Mutants: 0
+  line 292, col 6 to line 292, col 22 of module NoKingV05_Mutants: 0
+  line 293, col 6 to line 293, col 26 of module NoKingV05_Mutants: 0
+  line 294, col 6 to line 294, col 37 of module NoKingV05_Mutants: 0
+  line 295, col 6 to line 295, col 69 of module NoKingV05_Mutants: 0
+  line 296, col 6 to line 296, col 46 of module NoKingV05_Mutants: 0
+  line 297, col 6 to line 297, col 82 of module NoKingV05_Mutants: 0
+  line 298, col 6 to line 298, col 21 of module NoKingV05_Mutants: 0
+  line 299, col 6 to line 299, col 22 of module NoKingV05_Mutants: 0
+  line 300, col 6 to line 300, col 23 of module NoKingV05_Mutants: 0
+  line 301, col 6 to line 301, col 23 of module NoKingV05_Mutants: 0
+  line 302, col 6 to line 302, col 25 of module NoKingV05_Mutants: 0
+  line 303, col 6 to line 310, col 73 of module NoKingV05_Mutants: 0
+  line 485, col 6 to line 485, col 22 of module NoKingV05: 3128
+  |line 485, col 6 to line 485, col 10 of module NoKingV05: 2437
+  line 486, col 6 to line 486, col 14 of module NoKingV05: 2484
+  |line 486, col 6 to line 486, col 10 of module NoKingV05: 1793
+  line 487, col 6 to line 487, col 18 of module NoKingV05: 691
+  |line 487, col 6 to line 487, col 14 of module NoKingV05: 1793
+  line 488, col 9 to line 488, col 21 of module NoKingV05: 1844
+  |line 488, col 10 to line 488, col 21 of module NoKingV05: 1523
+  line 488, col 26 to line 488, col 43 of module NoKingV05: 1175
+  |line 488, col 26 to line 488, col 35 of module NoKingV05: 854
+  ||line 134, col 3 to line 136, col 17 of module NoKingV05: 854
+  |||line 134, col 6 to line 134, col 18 of module NoKingV05: 854
+  |||line 134, col 25 to line 134, col 34 of module NoKingV05: 417
+  |||line 135, col 8 to line 136, col 17 of module NoKingV05: 437
+  |line 488, col 39 to line 488, col 43 of module NoKingV05: 854
+  line 488, col 48 to line 488, col 85 of module NoKingV05: 321
+  |line 488, col 48 to line 488, col 52 of module NoKingV05: 437
+  |line 488, col 56 to line 488, col 85 of module NoKingV05: 437
+  line 489, col 12 to line 489, col 23 of module NoKingV05: 1607
+  |line 489, col 12 to line 489, col 16 of module NoKingV05: 1523
+  |line 489, col 20 to line 489, col 23 of module NoKingV05: 1523
+  line 489, col 28 to line 489, col 50 of module NoKingV05: 339
+  |line 489, col 28 to line 489, col 34 of module NoKingV05: 255
+  line 489, col 55 to line 489, col 92 of module NoKingV05: 84
+  line 490, col 12 to line 490, col 50 of module NoKingV05: 286
+  |line 490, col 12 to line 490, col 16 of module NoKingV05: 1523
+  |line 490, col 21 to line 490, col 50 of module NoKingV05: 1523
+  line 490, col 56 to line 490, col 61 of module NoKingV05: 574
+  |line 490, col 57 to line 490, col 61 of module NoKingV05: 288
+  line 490, col 66 to line 490, col 88 of module NoKingV05: 288
+  line 493, col 6 to line 511, col 26 of module NoKingV05: 691
+  line 512, col 6 to line 518, col 84 of module NoKingV05: 691
+<MutantNext line 442, col 1 to line 442, col 10 of module NoKingV05_Mutants (461 6 461 59)>: 735:756
+  line 461, col 9 to line 461, col 21 of module NoKingV05_Mutants: 2436
+  line 419, col 14 to line 419, col 25 of module NoKingV05_Mutants: 0
+  line 420, col 14 to line 420, col 25 of module NoKingV05_Mutants: 0
+  line 421, col 14 to line 421, col 38 of module NoKingV05_Mutants: 0
+  line 422, col 14 to line 422, col 26 of module NoKingV05_Mutants: 0
+  line 423, col 14 to line 423, col 73 of module NoKingV05_Mutants: 0
+  line 424, col 14 to line 424, col 34 of module NoKingV05_Mutants: 0
+  line 425, col 6 to line 434, col 60 of module NoKingV05_Mutants: 0
+  line 541, col 6 to line 541, col 22 of module NoKingV05: 2472
+  |line 541, col 6 to line 541, col 10 of module NoKingV05: 2436
+  line 542, col 6 to line 542, col 24 of module NoKingV05: 1828
+  |line 542, col 6 to line 542, col 17 of module NoKingV05: 1792
+  |line 542, col 21 to line 542, col 24 of module NoKingV05: 1792
+  line 543, col 6 to line 543, col 21 of module NoKingV05: 806
+  |line 543, col 6 to line 543, col 14 of module NoKingV05: 770
+  |line 543, col 18 to line 543, col 21 of module NoKingV05: 770
+  line 544, col 6 to line 544, col 18 of module NoKingV05: 414
+  |line 544, col 6 to line 544, col 10 of module NoKingV05: 378
+  |line 544, col 14 to line 544, col 18 of module NoKingV05: 378
+  line 545, col 6 to line 545, col 81 of module NoKingV05: 36
+  |line 545, col 6 to line 545, col 10 of module NoKingV05: 123
+  |line 545, col 15 to line 545, col 81 of module NoKingV05: 123
+  line 546, col 6 to line 546, col 91 of module NoKingV05: 36
+  |line 546, col 6 to line 546, col 10 of module NoKingV05: 51
+  |line 546, col 14 to line 546, col 91 of module NoKingV05: 51
+  line 547, col 6 to line 547, col 43 of module NoKingV05: 36
+  |line 547, col 6 to line 547, col 10 of module NoKingV05: 39
+  |line 547, col 14 to line 547, col 43 of module NoKingV05: 39
+  line 549, col 11 to line 549, col 40 of module NoKingV05: 8532
+  |line 549, col 11 to line 549, col 26 of module NoKingV05: 7776
+  |line 549, col 30 to line 549, col 40 of module NoKingV05: 7776
+  line 554, col 14 to line 554, col 25 of module NoKingV05: 756
+  line 555, col 14 to line 555, col 25 of module NoKingV05: 756
+  line 556, col 14 to line 556, col 38 of module NoKingV05: 756
+  line 557, col 14 to line 557, col 26 of module NoKingV05: 756
+  line 558, col 14 to line 560, col 42 of module NoKingV05: 756
+  |line 558, col 25 to line 560, col 42 of module NoKingV05: 756
+  ||line 558, col 28 to line 558, col 34 of module NoKingV05: 756
+  |||line 552, col 26 to line 552, col 57 of module NoKingV05: 756
+  ||||line 552, col 27 to line 552, col 42 of module NoKingV05: 756
+  ||||line 552, col 49 to line 552, col 56 of module NoKingV05: 540
+  ||line 559, col 31 to line 559, col 66 of module NoKingV05: 504
+  line 561, col 14 to line 561, col 37 of module NoKingV05: 756
+  |line 561, col 30 to line 561, col 37 of module NoKingV05: 756
+  ||line 561, col 31 to line 561, col 37 of module NoKingV05: 756
+  |||line 552, col 26 to line 552, col 57 of module NoKingV05: 756
+  ||||line 552, col 27 to line 552, col 42 of module NoKingV05: 756
+  ||||line 552, col 49 to line 552, col 56 of module NoKingV05: 540
+  line 548, col 28 to line 548, col 41 of module NoKingV05: 36
+  line 562, col 6 to line 571, col 60 of module NoKingV05: 756
+<MutantNext line 442, col 1 to line 442, col 10 of module NoKingV05_Mutants (462 6 462 61)>: 0:0
+  line 462, col 9 to line 462, col 20 of module NoKingV05_Mutants: 2435
+  line 354, col 9 to line 354, col 22 of module NoKingV05_Mutants: 0
+  line 355, col 9 to line 355, col 26 of module NoKingV05_Mutants: 0
+  line 356, col 9 to line 356, col 29 of module NoKingV05_Mutants: 0
+  line 357, col 9 to line 357, col 28 of module NoKingV05_Mutants: 0
+  line 358, col 9 to line 358, col 30 of module NoKingV05_Mutants: 0
+  line 359, col 9 to line 359, col 31 of module NoKingV05_Mutants: 0
+  line 360, col 9 to line 360, col 25 of module NoKingV05_Mutants: 0
+  line 361, col 9 to line 361, col 27 of module NoKingV05_Mutants: 0
+  line 362, col 27 to line 362, col 37 of module NoKingV05_Mutants: 0
+  line 362, col 42 to line 362, col 52 of module NoKingV05_Mutants: 0
+  line 362, col 59 to line 362, col 86 of module NoKingV05_Mutants: 0
+  line 363, col 9 to line 363, col 28 of module NoKingV05_Mutants: 0
+  line 364, col 9 to line 364, col 47 of module NoKingV05_Mutants: 0
+  line 365, col 9 to line 365, col 71 of module NoKingV05_Mutants: 0
+  line 366, col 9 to line 366, col 44 of module NoKingV05_Mutants: 0
+  line 368, col 17 to line 368, col 54 of module NoKingV05_Mutants: 0
+  line 369, col 17 to line 369, col 53 of module NoKingV05_Mutants: 0
+  line 370, col 17 to line 370, col 51 of module NoKingV05_Mutants: 0
+  line 371, col 17 to line 371, col 61 of module NoKingV05_Mutants: 0
+  line 372, col 14 to line 372, col 84 of module NoKingV05_Mutants: 0
+  line 373, col 6 to line 380, col 42 of module NoKingV05_Mutants: 0
+  line 574, col 6 to line 574, col 22 of module NoKingV05: 2435
+  line 575, col 6 to line 575, col 17 of module NoKingV05: 1791
+  line 576, col 6 to line 576, col 28 of module NoKingV05: 255
+  line 577, col 6 to line 577, col 16 of module NoKingV05: 84
+  line 578, col 6 to line 578, col 66 of module NoKingV05: 84
+  line 586, col 9 to line 586, col 22 of module NoKingV05: 0
+  line 587, col 9 to line 587, col 26 of module NoKingV05: 0
+  line 588, col 9 to line 588, col 28 of module NoKingV05: 0
+  line 589, col 9 to line 589, col 30 of module NoKingV05: 0
+  line 590, col 9 to line 590, col 31 of module NoKingV05: 0
+  line 591, col 9 to line 591, col 25 of module NoKingV05: 0
+  line 592, col 9 to line 592, col 27 of module NoKingV05: 0
+  line 593, col 27 to line 593, col 37 of module NoKingV05: 0
+  line 593, col 42 to line 593, col 52 of module NoKingV05: 0
+  line 593, col 59 to line 593, col 86 of module NoKingV05: 0
+  line 594, col 9 to line 594, col 28 of module NoKingV05: 0
+  line 595, col 9 to line 595, col 47 of module NoKingV05: 0
+  line 596, col 9 to line 596, col 71 of module NoKingV05: 0
+  line 597, col 9 to line 597, col 44 of module NoKingV05: 0
+  line 599, col 17 to line 599, col 54 of module NoKingV05: 0
+  line 600, col 17 to line 600, col 53 of module NoKingV05: 0
+  line 601, col 17 to line 601, col 51 of module NoKingV05: 0
+  line 602, col 17 to line 602, col 61 of module NoKingV05: 0
+  line 603, col 14 to line 603, col 84 of module NoKingV05: 0
+  line 604, col 6 to line 611, col 42 of module NoKingV05: 0
+<MutantNext line 442, col 1 to line 442, col 10 of module NoKingV05_Mutants (463 6 463 56)>: 63:63
+  line 463, col 9 to line 463, col 21 of module NoKingV05_Mutants: 2435
+  line 616, col 6 to line 616, col 22 of module NoKingV05: 2498
+  |line 616, col 6 to line 616, col 10 of module NoKingV05: 2435
+  line 617, col 6 to line 617, col 14 of module NoKingV05: 1854
+  |line 617, col 6 to line 617, col 10 of module NoKingV05: 1791
+  line 618, col 6 to line 618, col 18 of module NoKingV05: 1854
+  |line 618, col 6 to line 618, col 14 of module NoKingV05: 1791
+  line 619, col 6 to line 619, col 44 of module NoKingV05: 63
+  |line 619, col 6 to line 619, col 10 of module NoKingV05: 270
+  |line 619, col 15 to line 619, col 44 of module NoKingV05: 270
+  line 620, col 7 to line 620, col 12 of module NoKingV05: 126
+  |line 620, col 8 to line 620, col 12 of module NoKingV05: 63
+  line 620, col 17 to line 620, col 39 of module NoKingV05: 63
+  line 621, col 6 to line 621, col 24 of module NoKingV05: 63
+  line 622, col 6 to line 622, col 29 of module NoKingV05: 63
+  line 623, col 6 to line 623, col 22 of module NoKingV05: 63
+  line 624, col 6 to line 624, col 26 of module NoKingV05: 63
+  line 625, col 6 to line 625, col 37 of module NoKingV05: 63
+  line 636, col 6 to line 640, col 51 of module NoKingV05: 63
+  line 641, col 6 to line 641, col 21 of module NoKingV05: 63
+  line 642, col 6 to line 642, col 22 of module NoKingV05: 63
+  line 643, col 6 to line 643, col 23 of module NoKingV05: 63
+  line 644, col 6 to line 644, col 23 of module NoKingV05: 63
+  line 645, col 6 to line 645, col 25 of module NoKingV05: 63
+  line 646, col 6 to line 653, col 54 of module NoKingV05: 63
+<MutantNext line 442, col 1 to line 442, col 10 of module NoKingV05_Mutants (464 6 464 103)>: 0:0
+  line 464, col 9 to line 464, col 21 of module NoKingV05_Mutants: 2435
+  line 464, col 43 to line 464, col 54 of module NoKingV05_Mutants: 2435
+  line 317, col 6 to line 317, col 24 of module NoKingV05_Mutants: 0
+  line 318, col 6 to line 318, col 29 of module NoKingV05_Mutants: 0
+  line 319, col 6 to line 319, col 22 of module NoKingV05_Mutants: 0
+  line 320, col 6 to line 320, col 26 of module NoKingV05_Mutants: 0
+  line 321, col 6 to line 321, col 37 of module NoKingV05_Mutants: 0
+  line 322, col 6 to line 322, col 50 of module NoKingV05_Mutants: 0
+  line 323, col 6 to line 323, col 77 of module NoKingV05_Mutants: 0
+  line 324, col 6 to line 324, col 69 of module NoKingV05_Mutants: 0
+  line 325, col 6 to line 325, col 21 of module NoKingV05_Mutants: 0
+  line 326, col 6 to line 326, col 22 of module NoKingV05_Mutants: 0
+  line 327, col 6 to line 327, col 23 of module NoKingV05_Mutants: 0
+  line 328, col 6 to line 328, col 22 of module NoKingV05_Mutants: 0
+  line 329, col 6 to line 329, col 21 of module NoKingV05_Mutants: 0
+  line 330, col 6 to line 330, col 23 of module NoKingV05_Mutants: 0
+  line 331, col 6 to line 331, col 25 of module NoKingV05_Mutants: 0
+  line 332, col 6 to line 339, col 51 of module NoKingV05_Mutants: 0
+  line 656, col 6 to line 656, col 22 of module NoKingV05: 2435
+  line 657, col 6 to line 657, col 14 of module NoKingV05: 1791
+  line 660, col 6 to line 660, col 24 of module NoKingV05: 0
+  line 661, col 6 to line 661, col 22 of module NoKingV05: 0
+  line 662, col 6 to line 662, col 27 of module NoKingV05: 0
+  line 663, col 6 to line 663, col 26 of module NoKingV05: 0
+  line 664, col 6 to line 664, col 37 of module NoKingV05: 0
+  line 666, col 14 to line 666, col 70 of module NoKingV05: 0
+  line 667, col 14 to line 667, col 40 of module NoKingV05: 0
+  line 668, col 14 to line 668, col 53 of module NoKingV05: 0
+  line 669, col 14 to line 669, col 93 of module NoKingV05: 0
+  line 670, col 14 to line 670, col 65 of module NoKingV05: 0
+  line 671, col 14 to line 671, col 40 of module NoKingV05: 0
+  line 672, col 14 to line 672, col 39 of module NoKingV05: 0
+  line 673, col 14 to line 673, col 104 of module NoKingV05: 0
+  line 674, col 6 to line 674, col 21 of module NoKingV05: 0
+  line 675, col 6 to line 675, col 22 of module NoKingV05: 0
+  line 676, col 6 to line 676, col 23 of module NoKingV05: 0
+  line 677, col 6 to line 677, col 22 of module NoKingV05: 0
+  line 678, col 6 to line 678, col 21 of module NoKingV05: 0
+  line 679, col 6 to line 679, col 23 of module NoKingV05: 0
+  line 680, col 6 to line 680, col 25 of module NoKingV05: 0
+  line 681, col 6 to line 688, col 38 of module NoKingV05: 0
+<MutantNext line 442, col 1 to line 442, col 10 of module NoKingV05_Mutants (466 6 466 55)>: 2:3
+  line 466, col 9 to line 466, col 20 of module NoKingV05_Mutants: 2434
+  line 203, col 6 to line 203, col 25 of module NoKingV05_Mutants: 2435
+  |line 203, col 6 to line 203, col 10 of module NoKingV05_Mutants: 2434
+  line 204, col 6 to line 204, col 14 of module NoKingV05_Mutants: 4
+  |line 204, col 6 to line 204, col 10 of module NoKingV05_Mutants: 3
+  line 205, col 6 to line 205, col 36 of module NoKingV05_Mutants: 1
+  |line 205, col 6 to line 205, col 10 of module NoKingV05_Mutants: 3
+  |line 205, col 14 to line 205, col 36 of module NoKingV05_Mutants: 3
+  line 206, col 6 to line 206, col 23 of module NoKingV05_Mutants: 1
+  line 207, col 6 to line 207, col 15 of module NoKingV05_Mutants: 1
+  line 208, col 6 to line 208, col 25 of module NoKingV05_Mutants: 1
+  |line 208, col 19 to line 208, col 25 of module NoKingV05_Mutants: 3
+  line 209, col 6 to line 209, col 23 of module NoKingV05_Mutants: 1
+  |line 209, col 17 to line 209, col 23 of module NoKingV05_Mutants: 3
+  line 210, col 6 to line 210, col 30 of module NoKingV05_Mutants: 1
+  |line 210, col 26 to line 210, col 30 of module NoKingV05_Mutants: 3
+  line 211, col 6 to line 211, col 17 of module NoKingV05_Mutants: 1
+  line 212, col 6 to line 212, col 28 of module NoKingV05_Mutants: 1
+  |line 212, col 24 to line 212, col 28 of module NoKingV05_Mutants: 3
+  line 213, col 6 to line 213, col 28 of module NoKingV05_Mutants: 1
+  |line 213, col 24 to line 213, col 28 of module NoKingV05_Mutants: 3
+  line 214, col 6 to line 214, col 26 of module NoKingV05_Mutants: 1
+  |line 214, col 22 to line 214, col 26 of module NoKingV05_Mutants: 3
+  line 215, col 6 to line 215, col 23 of module NoKingV05_Mutants: 1
+  |line 215, col 19 to line 215, col 23 of module NoKingV05_Mutants: 3
+  line 216, col 6 to line 216, col 19 of module NoKingV05_Mutants: 1
+  |line 216, col 15 to line 216, col 19 of module NoKingV05_Mutants: 3
+  line 217, col 6 to line 217, col 25 of module NoKingV05_Mutants: 1
+  |line 217, col 22 to line 217, col 25 of module NoKingV05_Mutants: 3
+  line 218, col 6 to line 218, col 16 of module NoKingV05_Mutants: 1
+  line 219, col 6 to line 219, col 16 of module NoKingV05_Mutants: 1
+  line 220, col 6 to line 220, col 25 of module NoKingV05_Mutants: 1
+  line 221, col 6 to line 221, col 21 of module NoKingV05_Mutants: 1
+  line 222, col 6 to line 222, col 22 of module NoKingV05_Mutants: 1
+  line 223, col 9 to line 223, col 28 of module NoKingV05_Mutants: 3
+  line 224, col 14 to line 224, col 41 of module NoKingV05_Mutants: 1
+  |line 224, col 22 to line 224, col 41 of module NoKingV05_Mutants: 3
+  line 225, col 14 to line 225, col 25 of module NoKingV05_Mutants: 1
+  |line 225, col 22 to line 225, col 25 of module NoKingV05_Mutants: 3
+  line 226, col 14 to line 226, col 41 of module NoKingV05_Mutants: 0
+  line 227, col 14 to line 227, col 25 of module NoKingV05_Mutants: 0
+  line 228, col 6 to line 228, col 34 of module NoKingV05_Mutants: 1
+  |line 228, col 22 to line 228, col 34 of module NoKingV05_Mutants: 3
+  line 229, col 6 to line 235, col 102 of module NoKingV05_Mutants: 1
+  line 727, col 9 to line 727, col 26 of module NoKingV05: 0
+  line 728, col 9 to line 728, col 18 of module NoKingV05: 0
+  line 729, col 9 to line 729, col 33 of module NoKingV05: 0
+  line 730, col 9 to line 730, col 31 of module NoKingV05: 0
+  line 731, col 9 to line 731, col 38 of module NoKingV05: 0
+  line 732, col 9 to line 732, col 20 of module NoKingV05: 0
+  line 733, col 9 to line 733, col 31 of module NoKingV05: 0
+  line 734, col 9 to line 734, col 31 of module NoKingV05: 0
+  line 735, col 9 to line 735, col 29 of module NoKingV05: 0
+  line 736, col 9 to line 736, col 26 of module NoKingV05: 0
+  line 737, col 9 to line 737, col 22 of module NoKingV05: 0
+  line 738, col 9 to line 738, col 28 of module NoKingV05: 0
+  line 739, col 9 to line 739, col 19 of module NoKingV05: 0
+  line 740, col 9 to line 740, col 19 of module NoKingV05: 0
+  line 741, col 9 to line 741, col 28 of module NoKingV05: 0
+  line 742, col 9 to line 742, col 24 of module NoKingV05: 0
+  line 743, col 9 to line 743, col 25 of module NoKingV05: 0
+  line 745, col 17 to line 745, col 44 of module NoKingV05: 0
+  line 746, col 17 to line 746, col 28 of module NoKingV05: 0
+  line 747, col 17 to line 747, col 44 of module NoKingV05: 0
+  line 748, col 17 to line 748, col 28 of module NoKingV05: 0
+  line 749, col 9 to line 749, col 37 of module NoKingV05: 0
+  line 750, col 6 to line 756, col 102 of module NoKingV05: 0
+<Tick line 198, col 1 to line 198, col 4 of module NoKingV05>: 1523:1732
+  line 199, col 6 to line 199, col 20 of module NoKingV05: 1732
+  |line 199, col 6 to line 199, col 10 of module NoKingV05: 2444
+  |line 199, col 14 to line 199, col 20 of module NoKingV05: 2444
+  line 200, col 6 to line 200, col 51 of module NoKingV05: 4176
+  |line 200, col 8 to line 200, col 50 of module NoKingV05: 2444
+  line 201, col 6 to line 201, col 48 of module NoKingV05: 3935
+  |line 201, col 8 to line 201, col 47 of module NoKingV05: 2203
+  ||line 201, col 9 to line 201, col 23 of module NoKingV05: 2203
+  ||line 201, col 30 to line 201, col 46 of module NoKingV05: 65
+  line 202, col 6 to line 202, col 92 of module NoKingV05: 3919
+  |line 202, col 8 to line 202, col 91 of module NoKingV05: 2187
+  ||line 202, col 8 to line 202, col 47 of module NoKingV05: 2187
+  |||line 202, col 9 to line 202, col 23 of module NoKingV05: 2187
+  |||line 202, col 30 to line 202, col 46 of module NoKingV05: 49
+  ||line 202, col 53 to line 202, col 90 of module NoKingV05: 24
+  line 203, col 6 to line 203, col 49 of module NoKingV05: 3911
+  |line 203, col 8 to line 203, col 48 of module NoKingV05: 2179
+  ||line 203, col 9 to line 203, col 24 of module NoKingV05: 2179
+  ||line 203, col 31 to line 203, col 47 of module NoKingV05: 49
+  line 204, col 6 to line 204, col 54 of module NoKingV05: 3903
+  |line 204, col 8 to line 204, col 53 of module NoKingV05: 2171
+  ||line 204, col 9 to line 204, col 29 of module NoKingV05: 2171
+  ||line 204, col 36 to line 204, col 52 of module NoKingV05: 49
+  line 205, col 6 to line 205, col 85 of module NoKingV05: 3895
+  |line 205, col 8 to line 205, col 84 of module NoKingV05: 2163
+  ||line 205, col 8 to line 205, col 47 of module NoKingV05: 2163
+  |||line 205, col 9 to line 205, col 24 of module NoKingV05: 2163
+  |||line 205, col 31 to line 205, col 46 of module NoKingV05: 241
+  ||line 205, col 53 to line 205, col 83 of module NoKingV05: 241
+  line 206, col 6 to line 206, col 91 of module NoKingV05: 3815
+  |line 206, col 8 to line 206, col 90 of module NoKingV05: 2083
+  ||line 206, col 8 to line 206, col 52 of module NoKingV05: 2083
+  |||line 206, col 9 to line 206, col 28 of module NoKingV05: 2083
+  |||line 206, col 35 to line 206, col 51 of module NoKingV05: 3
+  ||line 206, col 58 to line 206, col 89 of module NoKingV05: 3
+  line 207, col 6 to line 207, col 97 of module NoKingV05: 3815
+  |line 207, col 8 to line 207, col 96 of module NoKingV05: 2083
+  ||line 207, col 8 to line 207, col 51 of module NoKingV05: 2083
+  |||line 207, col 9 to line 207, col 25 of module NoKingV05: 2083
+  |||line 207, col 32 to line 207, col 50 of module NoKingV05: 1796
+  ||line 207, col 57 to line 207, col 95 of module NoKingV05: 1796
+  line 208, col 6 to line 208, col 23 of module NoKingV05: 1732
+  line 209, col 6 to line 219, col 60 of module NoKingV05: 1732
+<Accept line 221, col 1 to line 221, col 6 of module NoKingV05>: 19:25
+  line 222, col 6 to line 222, col 20 of module NoKingV05: 2467
+  |line 222, col 6 to line 222, col 10 of module NoKingV05: 2442
+  line 223, col 6 to line 223, col 21 of module NoKingV05: 25
+  |line 223, col 6 to line 223, col 10 of module NoKingV05: 65
+  |line 223, col 14 to line 223, col 21 of module NoKingV05: 65
+  line 224, col 6 to line 224, col 22 of module NoKingV05: 74
+  |line 224, col 6 to line 224, col 17 of module NoKingV05: 49
+  |line 224, col 21 to line 224, col 22 of module NoKingV05: 49
+  line 225, col 6 to line 225, col 22 of module NoKingV05: 25
+  line 226, col 6 to line 226, col 26 of module NoKingV05: 25
+  line 227, col 6 to line 227, col 26 of module NoKingV05: 25
+  line 228, col 6 to line 237, col 103 of module NoKingV05: 25
+<RequestCancelDraft line 239, col 1 to line 239, col 18 of module NoKingV05>: 16:16
+  line 240, col 6 to line 240, col 20 of module NoKingV05: 2457
+  |line 240, col 6 to line 240, col 10 of module NoKingV05: 2441
+  line 241, col 6 to line 241, col 22 of module NoKingV05: 80
+  |line 241, col 6 to line 241, col 17 of module NoKingV05: 64
+  |line 241, col 21 to line 241, col 22 of module NoKingV05: 64
+  line 242, col 6 to line 242, col 28 of module NoKingV05: 16
+  |line 242, col 6 to line 242, col 10 of module NoKingV05: 32
+  |line 242, col 15 to line 242, col 28 of module NoKingV05: 32
+  line 243, col 6 to line 243, col 21 of module NoKingV05: 16
+  |line 243, col 6 to line 243, col 10 of module NoKingV05: 24
+  |line 243, col 14 to line 243, col 21 of module NoKingV05: 24
+  line 244, col 6 to line 244, col 26 of module NoKingV05: 16
+  line 245, col 6 to line 255, col 60 of module NoKingV05: 16
+<ExecuteCancelDraft line 257, col 1 to line 257, col 18 of module NoKingV05>: 8:8
+  line 258, col 6 to line 258, col 20 of module NoKingV05: 2449
+  |line 258, col 6 to line 258, col 10 of module NoKingV05: 2441
+  line 259, col 6 to line 259, col 22 of module NoKingV05: 8
+  |line 259, col 6 to line 259, col 17 of module NoKingV05: 64
+  line 260, col 6 to line 260, col 43 of module NoKingV05: 8
+  |line 260, col 6 to line 260, col 10 of module NoKingV05: 32
+  |line 260, col 15 to line 260, col 43 of module NoKingV05: 32
+  line 261, col 6 to line 261, col 21 of module NoKingV05: 8
+  |line 261, col 6 to line 261, col 10 of module NoKingV05: 16
+  |line 261, col 14 to line 261, col 21 of module NoKingV05: 16
+  line 262, col 6 to line 262, col 23 of module NoKingV05: 8
+  line 263, col 6 to line 263, col 22 of module NoKingV05: 8
+  line 264, col 6 to line 264, col 32 of module NoKingV05: 8
+  line 265, col 6 to line 265, col 22 of module NoKingV05: 8
+  line 266, col 6 to line 266, col 37 of module NoKingV05: 8
+  line 267, col 6 to line 276, col 102 of module NoKingV05: 8
+<TimeoutDraft line 278, col 1 to line 278, col 12 of module NoKingV05>: 16:16
+  line 279, col 6 to line 279, col 20 of module NoKingV05: 2457
+  |line 279, col 6 to line 279, col 10 of module NoKingV05: 2441
+  line 280, col 6 to line 280, col 22 of module NoKingV05: 16
+  |line 280, col 6 to line 280, col 10 of module NoKingV05: 64
+  |line 280, col 15 to line 280, col 22 of module NoKingV05: 64
+  line 281, col 6 to line 281, col 23 of module NoKingV05: 16
+  line 282, col 6 to line 282, col 22 of module NoKingV05: 16
+  line 283, col 6 to line 283, col 32 of module NoKingV05: 16
+  line 284, col 6 to line 284, col 22 of module NoKingV05: 16
+  line 285, col 6 to line 285, col 37 of module NoKingV05: 16
+  line 286, col 6 to line 295, col 102 of module NoKingV05: 16
+<Start line 297, col 1 to line 297, col 5 of module NoKingV05>: 24:41
+  line 298, col 6 to line 298, col 21 of module NoKingV05: 2482
+  |line 298, col 6 to line 298, col 10 of module NoKingV05: 2441
+  line 299, col 6 to line 299, col 21 of module NoKingV05: 41
+  |line 299, col 6 to line 299, col 10 of module NoKingV05: 49
+  |line 299, col 14 to line 299, col 21 of module NoKingV05: 49
+  line 300, col 6 to line 300, col 27 of module NoKingV05: 41
+  line 301, col 6 to line 311, col 60 of module NoKingV05: 41
+<TimeoutLocked line 313, col 1 to line 313, col 13 of module NoKingV05>: 8:8
+  line 314, col 6 to line 314, col 21 of module NoKingV05: 2448
+  |line 314, col 6 to line 314, col 10 of module NoKingV05: 2440
+  line 315, col 6 to line 315, col 22 of module NoKingV05: 8
+  |line 315, col 6 to line 315, col 10 of module NoKingV05: 48
+  |line 315, col 15 to line 315, col 22 of module NoKingV05: 48
+  line 316, col 6 to line 316, col 23 of module NoKingV05: 8
+  line 317, col 6 to line 317, col 22 of module NoKingV05: 8
+  line 318, col 6 to line 318, col 47 of module NoKingV05: 8
+  line 319, col 6 to line 319, col 55 of module NoKingV05: 8
+  line 320, col 6 to line 320, col 44 of module NoKingV05: 8
+  line 321, col 6 to line 321, col 39 of module NoKingV05: 8
+  line 322, col 6 to line 322, col 21 of module NoKingV05: 8
+  line 323, col 6 to line 323, col 22 of module NoKingV05: 8
+  line 324, col 6 to line 324, col 37 of module NoKingV05: 8
+  line 325, col 6 to line 334, col 89 of module NoKingV05: 8
+<Submit line 336, col 1 to line 336, col 6 of module NoKingV05>: 80:82
+  line 337, col 6 to line 337, col 26 of module NoKingV05: 2481
+  |line 337, col 6 to line 337, col 10 of module NoKingV05: 2440
+  line 338, col 6 to line 338, col 21 of module NoKingV05: 41
+  |line 338, col 6 to line 338, col 10 of module NoKingV05: 49
+  |line 338, col 14 to line 338, col 21 of module NoKingV05: 49
+  line 339, col 35 to line 339, col 59 of module NoKingV05: 82
+  line 339, col 19 to line 339, col 31 of module NoKingV05: 41:123
+  line 340, col 6 to line 340, col 22 of module NoKingV05: 82
+  line 341, col 6 to line 341, col 25 of module NoKingV05: 82
+  line 342, col 6 to line 352, col 60 of module NoKingV05: 82
+<TimeoutInProgress line 354, col 1 to line 354, col 17 of module NoKingV05>: 0:8
+  line 355, col 6 to line 355, col 26 of module NoKingV05: 2447
+  |line 355, col 6 to line 355, col 10 of module NoKingV05: 2439
+  line 356, col 6 to line 356, col 22 of module NoKingV05: 8
+  |line 356, col 6 to line 356, col 10 of module NoKingV05: 48
+  |line 356, col 15 to line 356, col 22 of module NoKingV05: 48
+  line 357, col 6 to line 357, col 23 of module NoKingV05: 8
+  line 358, col 6 to line 358, col 22 of module NoKingV05: 8
+  line 359, col 6 to line 359, col 47 of module NoKingV05: 8
+  line 360, col 6 to line 360, col 55 of module NoKingV05: 8
+  line 361, col 6 to line 361, col 44 of module NoKingV05: 8
+  line 362, col 6 to line 362, col 39 of module NoKingV05: 8
+  line 363, col 6 to line 363, col 21 of module NoKingV05: 8
+  line 364, col 6 to line 364, col 22 of module NoKingV05: 8
+  line 365, col 6 to line 365, col 37 of module NoKingV05: 8
+  line 366, col 6 to line 375, col 89 of module NoKingV05: 8
+<Confirm line 377, col 1 to line 377, col 7 of module NoKingV05>: 40:40
+  line 378, col 6 to line 378, col 21 of module NoKingV05: 2479
+  |line 378, col 6 to line 378, col 10 of module NoKingV05: 2439
+  line 379, col 6 to line 379, col 35 of module NoKingV05: 40
+  |line 379, col 6 to line 379, col 10 of module NoKingV05: 241
+  |line 379, col 14 to line 379, col 35 of module NoKingV05: 241
+  line 380, col 6 to line 380, col 24 of module NoKingV05: 201
+  |line 380, col 6 to line 380, col 17 of module NoKingV05: 161
+  |line 380, col 21 to line 380, col 24 of module NoKingV05: 161
+  line 381, col 6 to line 381, col 28 of module NoKingV05: 121
+  |line 381, col 6 to line 381, col 21 of module NoKingV05: 81
+  |line 381, col 25 to line 381, col 28 of module NoKingV05: 81
+  line 382, col 6 to line 382, col 22 of module NoKingV05: 40
+  line 383, col 6 to line 383, col 22 of module NoKingV05: 40
+  line 384, col 6 to line 384, col 62 of module NoKingV05: 40
+  line 385, col 6 to line 385, col 45 of module NoKingV05: 40
+  line 386, col 6 to line 386, col 21 of module NoKingV05: 40
+  line 387, col 6 to line 387, col 22 of module NoKingV05: 40
+  line 388, col 6 to line 388, col 37 of module NoKingV05: 40
+  line 389, col 6 to line 398, col 89 of module NoKingV05: 40
+<OpenDispute line 429, col 1 to line 429, col 11 of module NoKingV05>: 120:161
+  line 430, col 6 to line 430, col 21 of module NoKingV05: 2560
+  |line 430, col 6 to line 430, col 10 of module NoKingV05: 2439
+  line 431, col 6 to line 431, col 35 of module NoKingV05: 121
+  |line 431, col 6 to line 431, col 10 of module NoKingV05: 241
+  |line 431, col 14 to line 431, col 35 of module NoKingV05: 241
+  line 432, col 7 to line 432, col 23 of module NoKingV05: 242
+  |line 432, col 8 to line 432, col 23 of module NoKingV05: 161
+  line 432, col 28 to line 432, col 40 of module NoKingV05: 241
+  |line 432, col 29 to line 432, col 40 of module NoKingV05: 161
+  line 433, col 6 to line 433, col 23 of module NoKingV05: 161
+  line 434, col 6 to line 434, col 15 of module NoKingV05: 161
+  line 435, col 6 to line 435, col 19 of module NoKingV05: 161
+  line 436, col 6 to line 436, col 25 of module NoKingV05: 161
+  line 437, col 6 to line 437, col 33 of module NoKingV05: 161
+  line 438, col 6 to line 438, col 45 of module NoKingV05: 161
+  line 439, col 6 to line 439, col 37 of module NoKingV05: 161
+  line 440, col 6 to line 440, col 17 of module NoKingV05: 161
+  line 441, col 6 to line 441, col 28 of module NoKingV05: 161
+  line 442, col 6 to line 442, col 28 of module NoKingV05: 161
+  line 443, col 6 to line 443, col 26 of module NoKingV05: 161
+  line 444, col 6 to line 444, col 29 of module NoKingV05: 161
+  line 445, col 6 to line 445, col 23 of module NoKingV05: 161
+  line 446, col 6 to line 446, col 19 of module NoKingV05: 161
+  line 447, col 6 to line 447, col 25 of module NoKingV05: 161
+  line 448, col 6 to line 448, col 16 of module NoKingV05: 161
+  line 449, col 6 to line 449, col 16 of module NoKingV05: 161
+  line 450, col 6 to line 450, col 25 of module NoKingV05: 161
+  line 451, col 6 to line 451, col 21 of module NoKingV05: 161
+  line 452, col 6 to line 452, col 22 of module NoKingV05: 161
+  line 453, col 6 to line 453, col 34 of module NoKingV05: 161
+  line 454, col 6 to line 454, col 36 of module NoKingV05: 161
+  line 455, col 6 to line 461, col 84 of module NoKingV05: 161
+<FormPanel line 463, col 1 to line 463, col 9 of module NoKingV05>: 372:427
+  line 464, col 6 to line 464, col 22 of module NoKingV05: 2865
+  |line 464, col 6 to line 464, col 10 of module NoKingV05: 2438
+  line 465, col 6 to line 465, col 25 of module NoKingV05: 2221
+  |line 465, col 6 to line 465, col 17 of module NoKingV05: 1794
+  |line 465, col 21 to line 465, col 25 of module NoKingV05: 1794
+  line 466, col 6 to line 466, col 22 of module NoKingV05: 1450
+  |line 466, col 6 to line 466, col 15 of module NoKingV05: 1023
+  ||line 134, col 3 to line 136, col 17 of module NoKingV05: 1023
+  |||line 134, col 6 to line 134, col 18 of module NoKingV05: 1023
+  |||line 134, col 25 to line 134, col 34 of module NoKingV05: 418
+  |||line 135, col 8 to line 136, col 17 of module NoKingV05: 605
+  ||||line 135, col 11 to line 135, col 23 of module NoKingV05: 605
+  ||||line 135, col 30 to line 135, col 39 of module NoKingV05: 437
+  ||||line 136, col 8 to line 136, col 17 of module NoKingV05: 168
+  |line 466, col 19 to line 466, col 22 of module NoKingV05: 1023
+  line 467, col 6 to line 467, col 43 of module NoKingV05: 427
+  |line 467, col 6 to line 467, col 10 of module NoKingV05: 586
+  |line 467, col 14 to line 467, col 43 of module NoKingV05: 586
+  line 468, col 6 to line 468, col 25 of module NoKingV05: 427
+  line 469, col 6 to line 469, col 86 of module NoKingV05: 427
+  |line 469, col 25 to line 469, col 86 of module NoKingV05: 427
+  ||line 469, col 29 to line 469, col 54 of module NoKingV05: 427
+  ||line 469, col 62 to line 469, col 65 of module NoKingV05: 114
+  ||line 469, col 72 to line 469, col 86 of module NoKingV05: 313
+  line 470, col 6 to line 470, col 29 of module NoKingV05: 427
+  line 471, col 6 to line 471, col 46 of module NoKingV05: 427
+  line 472, col 6 to line 472, col 60 of module NoKingV05: 427
+  line 473, col 6 to line 482, col 101 of module NoKingV05: 427
+<CommitVotes line 520, col 1 to line 520, col 11 of module NoKingV05>: 108:109
+  line 521, col 6 to line 521, col 22 of module NoKingV05: 2546
+  |line 521, col 6 to line 521, col 10 of module NoKingV05: 2437
+  line 522, col 6 to line 522, col 24 of module NoKingV05: 1902
+  |line 522, col 6 to line 522, col 17 of module NoKingV05: 1793
+  |line 522, col 21 to line 522, col 24 of module NoKingV05: 1793
+  line 523, col 6 to line 523, col 22 of module NoKingV05: 880
+  |line 523, col 6 to line 523, col 14 of module NoKingV05: 771
+  |line 523, col 18 to line 523, col 22 of module NoKingV05: 771
+  line 524, col 6 to line 524, col 70 of module NoKingV05: 109
+  |line 524, col 6 to line 524, col 10 of module NoKingV05: 393
+  |line 524, col 15 to line 524, col 70 of module NoKingV05: 393
+  line 525, col 6 to line 525, col 80 of module NoKingV05: 109
+  |line 525, col 6 to line 525, col 10 of module NoKingV05: 228
+  |line 525, col 14 to line 525, col 80 of module NoKingV05: 228
+  line 526, col 6 to line 526, col 43 of module NoKingV05: 109
+  |line 526, col 6 to line 526, col 10 of module NoKingV05: 121
+  |line 526, col 14 to line 526, col 43 of module NoKingV05: 121
+  line 527, col 6 to line 527, col 22 of module NoKingV05: 109
+  line 528, col 6 to line 538, col 60 of module NoKingV05: 109
+<ResolveRound1ToAppealable line 690, col 1 to line 690, col 25 of module NoKingV05>: 170:171
+  line 691, col 6 to line 691, col 22 of module NoKingV05: 2606
+  |line 691, col 6 to line 691, col 10 of module NoKingV05: 2435
+  line 692, col 6 to line 692, col 14 of module NoKingV05: 1962
+  |line 692, col 6 to line 692, col 10 of module NoKingV05: 1791
+  line 693, col 6 to line 693, col 17 of module NoKingV05: 1962
+  |line 693, col 6 to line 693, col 10 of module NoKingV05: 1791
+  |line 693, col 14 to line 693, col 17 of module NoKingV05: 1791
+  line 694, col 6 to line 694, col 35 of module NoKingV05: 426
+  |line 694, col 6 to line 694, col 12 of module NoKingV05: 255
+  |line 694, col 18 to line 694, col 35 of module NoKingV05: 255
+  line 695, col 6 to line 695, col 26 of module NoKingV05: 171
+  line 696, col 6 to line 696, col 26 of module NoKingV05: 171
+  line 697, col 6 to line 697, col 26 of module NoKingV05: 171
+  line 698, col 6 to line 698, col 25 of module NoKingV05: 171
+  line 704, col 9 to line 704, col 48 of module NoKingV05: 171
+  |line 704, col 19 to line 704, col 48 of module NoKingV05: 171
+  ||line 704, col 19 to line 704, col 30 of module NoKingV05: 171
+  |||line 704, col 19 to line 704, col 24 of module NoKingV05: 171
+  |||line 704, col 28 to line 704, col 30 of module NoKingV05: 171
+  ||||line 702, col 17 to line 702, col 55 of module NoKingV05: 171
+  |||||line 702, col 20 to line 702, col 39 of module NoKingV05: 171
+  ||||||line 702, col 20 to line 702, col 32 of module NoKingV05: 171
+  ||||||line 702, col 37 to line 702, col 39 of module NoKingV05: 171
+  |||||||line 700, col 17 to line 701, col 51 of module NoKingV05: 171
+  ||||||||line 700, col 17 to line 700, col 101 of module NoKingV05: 171
+  |||||||||line 700, col 18 to line 700, col 87 of module NoKingV05: 171
+  ||||||||||line 700, col 21 to line 700, col 46 of module NoKingV05: 171
+  |||||||||||line 700, col 21 to line 700, col 28 of module NoKingV05: 171
+  ||||||||||||line 699, col 22 to line 699, col 79 of module NoKingV05: 171
+  |||||||||||||line 699, col 22 to line 699, col 30 of module NoKingV05: 171
+  |||||||||||||line 699, col 35 to line 699, col 78 of module NoKingV05: 171
+  ||||||||||||||line 699, col 38 to line 699, col 54 of module NoKingV05: 171
+  ||||||||||||||line 699, col 61 to line 699, col 66 of module NoKingV05: 87
+  ||||||||||||||line 699, col 73 to line 699, col 78 of module NoKingV05: 84
+  |||||||||||line 700, col 32 to line 700, col 46 of module NoKingV05: 171
+  ||||||||||line 700, col 54 to line 700, col 79 of module NoKingV05: 97
+  |||||||||||line 700, col 54 to line 700, col 61 of module NoKingV05: 97
+  ||||||||||||line 699, col 22 to line 699, col 79 of module NoKingV05: 97
+  |||||||||||||line 699, col 22 to line 699, col 30 of module NoKingV05: 97
+  |||||||||||||line 699, col 35 to line 699, col 78 of module NoKingV05: 97
+  ||||||||||||||line 699, col 38 to line 699, col 54 of module NoKingV05: 97
+  ||||||||||||||line 699, col 61 to line 699, col 66 of module NoKingV05: 49
+  ||||||||||||||line 699, col 73 to line 699, col 78 of module NoKingV05: 48
+  |||||||||||line 700, col 65 to line 700, col 79 of module NoKingV05: 97
+  |||||||||line 700, col 92 to line 700, col 101 of module NoKingV05: 171
+  ||||||||line 701, col 19 to line 701, col 51 of module NoKingV05: 171
+  |||||line 702, col 46 to line 702, col 48 of module NoKingV05: 171
+  ||||||line 700, col 17 to line 701, col 51 of module NoKingV05: 171
+  |||||||line 700, col 17 to line 700, col 101 of module NoKingV05: 171
+  ||||||||line 700, col 18 to line 700, col 87 of module NoKingV05: 171
+  |||||||||line 700, col 21 to line 700, col 46 of module NoKingV05: 171
+  ||||||||||line 700, col 21 to line 700, col 28 of module NoKingV05: 171
+  |||||||||||line 699, col 22 to line 699, col 79 of module NoKingV05: 171
+  ||||||||||||line 699, col 22 to line 699, col 30 of module NoKingV05: 171
+  ||||||||||||line 699, col 35 to line 699, col 78 of module NoKingV05: 171
+  |||||||||||||line 699, col 38 to line 699, col 54 of module NoKingV05: 171
+  |||||||||||||line 699, col 61 to line 699, col 66 of module NoKingV05: 87
+  |||||||||||||line 699, col 73 to line 699, col 78 of module NoKingV05: 84
+  ||||||||||line 700, col 32 to line 700, col 46 of module NoKingV05: 171
+  |||||||||line 700, col 54 to line 700, col 79 of module NoKingV05: 97
+  ||||||||||line 700, col 54 to line 700, col 61 of module NoKingV05: 97
+  |||||||||||line 699, col 22 to line 699, col 79 of module NoKingV05: 97
+  ||||||||||||line 699, col 22 to line 699, col 30 of module NoKingV05: 97
+  ||||||||||||line 699, col 35 to line 699, col 78 of module NoKingV05: 97
+  |||||||||||||line 699, col 38 to line 699, col 54 of module NoKingV05: 97
+  |||||||||||||line 699, col 61 to line 699, col 66 of module NoKingV05: 49
+  |||||||||||||line 699, col 73 to line 699, col 78 of module NoKingV05: 48
+  ||||||||||line 700, col 65 to line 700, col 79 of module NoKingV05: 97
+  ||||||||line 700, col 92 to line 700, col 101 of module NoKingV05: 171
+  |||||||line 701, col 19 to line 701, col 51 of module NoKingV05: 171
+  ||line 704, col 34 to line 704, col 48 of module NoKingV05: 171
+  line 705, col 9 to line 705, col 42 of module NoKingV05: 171
+  |line 705, col 24 to line 705, col 42 of module NoKingV05: 171
+  ||line 705, col 24 to line 705, col 36 of module NoKingV05: 171
+  ||line 705, col 40 to line 705, col 42 of module NoKingV05: 171
+  |||line 702, col 17 to line 702, col 55 of module NoKingV05: 171
+  ||||line 702, col 20 to line 702, col 39 of module NoKingV05: 171
+  |||||line 702, col 20 to line 702, col 32 of module NoKingV05: 171
+  |||||line 702, col 37 to line 702, col 39 of module NoKingV05: 171
+  ||||||line 700, col 17 to line 701, col 51 of module NoKingV05: 171
+  |||||||line 700, col 17 to line 700, col 101 of module NoKingV05: 171
+  ||||||||line 700, col 18 to line 700, col 87 of module NoKingV05: 171
+  |||||||||line 700, col 21 to line 700, col 46 of module NoKingV05: 171
+  ||||||||||line 700, col 21 to line 700, col 28 of module NoKingV05: 171
+  |||||||||||line 699, col 22 to line 699, col 79 of module NoKingV05: 171
+  ||||||||||||line 699, col 22 to line 699, col 30 of module NoKingV05: 171
+  ||||||||||||line 699, col 35 to line 699, col 78 of module NoKingV05: 171
+  |||||||||||||line 699, col 38 to line 699, col 54 of module NoKingV05: 171
+  |||||||||||||line 699, col 61 to line 699, col 66 of module NoKingV05: 87
+  |||||||||||||line 699, col 73 to line 699, col 78 of module NoKingV05: 84
+  ||||||||||line 700, col 32 to line 700, col 46 of module NoKingV05: 171
+  |||||||||line 700, col 54 to line 700, col 79 of module NoKingV05: 97
+  ||||||||||line 700, col 54 to line 700, col 61 of module NoKingV05: 97
+  |||||||||||line 699, col 22 to line 699, col 79 of module NoKingV05: 97
+  ||||||||||||line 699, col 22 to line 699, col 30 of module NoKingV05: 97
+  ||||||||||||line 699, col 35 to line 699, col 78 of module NoKingV05: 97
+  |||||||||||||line 699, col 38 to line 699, col 54 of module NoKingV05: 97
+  |||||||||||||line 699, col 61 to line 699, col 66 of module NoKingV05: 49
+  |||||||||||||line 699, col 73 to line 699, col 78 of module NoKingV05: 48
+  ||||||||||line 700, col 65 to line 700, col 79 of module NoKingV05: 97
+  ||||||||line 700, col 92 to line 700, col 101 of module NoKingV05: 171
+  |||||||line 701, col 19 to line 701, col 51 of module NoKingV05: 171
+  ||||line 702, col 46 to line 702, col 48 of module NoKingV05: 171
+  |||||line 700, col 17 to line 701, col 51 of module NoKingV05: 171
+  ||||||line 700, col 17 to line 700, col 101 of module NoKingV05: 171
+  |||||||line 700, col 18 to line 700, col 87 of module NoKingV05: 171
+  ||||||||line 700, col 21 to line 700, col 46 of module NoKingV05: 171
+  |||||||||line 700, col 21 to line 700, col 28 of module NoKingV05: 171
+  ||||||||||line 699, col 22 to line 699, col 79 of module NoKingV05: 171
+  |||||||||||line 699, col 22 to line 699, col 30 of module NoKingV05: 171
+  |||||||||||line 699, col 35 to line 699, col 78 of module NoKingV05: 171
+  ||||||||||||line 699, col 38 to line 699, col 54 of module NoKingV05: 171
+  ||||||||||||line 699, col 61 to line 699, col 66 of module NoKingV05: 87
+  ||||||||||||line 699, col 73 to line 699, col 78 of module NoKingV05: 84
+  |||||||||line 700, col 32 to line 700, col 46 of module NoKingV05: 171
+  ||||||||line 700, col 54 to line 700, col 79 of module NoKingV05: 97
+  |||||||||line 700, col 54 to line 700, col 61 of module NoKingV05: 97
+  ||||||||||line 699, col 22 to line 699, col 79 of module NoKingV05: 97
+  |||||||||||line 699, col 22 to line 699, col 30 of module NoKingV05: 97
+  |||||||||||line 699, col 35 to line 699, col 78 of module NoKingV05: 97
+  ||||||||||||line 699, col 38 to line 699, col 54 of module NoKingV05: 97
+  ||||||||||||line 699, col 61 to line 699, col 66 of module NoKingV05: 49
+  ||||||||||||line 699, col 73 to line 699, col 78 of module NoKingV05: 48
+  |||||||||line 700, col 65 to line 700, col 79 of module NoKingV05: 97
+  |||||||line 700, col 92 to line 700, col 101 of module NoKingV05: 171
+  ||||||line 701, col 19 to line 701, col 51 of module NoKingV05: 171
+  line 706, col 9 to line 706, col 26 of module NoKingV05: 171
+  line 707, col 9 to line 707, col 28 of module NoKingV05: 171
+  line 708, col 6 to line 717, col 71 of module NoKingV05: 171
+<FinalizeAppealable line 758, col 1 to line 758, col 18 of module NoKingV05>: 0:0
+  line 759, col 6 to line 759, col 25 of module NoKingV05: 2431
+  line 761, col 6 to line 761, col 24 of module NoKingV05: 0
+  line 762, col 6 to line 762, col 22 of module NoKingV05: 0
+  line 763, col 6 to line 763, col 37 of module NoKingV05: 0
+  line 765, col 14 to line 765, col 70 of module NoKingV05: 0
+  line 766, col 14 to line 766, col 25 of module NoKingV05: 0
+  line 767, col 14 to line 767, col 53 of module NoKingV05: 0
+  line 768, col 14 to line 768, col 59 of module NoKingV05: 0
+  line 769, col 14 to line 769, col 65 of module NoKingV05: 0
+  line 770, col 14 to line 770, col 25 of module NoKingV05: 0
+  line 771, col 14 to line 771, col 39 of module NoKingV05: 0
+  line 772, col 14 to line 772, col 70 of module NoKingV05: 0
+  line 773, col 6 to line 773, col 21 of module NoKingV05: 0
+  line 774, col 6 to line 774, col 22 of module NoKingV05: 0
+  line 775, col 6 to line 775, col 23 of module NoKingV05: 0
+  line 776, col 6 to line 776, col 22 of module NoKingV05: 0
+  line 777, col 6 to line 777, col 21 of module NoKingV05: 0
+  line 778, col 6 to line 786, col 70 of module NoKingV05: 0
+<ResolveRound2Final line 788, col 1 to line 788, col 18 of module NoKingV05>: 0:0
+  line 789, col 6 to line 789, col 22 of module NoKingV05: 2431
+  line 790, col 6 to line 790, col 14 of module NoKingV05: 1790
+  line 793, col 6 to line 793, col 24 of module NoKingV05: 0
+  line 794, col 6 to line 794, col 22 of module NoKingV05: 0
+  line 795, col 6 to line 795, col 26 of module NoKingV05: 0
+  line 796, col 6 to line 796, col 37 of module NoKingV05: 0
+  line 798, col 9 to line 798, col 39 of module NoKingV05: 0
+  line 800, col 17 to line 801, col 78 of module NoKingV05: 0
+  line 802, col 17 to line 802, col 28 of module NoKingV05: 0
+  line 803, col 17 to line 803, col 56 of module NoKingV05: 0
+  line 804, col 17 to line 805, col 86 of module NoKingV05: 0
+  line 806, col 17 to line 807, col 78 of module NoKingV05: 0
+  line 808, col 17 to line 808, col 28 of module NoKingV05: 0
+  line 809, col 17 to line 809, col 42 of module NoKingV05: 0
+  line 810, col 17 to line 811, col 86 of module NoKingV05: 0
+  line 812, col 6 to line 812, col 21 of module NoKingV05: 0
+  line 813, col 6 to line 813, col 22 of module NoKingV05: 0
+  line 814, col 6 to line 814, col 23 of module NoKingV05: 0
+  line 815, col 6 to line 815, col 22 of module NoKingV05: 0
+  line 816, col 6 to line 816, col 21 of module NoKingV05: 0
+  line 817, col 6 to line 817, col 23 of module NoKingV05: 0
+  line 818, col 6 to line 825, col 55 of module NoKingV05: 0
+<TerminalStutter line 827, col 1 to line 827, col 15 of module NoKingV05>: 0:241
+  line 828, col 6 to line 828, col 48 of module NoKingV05: 2672
+  |line 828, col 6 to line 828, col 10 of module NoKingV05: 2431
+  |line 828, col 16 to line 828, col 48 of module NoKingV05: 2431
+  line 829, col 6 to line 829, col 19 of module NoKingV05: 241
+<Inv_Conservation line 861, col 1 to line 861, col 16 of module NoKingV05>
+  line 862, col 3 to line 864, col 66 of module NoKingV05: 3903
+<Inv_NonNegativeBalances line 866, col 1 to line 866, col 23 of module NoKingV05>
+  line 867, col 3 to line 869, col 88 of module NoKingV05: 3903
+<Inv_NoDoublePayout line 871, col 1 to line 871, col 18 of module NoKingV05>
+  line 871, col 23 to line 871, col 39 of module NoKingV05: 3903
+<Inv_EscrowIntactNonTerminal line 873, col 1 to line 873, col 27 of module NoKingV05>
+  line 874, col 3 to line 875, col 81 of module NoKingV05: 3903
+  |line 874, col 4 to line 874, col 73 of module NoKingV05: 3903
+  |line 875, col 9 to line 875, col 80 of module NoKingV05: 3544
+<Inv_EscrowEmptyTerminal line 877, col 1 to line 877, col 23 of module NoKingV05>
+  line 878, col 3 to line 880, col 91 of module NoKingV05: 3903
+  |line 878, col 4 to line 878, col 46 of module NoKingV05: 3903
+  |line 879, col 9 to line 880, col 90 of module NoKingV05: 295
+<Inv_NoZeroVoteWin line 882, col 1 to line 882, col 17 of module NoKingV05>
+  line 883, col 3 to line 885, col 82 of module NoKingV05: 3903
+  |line 883, col 4 to line 883, col 73 of module NoKingV05: 3903
+  ||line 883, col 4 to line 883, col 39 of module NoKingV05: 3903
+  ||line 883, col 44 to line 883, col 73 of module NoKingV05: 235
+  |line 884, col 9 to line 885, col 81 of module NoKingV05: 172
+  ||line 884, col 9 to line 885, col 44 of module NoKingV05: 172
+  |||line 884, col 9 to line 884, col 56 of module NoKingV05: 172
+  |||line 885, col 13 to line 885, col 43 of module NoKingV05: 172
+  ||||line 885, col 13 to line 885, col 29 of module NoKingV05: 172
+  ||||line 885, col 34 to line 885, col 43 of module NoKingV05: 88
+  ||line 885, col 50 to line 885, col 80 of module NoKingV05: 172
+  |||line 885, col 50 to line 885, col 66 of module NoKingV05: 172
+  |||line 885, col 71 to line 885, col 80 of module NoKingV05: 84
+<Inv_NoDeadlineRace line 887, col 1 to line 887, col 18 of module NoKingV05>
+  line 888, col 3 to line 890, col 89 of module NoKingV05: 3903
+  |line 888, col 7 to line 888, col 52 of module NoKingV05: 3903
+  ||line 888, col 8 to line 888, col 23 of module NoKingV05: 3903
+  ||line 888, col 30 to line 888, col 51 of module NoKingV05: 3711
+  |line 889, col 7 to line 889, col 105 of module NoKingV05: 3903
+  ||line 889, col 8 to line 889, col 59 of module NoKingV05: 3903
+  |||line 889, col 8 to line 889, col 39 of module NoKingV05: 3903
+  ||||line 889, col 8 to line 889, col 26 of module NoKingV05: 3903
+  ||||line 889, col 31 to line 889, col 39 of module NoKingV05: 3271
+  |||line 889, col 44 to line 889, col 59 of module NoKingV05: 3269
+  ||line 889, col 66 to line 889, col 104 of module NoKingV05: 3269
+  |line 890, col 7 to line 890, col 88 of module NoKingV05: 3903
+  ||line 890, col 8 to line 890, col 24 of module NoKingV05: 3903
+  ||line 890, col 31 to line 890, col 87 of module NoKingV05: 48
+<Inv_NoSimultaneousEnablement line 892, col 1 to line 892, col 28 of module NoKingV05>
+  line 893, col 3 to line 897, col 52 of module NoKingV05: 3903
+  |line 893, col 6 to line 893, col 46 of module NoKingV05: 3903
+  ||line 893, col 8 to line 893, col 45 of module NoKingV05: 3903
+  |||line 893, col 8 to line 893, col 20 of module NoKingV05: 3903
+  ||||line 298, col 6 to line 298, col 21 of module NoKingV05: 3903
+  ||||line 299, col 6 to line 299, col 21 of module NoKingV05: 48
+  ||||line 300, col 6 to line 300, col 27 of module NoKingV05: 0
+  ||||line 301, col 6 to line 311, col 60 of module NoKingV05: 40
+  |||line 893, col 25 to line 893, col 45 of module NoKingV05: 40
+  ||||line 314, col 6 to line 314, col 21 of module NoKingV05: 40
+  ||||line 315, col 6 to line 315, col 22 of module NoKingV05: 40
+  ||||line 316, col 6 to line 316, col 23 of module NoKingV05: 0
+  ||||line 317, col 6 to line 317, col 22 of module NoKingV05: 0
+  ||||line 318, col 6 to line 318, col 47 of module NoKingV05: 0
+  ||||line 319, col 6 to line 319, col 55 of module NoKingV05: 0
+  ||||line 320, col 6 to line 320, col 44 of module NoKingV05: 0
+  ||||line 321, col 6 to line 321, col 39 of module NoKingV05: 0
+  ||||line 322, col 6 to line 322, col 21 of module NoKingV05: 0
+  ||||line 323, col 6 to line 323, col 22 of module NoKingV05: 0
+  ||||line 324, col 6 to line 324, col 37 of module NoKingV05: 0
+  ||||line 325, col 6 to line 334, col 89 of module NoKingV05: 0
+  |line 894, col 6 to line 894, col 51 of module NoKingV05: 3903
+  ||line 894, col 8 to line 894, col 50 of module NoKingV05: 3903
+  |||line 894, col 8 to line 894, col 21 of module NoKingV05: 3903
+  ||||line 337, col 6 to line 337, col 26 of module NoKingV05: 3903
+  ||||line 338, col 6 to line 338, col 21 of module NoKingV05: 48
+  ||||line 339, col 35 to line 339, col 59 of module NoKingV05: 0
+  |||||line 339, col 55 to line 339, col 59 of module NoKingV05: 40
+  ||||line 339, col 19 to line 339, col 31 of module NoKingV05: 40:80
+  ||||line 340, col 6 to line 340, col 22 of module NoKingV05: 0
+  ||||line 341, col 6 to line 341, col 25 of module NoKingV05: 0
+  |||||line 341, col 21 to line 341, col 25 of module NoKingV05: 40
+  ||||line 342, col 6 to line 352, col 60 of module NoKingV05: 40
+  |||line 894, col 26 to line 894, col 50 of module NoKingV05: 40
+  ||||line 355, col 6 to line 355, col 26 of module NoKingV05: 40
+  ||||line 356, col 6 to line 356, col 22 of module NoKingV05: 40
+  ||||line 357, col 6 to line 357, col 23 of module NoKingV05: 0
+  ||||line 358, col 6 to line 358, col 22 of module NoKingV05: 0
+  ||||line 359, col 6 to line 359, col 47 of module NoKingV05: 0
+  ||||line 360, col 6 to line 360, col 55 of module NoKingV05: 0
+  ||||line 361, col 6 to line 361, col 44 of module NoKingV05: 0
+  ||||line 362, col 6 to line 362, col 39 of module NoKingV05: 0
+  ||||line 363, col 6 to line 363, col 21 of module NoKingV05: 0
+  ||||line 364, col 6 to line 364, col 22 of module NoKingV05: 0
+  ||||line 365, col 6 to line 365, col 37 of module NoKingV05: 0
+  ||||line 366, col 6 to line 375, col 89 of module NoKingV05: 0
+  |line 895, col 6 to line 895, col 48 of module NoKingV05: 3903
+  ||line 895, col 8 to line 895, col 47 of module NoKingV05: 3903
+  |||line 895, col 8 to line 895, col 22 of module NoKingV05: 3903
+  ||||line 378, col 6 to line 378, col 21 of module NoKingV05: 3903
+  ||||line 379, col 6 to line 379, col 35 of module NoKingV05: 240
+  ||||line 380, col 6 to line 380, col 24 of module NoKingV05: 160
+  ||||line 381, col 6 to line 381, col 28 of module NoKingV05: 80
+  ||||line 382, col 6 to line 382, col 22 of module NoKingV05: 0
+  ||||line 383, col 6 to line 383, col 22 of module NoKingV05: 0
+  ||||line 384, col 6 to line 384, col 62 of module NoKingV05: 0
+  |||||line 384, col 14 to line 384, col 62 of module NoKingV05: 40
+  ||||line 385, col 6 to line 385, col 45 of module NoKingV05: 0
+  |||||line 385, col 21 to line 385, col 45 of module NoKingV05: 40
+  ||||line 386, col 6 to line 386, col 21 of module NoKingV05: 0
+  ||||line 387, col 6 to line 387, col 22 of module NoKingV05: 0
+  ||||line 388, col 6 to line 388, col 37 of module NoKingV05: 0
+  |||||line 388, col 22 to line 388, col 37 of module NoKingV05: 40
+  ||||line 389, col 6 to line 398, col 89 of module NoKingV05: 40
+  |||line 895, col 27 to line 895, col 47 of module NoKingV05: 40
+  ||||line 403, col 6 to line 403, col 21 of module NoKingV05: 40
+  ||||line 404, col 6 to line 404, col 36 of module NoKingV05: 40
+  ||||line 409, col 11 to line 409, col 27 of module NoKingV05: 0
+  ||||line 410, col 11 to line 410, col 27 of module NoKingV05: 0
+  ||||line 411, col 11 to line 411, col 56 of module NoKingV05: 0
+  ||||line 412, col 11 to line 412, col 41 of module NoKingV05: 0
+  ||||line 413, col 11 to line 413, col 67 of module NoKingV05: 0
+  ||||line 414, col 11 to line 414, col 39 of module NoKingV05: 0
+  ||||line 415, col 11 to line 415, col 43 of module NoKingV05: 0
+  ||||line 416, col 11 to line 416, col 26 of module NoKingV05: 0
+  ||||line 417, col 11 to line 417, col 27 of module NoKingV05: 0
+  ||||line 418, col 11 to line 418, col 42 of module NoKingV05: 0
+  ||||line 419, col 6 to line 427, col 89 of module NoKingV05: 0
+  |line 896, col 6 to line 896, col 52 of module NoKingV05: 3903
+  ||line 896, col 8 to line 896, col 51 of module NoKingV05: 3903
+  |||line 896, col 8 to line 896, col 26 of module NoKingV05: 3903
+  ||||line 430, col 6 to line 430, col 21 of module NoKingV05: 3903
+  ||||line 431, col 6 to line 431, col 35 of module NoKingV05: 240
+  ||||line 432, col 7 to line 432, col 23 of module NoKingV05: 160
+  ||||line 432, col 28 to line 432, col 40 of module NoKingV05: 80
+  ||||line 433, col 6 to line 433, col 23 of module NoKingV05: 0
+  ||||line 434, col 6 to line 434, col 15 of module NoKingV05: 0
+  ||||line 435, col 6 to line 435, col 19 of module NoKingV05: 0
+  ||||line 436, col 6 to line 436, col 25 of module NoKingV05: 0
+  ||||line 437, col 6 to line 437, col 33 of module NoKingV05: 0
+  |||||line 437, col 21 to line 437, col 33 of module NoKingV05: 120
+  ||||line 438, col 6 to line 438, col 45 of module NoKingV05: 0
+  |||||line 438, col 20 to line 438, col 45 of module NoKingV05: 120
+  ||||line 439, col 6 to line 439, col 37 of module NoKingV05: 0
+  |||||line 439, col 25 to line 439, col 37 of module NoKingV05: 120
+  ||||line 440, col 6 to line 440, col 17 of module NoKingV05: 0
+  ||||line 441, col 6 to line 441, col 28 of module NoKingV05: 0
+  |||||line 441, col 24 to line 441, col 28 of module NoKingV05: 120
+  ||||line 442, col 6 to line 442, col 28 of module NoKingV05: 0
+  |||||line 442, col 24 to line 442, col 28 of module NoKingV05: 120
+  ||||line 443, col 6 to line 443, col 26 of module NoKingV05: 0
+  |||||line 443, col 22 to line 443, col 26 of module NoKingV05: 120
+  ||||line 444, col 6 to line 444, col 29 of module NoKingV05: 0
+  |||||line 444, col 25 to line 444, col 29 of module NoKingV05: 120
+  ||||line 445, col 6 to line 445, col 23 of module NoKingV05: 0
+  |||||line 445, col 19 to line 445, col 23 of module NoKingV05: 120
+  ||||line 446, col 6 to line 446, col 19 of module NoKingV05: 0
+  |||||line 446, col 15 to line 446, col 19 of module NoKingV05: 120
+  ||||line 447, col 6 to line 447, col 25 of module NoKingV05: 0
+  |||||line 447, col 22 to line 447, col 25 of module NoKingV05: 120
+  ||||line 448, col 6 to line 448, col 16 of module NoKingV05: 0
+  ||||line 449, col 6 to line 449, col 16 of module NoKingV05: 0
+  ||||line 450, col 6 to line 450, col 25 of module NoKingV05: 0
+  ||||line 451, col 6 to line 451, col 21 of module NoKingV05: 0
+  ||||line 452, col 6 to line 452, col 22 of module NoKingV05: 0
+  ||||line 453, col 6 to line 453, col 34 of module NoKingV05: 0
+  |||||line 453, col 14 to line 453, col 34 of module NoKingV05: 120
+  ||||line 454, col 6 to line 454, col 36 of module NoKingV05: 0
+  |||||line 454, col 23 to line 454, col 36 of module NoKingV05: 120
+  ||||line 455, col 6 to line 461, col 84 of module NoKingV05: 120
+  |||line 896, col 31 to line 896, col 51 of module NoKingV05: 120
+  ||||line 403, col 6 to line 403, col 21 of module NoKingV05: 120
+  ||||line 404, col 6 to line 404, col 36 of module NoKingV05: 120
+  ||||line 409, col 11 to line 409, col 27 of module NoKingV05: 0
+  ||||line 410, col 11 to line 410, col 27 of module NoKingV05: 0
+  ||||line 411, col 11 to line 411, col 56 of module NoKingV05: 0
+  ||||line 412, col 11 to line 412, col 41 of module NoKingV05: 0
+  ||||line 413, col 11 to line 413, col 67 of module NoKingV05: 0
+  ||||line 414, col 11 to line 414, col 39 of module NoKingV05: 0
+  ||||line 415, col 11 to line 415, col 43 of module NoKingV05: 0
+  ||||line 416, col 11 to line 416, col 26 of module NoKingV05: 0
+  ||||line 417, col 11 to line 417, col 27 of module NoKingV05: 0
+  ||||line 418, col 11 to line 418, col 42 of module NoKingV05: 0
+  ||||line 419, col 6 to line 427, col 89 of module NoKingV05: 0
+  |line 897, col 6 to line 897, col 52 of module NoKingV05: 3903
+  ||line 897, col 8 to line 897, col 51 of module NoKingV05: 3903
+  |||line 897, col 8 to line 897, col 21 of module NoKingV05: 3903
+  ||||line 721, col 6 to line 721, col 25 of module NoKingV05: 3903
+  ||||line 722, col 6 to line 722, col 14 of module NoKingV05: 172
+  ||||line 723, col 6 to line 723, col 36 of module NoKingV05: 172
+  ||||line 724, col 26 to line 724, col 81 of module NoKingV05: 474
+  |||||line 724, col 29 to line 724, col 39 of module NoKingV05: 474
+  |||||line 724, col 47 to line 724, col 73 of module NoKingV05: 390
+  ||||line 725, col 24 to line 725, col 66 of module NoKingV05: 172
+  |||||line 725, col 25 to line 725, col 36 of module NoKingV05: 172
+  |||||line 725, col 43 to line 725, col 65 of module NoKingV05: 130
+  ||||line 727, col 9 to line 727, col 26 of module NoKingV05: 0
+  ||||line 728, col 9 to line 728, col 18 of module NoKingV05: 0
+  ||||line 729, col 9 to line 729, col 33 of module NoKingV05: 0
+  |||||line 729, col 22 to line 729, col 33 of module NoKingV05: 172
+  ||||line 730, col 9 to line 730, col 31 of module NoKingV05: 0
+  |||||line 730, col 20 to line 730, col 31 of module NoKingV05: 172
+  ||||line 731, col 9 to line 731, col 38 of module NoKingV05: 0
+  |||||line 731, col 29 to line 731, col 38 of module NoKingV05: 172
+  ||||line 732, col 9 to line 732, col 20 of module NoKingV05: 0
+  ||||line 733, col 9 to line 733, col 31 of module NoKingV05: 0
+  |||||line 733, col 27 to line 733, col 31 of module NoKingV05: 172
+  ||||line 734, col 9 to line 734, col 31 of module NoKingV05: 0
+  |||||line 734, col 27 to line 734, col 31 of module NoKingV05: 172
+  ||||line 735, col 9 to line 735, col 29 of module NoKingV05: 0
+  |||||line 735, col 25 to line 735, col 29 of module NoKingV05: 172
+  ||||line 736, col 9 to line 736, col 26 of module NoKingV05: 0
+  |||||line 736, col 22 to line 736, col 26 of module NoKingV05: 172
+  ||||line 737, col 9 to line 737, col 22 of module NoKingV05: 0
+  |||||line 737, col 18 to line 737, col 22 of module NoKingV05: 172
+  ||||line 738, col 9 to line 738, col 28 of module NoKingV05: 0
+  |||||line 738, col 25 to line 738, col 28 of module NoKingV05: 172
+  ||||line 739, col 9 to line 739, col 19 of module NoKingV05: 0
+  ||||line 740, col 9 to line 740, col 19 of module NoKingV05: 0
+  ||||line 741, col 9 to line 741, col 28 of module NoKingV05: 0
+  ||||line 742, col 9 to line 742, col 24 of module NoKingV05: 0
+  ||||line 743, col 9 to line 743, col 25 of module NoKingV05: 0
+  ||||line 744, col 12 to line 744, col 31 of module NoKingV05: 172
+  ||||line 745, col 17 to line 745, col 44 of module NoKingV05: 0
+  |||||line 745, col 25 to line 745, col 44 of module NoKingV05: 88
+  ||||line 746, col 17 to line 746, col 28 of module NoKingV05: 0
+  |||||line 746, col 25 to line 746, col 28 of module NoKingV05: 88
+  ||||line 747, col 17 to line 747, col 44 of module NoKingV05: 0
+  |||||line 747, col 25 to line 747, col 44 of module NoKingV05: 84
+  ||||line 748, col 17 to line 748, col 28 of module NoKingV05: 0
+  |||||line 748, col 25 to line 748, col 28 of module NoKingV05: 84
+  ||||line 749, col 9 to line 749, col 37 of module NoKingV05: 0
+  |||||line 749, col 25 to line 749, col 37 of module NoKingV05: 172
+  ||||line 750, col 6 to line 756, col 102 of module NoKingV05: 172
+  |||line 897, col 26 to line 897, col 51 of module NoKingV05: 172
+  ||||line 759, col 6 to line 759, col 25 of module NoKingV05: 172
+  ||||line 760, col 6 to line 760, col 37 of module NoKingV05: 172
+  ||||line 761, col 6 to line 761, col 24 of module NoKingV05: 0
+  ||||line 762, col 6 to line 762, col 22 of module NoKingV05: 0
+  ||||line 763, col 6 to line 763, col 37 of module NoKingV05: 0
+  ||||line 765, col 14 to line 765, col 70 of module NoKingV05: 0
+  ||||line 766, col 14 to line 766, col 25 of module NoKingV05: 0
+  ||||line 767, col 14 to line 767, col 53 of module NoKingV05: 0
+  ||||line 768, col 14 to line 768, col 59 of module NoKingV05: 0
+  ||||line 769, col 14 to line 769, col 65 of module NoKingV05: 0
+  ||||line 770, col 14 to line 770, col 25 of module NoKingV05: 0
+  ||||line 771, col 14 to line 771, col 39 of module NoKingV05: 0
+  ||||line 772, col 14 to line 772, col 70 of module NoKingV05: 0
+  ||||line 773, col 6 to line 773, col 21 of module NoKingV05: 0
+  ||||line 774, col 6 to line 774, col 22 of module NoKingV05: 0
+  ||||line 775, col 6 to line 775, col 23 of module NoKingV05: 0
+  ||||line 776, col 6 to line 776, col 22 of module NoKingV05: 0
+  ||||line 777, col 6 to line 777, col 21 of module NoKingV05: 0
+  ||||line 778, col 6 to line 786, col 70 of module NoKingV05: 0
+<Inv_F1SplitOnlyAfterChain line 899, col 1 to line 899, col 25 of module NoKingV05>
+  line 900, col 3 to line 900, col 81 of module NoKingV05: 3903
+  |line 900, col 4 to line 900, col 48 of module NoKingV05: 3903
+  ||line 900, col 4 to line 900, col 21 of module NoKingV05: 3903
+  ||line 900, col 26 to line 900, col 48 of module NoKingV05: 63
+  |line 900, col 55 to line 900, col 80 of module NoKingV05: 63
+<Inv_F1GrowingReward line 902, col 1 to line 902, col 19 of module NoKingV05>
+  line 903, col 3 to line 903, col 96 of module NoKingV05: 3903
+  |line 903, col 4 to line 903, col 33 of module NoKingV05: 3903
+  ||line 903, col 4 to line 903, col 20 of module NoKingV05: 3903
+  ||line 903, col 25 to line 903, col 33 of module NoKingV05: 3036
+  |line 903, col 40 to line 903, col 95 of module NoKingV05: 3034
+<Inv_E1Round2NeverSplits5050 line 905, col 1 to line 905, col 27 of module NoKingV05>
+  line 906, col 3 to line 906, col 65 of module NoKingV05: 3903
+  |line 906, col 4 to line 906, col 34 of module NoKingV05: 3903
+  ||line 906, col 4 to line 906, col 12 of module NoKingV05: 3903
+  ||line 906, col 17 to line 906, col 34 of module NoKingV05: 2
+<Inv_N01Round2NoBuyerProfit line 908, col 1 to line 908, col 26 of module NoKingV05>
+  line 909, col 3 to line 909, col 110 of module NoKingV05: 3903
+  |line 909, col 4 to line 909, col 61 of module NoKingV05: 3903
+  ||line 909, col 4 to line 909, col 37 of module NoKingV05: 3903
+  |||line 909, col 4 to line 909, col 12 of module NoKingV05: 3903
+  |||line 909, col 17 to line 909, col 37 of module NoKingV05: 2
+<Inv_G1CapacityReservedNonTerminal line 912, col 1 to line 912, col 33 of module NoKingV05>
+  line 913, col 3 to line 913, col 77 of module NoKingV05: 3903
+  |line 913, col 4 to line 913, col 49 of module NoKingV05: 3903
+  |line 913, col 56 to line 913, col 76 of module NoKingV05: 3608
+<Inv_G1CapacityReleasedTerminal line 918, col 1 to line 918, col 30 of module NoKingV05>
+  line 919, col 3 to line 919, col 69 of module NoKingV05: 3903
+  |line 919, col 4 to line 919, col 46 of module NoKingV05: 3903
+  |line 919, col 53 to line 919, col 68 of module NoKingV05: 295
+<Inv_G1NoPassiveExhaustionSplit line 921, col 1 to line 921, col 30 of module NoKingV05>
+  line 922, col 3 to line 922, col 102 of module NoKingV05: 3903
+  |line 922, col 4 to line 922, col 48 of module NoKingV05: 3903
+  ||line 922, col 4 to line 922, col 21 of module NoKingV05: 3903
+  ||line 922, col 26 to line 922, col 48 of module NoKingV05: 63
+  |line 922, col 55 to line 922, col 101 of module NoKingV05: 63
+<Inv_G2DisjointR2Pool line 925, col 1 to line 925, col 20 of module NoKingV05>
+  line 926, col 3 to line 926, col 79 of module NoKingV05: 3903
+  |line 926, col 4 to line 926, col 12 of module NoKingV05: 3903
+  |line 926, col 19 to line 926, col 78 of module NoKingV05: 2
+<Inv_G3KeeperCappedAndPartiesExcluded line 932, col 1 to line 932, col 36 of module NoKingV05>
+  line 933, col 3 to line 936, col 97 of module NoKingV05: 3901
+  |line 933, col 6 to line 933, col 26 of module NoKingV05: 3901
+  |line 934, col 7 to line 934, col 45 of module NoKingV05: 3901
+  |line 935, col 7 to line 935, col 29 of module NoKingV05: 3901
+  |line 936, col 7 to line 936, col 96 of module NoKingV05: 3901
+  ||line 936, col 7 to line 936, col 29 of module NoKingV05: 3901
+  ||line 936, col 35 to line 936, col 95 of module NoKingV05: 80
+<Inv_F3TallySealedUntilQuorum line 938, col 1 to line 938, col 28 of module NoKingV05>
+  line 939, col 3 to line 939, col 108 of module NoKingV05: 3901
+  |line 939, col 4 to line 939, col 16 of module NoKingV05: 3901
+  |line 939, col 23 to line 939, col 107 of module NoKingV05: 3901
+  ||line 939, col 24 to line 939, col 81 of module NoKingV05: 3901
+  |||line 939, col 25 to line 939, col 41 of module NoKingV05: 3901
+  |||line 939, col 48 to line 939, col 80 of module NoKingV05: 3034
+  ||||line 939, col 48 to line 939, col 53 of module NoKingV05: 3034
+  ||||line 939, col 58 to line 939, col 80 of module NoKingV05: 987
+  ||line 939, col 88 to line 939, col 106 of module NoKingV05: 2376
+<Inv_F5DefaultOnlyOnSellerTimeout line 941, col 1 to line 941, col 32 of module NoKingV05>
+  line 942, col 3 to line 944, col 70 of module NoKingV05: 3901
+  |line 942, col 7 to line 942, col 70 of module NoKingV05: 3901
+  ||line 942, col 7 to line 942, col 27 of module NoKingV05: 3901
+  ||line 942, col 33 to line 942, col 69 of module NoKingV05: 8
+  |line 943, col 7 to line 943, col 132 of module NoKingV05: 3901
+  ||line 943, col 7 to line 943, col 107 of module NoKingV05: 3901
+  ||line 943, col 112 to line 943, col 132 of module NoKingV05: 3869
+  |line 944, col 7 to line 944, col 69 of module NoKingV05: 3901
+  ||line 944, col 7 to line 944, col 44 of module NoKingV05: 3901
+  |||line 944, col 7 to line 944, col 23 of module NoKingV05: 3901
+  |||line 944, col 28 to line 944, col 44 of module NoKingV05: 48
+  ||line 944, col 49 to line 944, col 69 of module NoKingV05: 16
+<Inv_M09CancelGraceAndDelay line 946, col 1 to line 946, col 26 of module NoKingV05>
+  line 947, col 3 to line 948, col 81 of module NoKingV05: 3901
+  |line 947, col 4 to line 947, col 40 of module NoKingV05: 3901
+  ||line 947, col 4 to line 947, col 20 of module NoKingV05: 3901
+  ||line 947, col 25 to line 947, col 40 of module NoKingV05: 32
+  |line 948, col 9 to line 948, col 80 of module NoKingV05: 8
+End of statistics.
+4805 states generated, 3903 distinct states found, 1468 states left on queue.
+The depth of the complete state graph search is 12.
+The average outdegree of the complete state graph is 2 (minimum is 0, the maximum 22 and the 95th percentile is 2).
+Finished in 13s at (2026-11-27 12:37:16)

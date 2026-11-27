@@ -1,0 +1,6 @@
+config,wrong_rate_mean,wrong_ci95,passive_split_rate,passive_split_ci95,r2_shortage_rate,r2_shortage_ci95,sybil_max_rent_300deals_usd,sybil_ci95
+v0.5 Full Stack (G1+G2+G3),0.0017,0.001,0.0,0.0,0.0,0.0,168.8,7.71
+LOO: -G1 (No CapCheck -> GLOBAL starvation risk),0.0033,0.0012,0.0367,0.0042,0.0,0.0,160.7,7.41
+LOO: -G2a (Allow same-pool R2 when N>=2k'),0.0968,0.0083,0.0,0.0,0.0,0.0,169.75,7.55
+LOO: -G2b (Static $8750 cap -> R2 liq shortage),0.0082,0.0021,0.0,0.0,0.0067,0.002,165.56,6.25
+LOO: -G3 (Uncapped keeper + party allowed),0.0017,0.001,0.0,0.0,0.0,0.0,507.19,34.0

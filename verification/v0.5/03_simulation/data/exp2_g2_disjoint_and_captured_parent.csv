@@ -1,0 +1,21 @@
+N_local,f_mal,routing_mode,wrong_mean,wrong_ci95
+36,0.1,v0.4 OVS=2x (local N=36 R2),0.0,0.0
+36,0.1,v0.5 G2 Disjoint (Parent 0.5*f),0.0,0.0
+36,0.1,v0.5 G2 Disjoint (Parent CAPTURED 1.0*f),0.0,0.0
+36,0.1,v0.5 G2 Direct GLOBAL (0.25*f),0.0,0.0
+36,0.2,v0.4 OVS=2x (local N=36 R2),0.00017,0.00033
+36,0.2,v0.5 G2 Disjoint (Parent 0.5*f),0.0,0.0
+36,0.2,v0.5 G2 Disjoint (Parent CAPTURED 1.0*f),0.0015,0.00075
+36,0.2,v0.5 G2 Direct GLOBAL (0.25*f),0.0,0.0
+36,0.3,v0.4 OVS=2x (local N=36 R2),0.01533,0.00319
+36,0.3,v0.5 G2 Disjoint (Parent 0.5*f),0.0005,0.00071
+36,0.3,v0.5 G2 Disjoint (Parent CAPTURED 1.0*f),0.01833,0.00215
+36,0.3,v0.5 G2 Direct GLOBAL (0.25*f),0.0,0.0
+36,0.4,v0.4 OVS=2x (local N=36 R2),0.099,0.00488
+36,0.4,v0.5 G2 Disjoint (Parent 0.5*f),0.003,0.00115
+36,0.4,v0.5 G2 Disjoint (Parent CAPTURED 1.0*f),0.12733,0.01021
+36,0.4,v0.5 G2 Direct GLOBAL (0.25*f),0.0,0.0
+36,0.5,v0.4 OVS=2x (local N=36 R2),0.41017,0.0102
+36,0.5,v0.5 G2 Disjoint (Parent 0.5*f),0.01933,0.00436
+36,0.5,v0.5 G2 Disjoint (Parent CAPTURED 1.0*f),0.39183,0.01265
+36,0.5,v0.5 G2 Direct GLOBAL (0.25*f),0.0005,0.00054
