@@ -1,0 +1,369 @@
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Warning: Please run the Java VM which executes TLC with a throughput optimized garbage collector by passing the "-XX:+UseParallelGC" property.
+(Use the -nowarning option to disable this warning.)
+Running breadth-first search Model-Checking with fp 92 and seed 5623821409473720855 with 2 workers on 2 cores with 2914MB heap and 64MB offheap memory [pid: 5712] (Linux 6.2.1-PRoot-Distro aarch64, Debian 17.0.21.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file /workspace/NoKing/verification/01_fsm/NoKingFixed.tla
+Parsing file /tmp/Integers.tla
+Parsing file /tmp/FiniteSets.tla
+Parsing file /tmp/Naturals.tla
+Parsing file /tmp/Sequences.tla
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module NoKingFixed
+Starting... (2026-11-27 00:23:18)
+Implied-temporal checking--satisfiability problem has 1 branches.
+Computing initial states...
+Computed 2 initial states...
+Finished computing initial states: 4 distinct states generated at 2026-11-27 00:23:18.
+Checking temporal properties for the current state space with 5630 total distinct states at (2026-11-27 00:23:22)
+Finished checking temporal properties in 00s at 2026-11-27 00:23:22
+Progress(17) at 2026-11-27 00:23:22: 8,356 states generated (8,356 s/min), 6,120 distinct states found (6,120 ds/min), 1,482 states left on queue.
+Progress(30) at 2026-11-27 00:23:27: 54,496 states generated, 33,932 distinct states found, 0 states left on queue.
+Checking temporal properties for the complete state space with 33932 total distinct states at (2026-11-27 00:23:27)
+Finished checking temporal properties in 00s at 2026-11-27 00:23:27
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = 3.8E-11
+The coverage statistics at 2026-11-27 00:23:27
+<Init line 72, col 1 to line 72, col 4 of module NoKingFixed>: 4:4
+  line 75, col 6 to line 75, col 21 of module NoKingFixed: 1
+  line 76, col 6 to line 76, col 22 of module NoKingFixed: 1
+  line 77, col 6 to line 77, col 24 of module NoKingFixed: 1
+  line 79, col 6 to line 79, col 25 of module NoKingFixed: 1
+  line 80, col 6 to line 80, col 38 of module NoKingFixed: 1
+  line 84, col 6 to line 84, col 18 of module NoKingFixed: 2
+  line 86, col 6 to line 86, col 29 of module NoKingFixed: 2
+  line 87, col 6 to line 87, col 35 of module NoKingFixed: 2
+  line 89, col 6 to line 89, col 22 of module NoKingFixed: 4
+  line 90, col 6 to line 90, col 21 of module NoKingFixed: 4
+  line 91, col 6 to line 91, col 21 of module NoKingFixed: 4
+  line 97, col 6 to line 97, col 23 of module NoKingFixed: 4
+<Tick line 99, col 1 to line 99, col 4 of module NoKingFixed>: 16119:17208
+  line 100, col 6 to line 100, col 20 of module NoKingFixed: 17208
+  |line 100, col 6 to line 100, col 10 of module NoKingFixed: 33932
+  |line 100, col 14 to line 100, col 20 of module NoKingFixed: 33932
+  line 101, col 6 to line 101, col 51 of module NoKingFixed: 48704
+  |line 101, col 6 to line 101, col 10 of module NoKingFixed: 31496
+  |line 101, col 19 to line 101, col 51 of module NoKingFixed: 31496
+  line 102, col 6 to line 102, col 75 of module NoKingFixed: 36432
+  |line 102, col 8 to line 102, col 74 of module NoKingFixed: 19224
+  ||line 102, col 8 to line 102, col 40 of module NoKingFixed: 19224
+  |||line 102, col 8 to line 102, col 24 of module NoKingFixed: 19224
+  |||line 102, col 29 to line 102, col 40 of module NoKingFixed: 14592
+  ||line 102, col 45 to line 102, col 74 of module NoKingFixed: 9696
+  line 103, col 6 to line 103, col 23 of module NoKingFixed: 17208
+  line 104, col 6 to line 108, col 87 of module NoKingFixed: 17208
+<Accept line 110, col 1 to line 110, col 6 of module NoKingFixed>: 6:8
+  line 111, col 6 to line 111, col 20 of module NoKingFixed: 33940
+  |line 111, col 6 to line 111, col 10 of module NoKingFixed: 33932
+  line 112, col 6 to line 112, col 21 of module NoKingFixed: 8
+  |line 112, col 6 to line 112, col 10 of module NoKingFixed: 76
+  |line 112, col 14 to line 112, col 21 of module NoKingFixed: 76
+  line 113, col 6 to line 113, col 22 of module NoKingFixed: 8
+  line 114, col 6 to line 114, col 26 of module NoKingFixed: 8
+  line 115, col 6 to line 115, col 33 of module NoKingFixed: 8
+  line 116, col 6 to line 116, col 26 of module NoKingFixed: 8
+  line 117, col 6 to line 117, col 34 of module NoKingFixed: 8
+  line 118, col 6 to line 121, col 81 of module NoKingFixed: 8
+<TimeoutDraft line 123, col 1 to line 123, col 12 of module NoKingFixed>: 68:68
+  line 124, col 6 to line 124, col 20 of module NoKingFixed: 34000
+  |line 124, col 6 to line 124, col 10 of module NoKingFixed: 33932
+  line 125, col 6 to line 125, col 22 of module NoKingFixed: 68
+  |line 125, col 6 to line 125, col 10 of module NoKingFixed: 76
+  |line 125, col 15 to line 125, col 22 of module NoKingFixed: 76
+  line 126, col 6 to line 126, col 23 of module NoKingFixed: 68
+  line 127, col 6 to line 131, col 87 of module NoKingFixed: 68
+<CancelDraft line 133, col 1 to line 133, col 11 of module NoKingFixed>: 8:8
+  line 134, col 6 to line 134, col 20 of module NoKingFixed: 33940
+  |line 134, col 6 to line 134, col 10 of module NoKingFixed: 33932
+  line 135, col 6 to line 135, col 21 of module NoKingFixed: 8
+  |line 135, col 6 to line 135, col 10 of module NoKingFixed: 76
+  |line 135, col 14 to line 135, col 21 of module NoKingFixed: 76
+  line 136, col 6 to line 136, col 23 of module NoKingFixed: 8
+  line 137, col 6 to line 141, col 87 of module NoKingFixed: 8
+<Start line 143, col 1 to line 143, col 5 of module NoKingFixed>: 16:16
+  line 144, col 6 to line 144, col 21 of module NoKingFixed: 33948
+  |line 144, col 6 to line 144, col 10 of module NoKingFixed: 33932
+  line 145, col 6 to line 145, col 21 of module NoKingFixed: 16
+  |line 145, col 6 to line 145, col 10 of module NoKingFixed: 76
+  |line 145, col 14 to line 145, col 21 of module NoKingFixed: 76
+  line 146, col 6 to line 146, col 27 of module NoKingFixed: 16
+  line 147, col 6 to line 151, col 87 of module NoKingFixed: 16
+<TimeoutLocked line 153, col 1 to line 153, col 13 of module NoKingFixed>: 60:60
+  line 154, col 6 to line 154, col 21 of module NoKingFixed: 33992
+  |line 154, col 6 to line 154, col 10 of module NoKingFixed: 33932
+  line 155, col 6 to line 155, col 22 of module NoKingFixed: 60
+  |line 155, col 6 to line 155, col 10 of module NoKingFixed: 76
+  |line 155, col 15 to line 155, col 22 of module NoKingFixed: 76
+  line 156, col 6 to line 156, col 23 of module NoKingFixed: 60
+  line 157, col 6 to line 157, col 41 of module NoKingFixed: 60
+  line 158, col 6 to line 158, col 44 of module NoKingFixed: 60
+  line 159, col 6 to line 159, col 21 of module NoKingFixed: 60
+  line 160, col 6 to line 160, col 22 of module NoKingFixed: 60
+  line 161, col 6 to line 161, col 37 of module NoKingFixed: 60
+  line 162, col 6 to line 165, col 81 of module NoKingFixed: 60
+<SubmitHonest line 167, col 1 to line 167, col 12 of module NoKingFixed>: 16:16
+  line 168, col 6 to line 168, col 26 of module NoKingFixed: 33948
+  |line 168, col 6 to line 168, col 10 of module NoKingFixed: 33932
+  line 169, col 6 to line 169, col 21 of module NoKingFixed: 16
+  |line 169, col 6 to line 169, col 10 of module NoKingFixed: 76
+  |line 169, col 14 to line 169, col 21 of module NoKingFixed: 76
+  line 170, col 6 to line 170, col 22 of module NoKingFixed: 16
+  line 171, col 6 to line 171, col 25 of module NoKingFixed: 16
+  line 172, col 6 to line 172, col 29 of module NoKingFixed: 16
+  line 173, col 6 to line 177, col 87 of module NoKingFixed: 16
+<SubmitFake line 179, col 1 to line 179, col 10 of module NoKingFixed>: 16:16
+  line 180, col 6 to line 180, col 26 of module NoKingFixed: 33948
+  |line 180, col 6 to line 180, col 10 of module NoKingFixed: 33932
+  line 181, col 6 to line 181, col 21 of module NoKingFixed: 16
+  |line 181, col 6 to line 181, col 10 of module NoKingFixed: 76
+  |line 181, col 14 to line 181, col 21 of module NoKingFixed: 76
+  line 182, col 6 to line 182, col 22 of module NoKingFixed: 16
+  line 183, col 6 to line 183, col 25 of module NoKingFixed: 16
+  line 184, col 6 to line 184, col 30 of module NoKingFixed: 16
+  line 185, col 6 to line 189, col 87 of module NoKingFixed: 16
+<TimeoutInProgress line 191, col 1 to line 191, col 17 of module NoKingFixed>: 0:60
+  line 192, col 6 to line 192, col 26 of module NoKingFixed: 33992
+  |line 192, col 6 to line 192, col 10 of module NoKingFixed: 33932
+  line 193, col 6 to line 193, col 22 of module NoKingFixed: 60
+  |line 193, col 6 to line 193, col 10 of module NoKingFixed: 76
+  |line 193, col 15 to line 193, col 22 of module NoKingFixed: 76
+  line 194, col 6 to line 194, col 23 of module NoKingFixed: 60
+  line 195, col 6 to line 195, col 41 of module NoKingFixed: 60
+  line 196, col 6 to line 196, col 44 of module NoKingFixed: 60
+  line 197, col 6 to line 197, col 21 of module NoKingFixed: 60
+  line 198, col 6 to line 198, col 22 of module NoKingFixed: 60
+  line 199, col 6 to line 199, col 37 of module NoKingFixed: 60
+  line 200, col 6 to line 203, col 81 of module NoKingFixed: 60
+<Confirm line 205, col 1 to line 205, col 7 of module NoKingFixed>: 16:16
+  line 206, col 6 to line 206, col 21 of module NoKingFixed: 33948
+  |line 206, col 6 to line 206, col 10 of module NoKingFixed: 33932
+  line 207, col 6 to line 207, col 35 of module NoKingFixed: 16
+  |line 207, col 6 to line 207, col 10 of module NoKingFixed: 560
+  |line 207, col 14 to line 207, col 35 of module NoKingFixed: 560
+  line 208, col 6 to line 208, col 24 of module NoKingFixed: 80
+  |line 208, col 6 to line 208, col 17 of module NoKingFixed: 64
+  |line 208, col 21 to line 208, col 24 of module NoKingFixed: 64
+  line 209, col 6 to line 209, col 28 of module NoKingFixed: 48
+  |line 209, col 6 to line 209, col 21 of module NoKingFixed: 32
+  |line 209, col 25 to line 209, col 28 of module NoKingFixed: 32
+  line 210, col 6 to line 210, col 22 of module NoKingFixed: 16
+  line 211, col 6 to line 211, col 62 of module NoKingFixed: 16
+  line 212, col 6 to line 212, col 45 of module NoKingFixed: 16
+  line 213, col 6 to line 213, col 21 of module NoKingFixed: 16
+  line 214, col 6 to line 214, col 22 of module NoKingFixed: 16
+  line 215, col 6 to line 215, col 37 of module NoKingFixed: 16
+  line 216, col 6 to line 219, col 74 of module NoKingFixed: 16
+<TimeoutReview line 221, col 1 to line 221, col 13 of module NoKingFixed>: 496:496
+  line 222, col 6 to line 222, col 21 of module NoKingFixed: 34428
+  |line 222, col 6 to line 222, col 10 of module NoKingFixed: 33932
+  line 223, col 6 to line 223, col 36 of module NoKingFixed: 496
+  |line 223, col 6 to line 223, col 10 of module NoKingFixed: 560
+  |line 223, col 15 to line 223, col 36 of module NoKingFixed: 560
+  line 224, col 6 to line 224, col 22 of module NoKingFixed: 496
+  line 225, col 6 to line 225, col 62 of module NoKingFixed: 496
+  line 226, col 6 to line 226, col 45 of module NoKingFixed: 496
+  line 227, col 6 to line 227, col 21 of module NoKingFixed: 496
+  line 228, col 6 to line 228, col 22 of module NoKingFixed: 496
+  line 229, col 6 to line 229, col 37 of module NoKingFixed: 496
+  line 230, col 6 to line 233, col 74 of module NoKingFixed: 496
+<OpenDispute line 235, col 1 to line 235, col 11 of module NoKingFixed>: 48:64
+  line 236, col 6 to line 236, col 21 of module NoKingFixed: 33980
+  |line 236, col 6 to line 236, col 10 of module NoKingFixed: 33932
+  line 237, col 6 to line 237, col 35 of module NoKingFixed: 48
+  |line 237, col 6 to line 237, col 10 of module NoKingFixed: 560
+  |line 237, col 14 to line 237, col 35 of module NoKingFixed: 560
+  line 238, col 7 to line 238, col 23 of module NoKingFixed: 96
+  |line 238, col 8 to line 238, col 23 of module NoKingFixed: 64
+  line 238, col 28 to line 238, col 40 of module NoKingFixed: 96
+  |line 238, col 29 to line 238, col 40 of module NoKingFixed: 64
+  line 239, col 6 to line 239, col 23 of module NoKingFixed: 64
+  line 240, col 6 to line 240, col 28 of module NoKingFixed: 64
+  line 241, col 6 to line 241, col 15 of module NoKingFixed: 64
+  line 242, col 6 to line 242, col 26 of module NoKingFixed: 64
+  line 243, col 6 to line 243, col 19 of module NoKingFixed: 64
+  line 244, col 6 to line 244, col 16 of module NoKingFixed: 64
+  line 245, col 6 to line 245, col 16 of module NoKingFixed: 64
+  line 246, col 6 to line 246, col 22 of module NoKingFixed: 64
+  line 247, col 6 to line 247, col 22 of module NoKingFixed: 64
+  line 248, col 6 to line 248, col 34 of module NoKingFixed: 64
+  line 249, col 6 to line 249, col 36 of module NoKingFixed: 64
+  line 250, col 6 to line 253, col 72 of module NoKingFixed: 64
+<FormPanel line 255, col 1 to line 255, col 9 of module NoKingFixed>: 625:672
+  line 256, col 6 to line 256, col 22 of module NoKingFixed: 34604
+  |line 256, col 6 to line 256, col 10 of module NoKingFixed: 33932
+  line 257, col 6 to line 257, col 25 of module NoKingFixed: 16296
+  |line 257, col 6 to line 257, col 17 of module NoKingFixed: 15624
+  |line 257, col 21 to line 257, col 25 of module NoKingFixed: 15624
+  line 258, col 6 to line 258, col 27 of module NoKingFixed: 3504
+  |line 258, col 6 to line 258, col 20 of module NoKingFixed: 2832
+  |line 258, col 24 to line 258, col 27 of module NoKingFixed: 2832
+  line 259, col 6 to line 259, col 49 of module NoKingFixed: 672
+  |line 259, col 6 to line 259, col 10 of module NoKingFixed: 2424
+  |line 259, col 14 to line 259, col 49 of module NoKingFixed: 2424
+  line 260, col 6 to line 260, col 25 of module NoKingFixed: 672
+  line 261, col 6 to line 261, col 46 of module NoKingFixed: 672
+  line 262, col 6 to line 262, col 62 of module NoKingFixed: 672
+  line 263, col 6 to line 267, col 71 of module NoKingFixed: 672
+<CastVotes line 269, col 1 to line 269, col 9 of module NoKingFixed>: 3306:3360
+  line 270, col 6 to line 270, col 22 of module NoKingFixed: 34268
+  |line 270, col 6 to line 270, col 10 of module NoKingFixed: 33932
+  line 271, col 6 to line 271, col 24 of module NoKingFixed: 15960
+  |line 271, col 6 to line 271, col 17 of module NoKingFixed: 15624
+  |line 271, col 21 to line 271, col 24 of module NoKingFixed: 15624
+  line 272, col 6 to line 272, col 18 of module NoKingFixed: 13128
+  |line 272, col 6 to line 272, col 10 of module NoKingFixed: 12792
+  |line 272, col 14 to line 272, col 18 of module NoKingFixed: 12792
+  line 273, col 6 to line 273, col 41 of module NoKingFixed: 336
+  |line 273, col 6 to line 273, col 10 of module NoKingFixed: 2424
+  |line 273, col 15 to line 273, col 41 of module NoKingFixed: 2424
+  line 274, col 6 to line 274, col 49 of module NoKingFixed: 336
+  |line 274, col 6 to line 274, col 10 of module NoKingFixed: 2088
+  |line 274, col 14 to line 274, col 49 of module NoKingFixed: 2088
+  line 276, col 11 to line 276, col 36 of module NoKingFixed: 24864
+  |line 276, col 11 to line 276, col 24 of module NoKingFixed: 21504
+  |line 276, col 28 to line 276, col 36 of module NoKingFixed: 21504
+  line 277, col 11 to line 277, col 22 of module NoKingFixed: 3360
+  line 278, col 11 to line 278, col 22 of module NoKingFixed: 3360
+  line 279, col 11 to line 279, col 30 of module NoKingFixed: 3360
+  line 280, col 11 to line 280, col 23 of module NoKingFixed: 3360
+  line 281, col 11 to line 283, col 37 of module NoKingFixed: 3360
+  |line 281, col 22 to line 283, col 37 of module NoKingFixed: 3360
+  ||line 281, col 26 to line 281, col 43 of module NoKingFixed: 3360
+  ||line 282, col 27 to line 283, col 37 of module NoKingFixed: 2352
+  line 275, col 26 to line 275, col 37 of module NoKingFixed: 336
+  line 284, col 6 to line 287, col 87 of module NoKingFixed: 3360
+<DisputeFallbackTimeout line 290, col 1 to line 290, col 22 of module NoKingFixed>: 7944:12888
+  line 291, col 6 to line 291, col 22 of module NoKingFixed: 44756
+  |line 291, col 6 to line 291, col 10 of module NoKingFixed: 33932
+  line 292, col 6 to line 292, col 50 of module NoKingFixed: 10824
+  |line 292, col 6 to line 292, col 10 of module NoKingFixed: 15624
+  |line 292, col 15 to line 292, col 50 of module NoKingFixed: 15624
+  line 293, col 7 to line 293, col 19 of module NoKingFixed: 12888
+  |line 293, col 8 to line 293, col 19 of module NoKingFixed: 10824
+  line 293, col 24 to line 293, col 29 of module NoKingFixed: 14640
+  |line 293, col 25 to line 293, col 29 of module NoKingFixed: 10824
+  line 293, col 34 to line 293, col 54 of module NoKingFixed: 17832
+  |line 293, col 34 to line 293, col 40 of module NoKingFixed: 10824
+  line 294, col 6 to line 294, col 24 of module NoKingFixed: 12888
+  line 295, col 6 to line 295, col 26 of module NoKingFixed: 12888
+  line 296, col 6 to line 296, col 37 of module NoKingFixed: 12888
+  line 297, col 6 to line 297, col 89 of module NoKingFixed: 12888
+  |line 297, col 14 to line 297, col 89 of module NoKingFixed: 12888
+  ||line 297, col 14 to line 297, col 47 of module NoKingFixed: 12888
+  ||line 297, col 52 to line 297, col 88 of module NoKingFixed: 12888
+  |||line 297, col 55 to line 297, col 63 of module NoKingFixed: 12888
+  |||line 297, col 70 to line 297, col 81 of module NoKingFixed: 10080
+  line 298, col 6 to line 298, col 32 of module NoKingFixed: 12888
+  line 299, col 6 to line 299, col 38 of module NoKingFixed: 12888
+  line 300, col 6 to line 300, col 21 of module NoKingFixed: 12888
+  line 301, col 6 to line 301, col 22 of module NoKingFixed: 12888
+  line 302, col 6 to line 302, col 23 of module NoKingFixed: 12888
+  line 303, col 6 to line 303, col 22 of module NoKingFixed: 12888
+  line 304, col 6 to line 304, col 24 of module NoKingFixed: 12888
+  line 305, col 6 to line 307, col 60 of module NoKingFixed: 12888
+<ResolveToAppealable line 310, col 1 to line 310, col 19 of module NoKingFixed>: 288:288
+  line 311, col 6 to line 311, col 22 of module NoKingFixed: 34220
+  |line 311, col 6 to line 311, col 10 of module NoKingFixed: 33932
+  line 312, col 6 to line 312, col 14 of module NoKingFixed: 15912
+  |line 312, col 6 to line 312, col 10 of module NoKingFixed: 15624
+  line 313, col 6 to line 313, col 17 of module NoKingFixed: 3240
+  |line 313, col 6 to line 313, col 10 of module NoKingFixed: 2952
+  |line 313, col 14 to line 313, col 17 of module NoKingFixed: 2952
+  line 314, col 6 to line 314, col 35 of module NoKingFixed: 2016
+  |line 314, col 6 to line 314, col 12 of module NoKingFixed: 1728
+  |line 314, col 18 to line 314, col 35 of module NoKingFixed: 1728
+  line 315, col 6 to line 315, col 26 of module NoKingFixed: 288
+  line 316, col 6 to line 316, col 26 of module NoKingFixed: 288
+  line 317, col 6 to line 321, col 87 of module NoKingFixed: 288
+<Appeal line 324, col 1 to line 324, col 6 of module NoKingFixed>: 144:576
+  line 325, col 6 to line 325, col 25 of module NoKingFixed: 34508
+  |line 325, col 6 to line 325, col 10 of module NoKingFixed: 33932
+  line 326, col 6 to line 326, col 14 of module NoKingFixed: 4752
+  |line 326, col 6 to line 326, col 10 of module NoKingFixed: 4176
+  line 327, col 6 to line 327, col 36 of module NoKingFixed: 576
+  |line 327, col 6 to line 327, col 10 of module NoKingFixed: 4176
+  |line 327, col 14 to line 327, col 36 of module NoKingFixed: 4176
+  line 328, col 6 to line 328, col 23 of module NoKingFixed: 576
+  line 329, col 6 to line 329, col 15 of module NoKingFixed: 576
+  line 330, col 6 to line 330, col 28 of module NoKingFixed: 576
+  line 331, col 6 to line 331, col 26 of module NoKingFixed: 576
+  line 332, col 6 to line 332, col 19 of module NoKingFixed: 576
+  line 333, col 6 to line 333, col 16 of module NoKingFixed: 576
+  line 334, col 6 to line 334, col 16 of module NoKingFixed: 576
+  line 335, col 6 to line 335, col 22 of module NoKingFixed: 576
+  line 336, col 6 to line 336, col 22 of module NoKingFixed: 576
+  line 337, col 9 to line 337, col 25 of module NoKingFixed: 576
+  line 338, col 11 to line 339, col 25 of module NoKingFixed: 288
+  line 340, col 11 to line 341, col 25 of module NoKingFixed: 288
+  line 342, col 6 to line 342, col 34 of module NoKingFixed: 576
+  line 343, col 6 to line 345, col 94 of module NoKingFixed: 576
+<FinalizeAppealWindow line 348, col 1 to line 348, col 20 of module NoKingFixed>: 3600:3600
+  line 349, col 6 to line 349, col 25 of module NoKingFixed: 37532
+  |line 349, col 6 to line 349, col 10 of module NoKingFixed: 33932
+  line 350, col 6 to line 350, col 37 of module NoKingFixed: 3600
+  |line 350, col 6 to line 350, col 10 of module NoKingFixed: 4176
+  |line 350, col 15 to line 350, col 37 of module NoKingFixed: 4176
+  line 351, col 6 to line 351, col 24 of module NoKingFixed: 3600
+  line 352, col 6 to line 352, col 37 of module NoKingFixed: 3600
+  line 357, col 9 to line 357, col 25 of module NoKingFixed: 3600
+  line 358, col 11 to line 361, col 63 of module NoKingFixed: 1800
+  line 362, col 11 to line 365, col 76 of module NoKingFixed: 1800
+  line 366, col 6 to line 366, col 21 of module NoKingFixed: 3600
+  line 367, col 6 to line 367, col 22 of module NoKingFixed: 3600
+  line 368, col 6 to line 368, col 23 of module NoKingFixed: 3600
+  line 369, col 6 to line 369, col 22 of module NoKingFixed: 3600
+  line 370, col 6 to line 370, col 24 of module NoKingFixed: 3600
+  line 371, col 6 to line 373, col 47 of module NoKingFixed: 3600
+<FinalizeRound2 line 375, col 1 to line 375, col 14 of module NoKingFixed>: 1152:1728
+  line 376, col 6 to line 376, col 22 of module NoKingFixed: 35660
+  |line 376, col 6 to line 376, col 10 of module NoKingFixed: 33932
+  line 377, col 6 to line 377, col 14 of module NoKingFixed: 17352
+  |line 377, col 6 to line 377, col 10 of module NoKingFixed: 15624
+  line 378, col 6 to line 378, col 17 of module NoKingFixed: 14400
+  |line 378, col 6 to line 378, col 10 of module NoKingFixed: 12672
+  |line 378, col 14 to line 378, col 17 of module NoKingFixed: 12672
+  line 379, col 6 to line 379, col 35 of module NoKingFixed: 10368
+  |line 379, col 6 to line 379, col 12 of module NoKingFixed: 8640
+  |line 379, col 18 to line 379, col 35 of module NoKingFixed: 8640
+  line 380, col 6 to line 380, col 24 of module NoKingFixed: 1728
+  line 381, col 6 to line 381, col 26 of module NoKingFixed: 1728
+  line 382, col 6 to line 382, col 37 of module NoKingFixed: 1728
+  line 387, col 9 to line 387, col 25 of module NoKingFixed: 1728
+  line 388, col 11 to line 391, col 63 of module NoKingFixed: 864
+  line 392, col 11 to line 395, col 76 of module NoKingFixed: 864
+  line 396, col 6 to line 396, col 21 of module NoKingFixed: 1728
+  line 397, col 6 to line 397, col 22 of module NoKingFixed: 1728
+  line 398, col 6 to line 398, col 23 of module NoKingFixed: 1728
+  line 399, col 6 to line 399, col 22 of module NoKingFixed: 1728
+  line 400, col 6 to line 400, col 24 of module NoKingFixed: 1728
+  line 401, col 6 to line 403, col 47 of module NoKingFixed: 1728
+<TerminalStutter line 406, col 1 to line 406, col 15 of module NoKingFixed>: 0:13344
+  line 407, col 6 to line 407, col 48 of module NoKingFixed: 47276
+  |line 407, col 6 to line 407, col 10 of module NoKingFixed: 33932
+  |line 407, col 16 to line 407, col 48 of module NoKingFixed: 33932
+  line 408, col 6 to line 408, col 19 of module NoKingFixed: 13344
+<Inv_Conservation line 436, col 1 to line 436, col 16 of module NoKingFixed>
+  line 437, col 3 to line 438, col 95 of module NoKingFixed: 33932
+<Inv_NonNegativeBalances line 440, col 1 to line 440, col 23 of module NoKingFixed>
+  line 441, col 3 to line 443, col 45 of module NoKingFixed: 33932
+<Inv_NoDoublePayout line 445, col 1 to line 445, col 18 of module NoKingFixed>
+  line 445, col 23 to line 445, col 39 of module NoKingFixed: 33932
+<Inv_NoEscrowLeakInNonTerminal line 447, col 1 to line 447, col 29 of module NoKingFixed>
+  line 448, col 3 to line 449, col 81 of module NoKingFixed: 33932
+  |line 448, col 4 to line 448, col 73 of module NoKingFixed: 33932
+  |line 449, col 9 to line 449, col 80 of module NoKingFixed: 20512
+<Inv_NoZeroVoteWin line 451, col 1 to line 451, col 17 of module NoKingFixed>
+  line 452, col 3 to line 453, col 43 of module NoKingFixed: 33932
+  |line 452, col 4 to line 452, col 73 of module NoKingFixed: 33932
+  ||line 452, col 4 to line 452, col 39 of module NoKingFixed: 33932
+  ||line 452, col 44 to line 452, col 73 of module NoKingFixed: 16872
+  |line 453, col 9 to line 453, col 42 of module NoKingFixed: 8928
+End of statistics.
+54496 states generated, 33932 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 30.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 11 and the 95th percentile is 2).
+Finished in 10s at (2026-11-27 00:23:28)

@@ -1,0 +1,158 @@
+{
+  "seeds": [
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119
+  ],
+  "num_seeds": 20,
+  "exp1_k5_f20": {
+    "k": 5,
+    "k_appeal": 17,
+    "N_pool": 60,
+    "f_mal": 0.2,
+    "r1_wrong_mean": 0.08683333333333333,
+    "r1_wrong_ci95": 0.0053304068725474035,
+    "final_wrong_with_appeal_mean": 0.0001666666666666667,
+    "final_wrong_with_appeal_ci95": 0.0003266666666666667,
+    "appeal_available": true
+  },
+  "exp1_k5_f30": {
+    "k": 5,
+    "k_appeal": 17,
+    "N_pool": 60,
+    "f_mal": 0.3,
+    "r1_wrong_mean": 0.21683333333333335,
+    "r1_wrong_ci95": 0.011281020546094379,
+    "final_wrong_with_appeal_mean": 0.011,
+    "final_wrong_with_appeal_ci95": 0.0023268400880425014,
+    "appeal_available": true
+  },
+  "exp1_k5_f40": {
+    "k": 5,
+    "k_appeal": 17,
+    "N_pool": 60,
+    "f_mal": 0.4,
+    "r1_wrong_mean": 0.3633333333333334,
+    "r1_wrong_ci95": 0.012513373430849217,
+    "final_wrong_with_appeal_mean": 0.088,
+    "final_wrong_with_appeal_ci95": 0.006259379114623493,
+    "appeal_available": true
+  },
+  "exp1_k5_f50": {
+    "k": 5,
+    "k_appeal": 17,
+    "N_pool": 60,
+    "f_mal": 0.5,
+    "r1_wrong_mean": 0.5515,
+    "r1_wrong_ci95": 0.011271058938300488,
+    "final_wrong_with_appeal_mean": 0.3203333333333333,
+    "final_wrong_with_appeal_ci95": 0.013371719830600332,
+    "appeal_available": true
+  },
+  "exp1_k7_f30_blocked_appeal": {
+    "k": 7,
+    "k_appeal": 23,
+    "N_pool": 60,
+    "f_mal": 0.3,
+    "r1_wrong_mean": 0.16849999999999998,
+    "r1_wrong_ci95": 0.007881083874755786,
+    "final_wrong_with_appeal_mean": 0.16849999999999998,
+    "final_wrong_with_appeal_ci95": 0.007881083874755786,
+    "appeal_available": false
+  },
+  "exp2_M20": [
+    {
+      "scheme": "Uniform + Commit-Reveal",
+      "wrong_rate_mean": 0.25283333333333335,
+      "wrong_rate_ci95": 0.012133045205755736
+    },
+    {
+      "scheme": "Uniform + Open Voting (Herding 60%)",
+      "wrong_rate_mean": 0.3926666666666666,
+      "wrong_rate_ci95": 0.01462895502577675
+    },
+    {
+      "scheme": "Reputation-Weighted + Commit-Reveal",
+      "wrong_rate_mean": 0.021333333333333336,
+      "wrong_rate_ci95": 0.0035278726422756476
+    },
+    {
+      "scheme": "Stake-Weighted (Low-Stake Sybils) + CR",
+      "wrong_rate_mean": 0.007166666666666667,
+      "wrong_rate_ci95": 0.0024753715534208964
+    }
+  ],
+  "exp3_summary": [
+    {
+      "false_dispute_rate": 0.02,
+      "buyer_net_ev_per_false_dispute_mean": 34.810974505015636,
+      "buyer_net_ev_ci95": 12.314701978029078,
+      "keeper_pool_deficit_1000_deals_mean": 31.52771962558095,
+      "keeper_pool_deficit_ci95": 4.766754381342074,
+      "abstain_default_wrong_frac_mean": 0.24913589932815614,
+      "abstain_default_wrong_frac_ci95": 0.05067251090658315
+    },
+    {
+      "false_dispute_rate": 0.05,
+      "buyer_net_ev_per_false_dispute_mean": 29.33611030460877,
+      "buyer_net_ev_ci95": 4.769468993788847,
+      "keeper_pool_deficit_1000_deals_mean": 31.209404643067153,
+      "keeper_pool_deficit_ci95": 4.196915504873646,
+      "abstain_default_wrong_frac_mean": 0.217368932472439,
+      "abstain_default_wrong_frac_ci95": 0.025270005455455748
+    },
+    {
+      "false_dispute_rate": 0.1,
+      "buyer_net_ev_per_false_dispute_mean": 34.92562306937686,
+      "buyer_net_ev_ci95": 4.521088882618981,
+      "keeper_pool_deficit_1000_deals_mean": 29.003476941030783,
+      "keeper_pool_deficit_ci95": 3.781880099335005,
+      "abstain_default_wrong_frac_mean": 0.22936388112087372,
+      "abstain_default_wrong_frac_ci95": 0.019777374988718146
+    },
+    {
+      "false_dispute_rate": 0.2,
+      "buyer_net_ev_per_false_dispute_mean": 35.10223538907286,
+      "buyer_net_ev_ci95": 2.2198377089293744,
+      "keeper_pool_deficit_1000_deals_mean": 20.175102102460293,
+      "keeper_pool_deficit_ci95": 4.007948288788193,
+      "abstain_default_wrong_frac_mean": 0.22889900714552805,
+      "abstain_default_wrong_frac_ci95": 0.013897630984013823
+    },
+    {
+      "false_dispute_rate": 0.3,
+      "buyer_net_ev_per_false_dispute_mean": 35.782264203666756,
+      "buyer_net_ev_ci95": 3.7072440164382945,
+      "keeper_pool_deficit_1000_deals_mean": 16.145946730472556,
+      "keeper_pool_deficit_ci95": 3.6671918772871988,
+      "abstain_default_wrong_frac_mean": 0.23987036122685562,
+      "abstain_default_wrong_frac_ci95": 0.01213509872578461
+    },
+    {
+      "false_dispute_rate": 0.5,
+      "buyer_net_ev_per_false_dispute_mean": 36.44097768800092,
+      "buyer_net_ev_ci95": 1.8948575507589747,
+      "keeper_pool_deficit_1000_deals_mean": 5.814565507044831,
+      "keeper_pool_deficit_ci95": 3.2964956435624293,
+      "abstain_default_wrong_frac_mean": 0.23442315207379472,
+      "abstain_default_wrong_frac_ci95": 0.00876240083243094
+    }
+  ]
+}

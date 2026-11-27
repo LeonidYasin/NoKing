@@ -1,0 +1,198 @@
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Warning: Please run the Java VM which executes TLC with a throughput optimized garbage collector by passing the "-XX:+UseParallelGC" property.
+(Use the -nowarning option to disable this warning.)
+Running breadth-first search Model-Checking with fp 80 and seed 6509076311051134623 with 2 workers on 2 cores with 2914MB heap and 64MB offheap memory [pid: 4987] (Linux 6.2.1-PRoot-Distro aarch64, Debian 17.0.21.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file /workspace/NoKing/verification/01_fsm/NoKingLiteral.tla
+Parsing file /tmp/Integers.tla
+Parsing file /tmp/FiniteSets.tla
+Parsing file /tmp/Naturals.tla
+Parsing file /tmp/Sequences.tla
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module NoKingLiteral
+Starting... (2026-11-27 00:21:06)
+Computing initial states...
+Computed 2 initial states...
+Finished computing initial states: 4 distinct states generated at 2026-11-27 00:21:07.
+Error: Invariant Inv_NoDeadlineRace is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ balA = 200
+/\ balB = 200
+/\ panel_formed = FALSE
+/\ doublePayoutErr = FALSE
+/\ dispute_open_t = -1
+/\ votesAbstain = 0
+/\ balArb = 100
+/\ state = "DRAFT"
+/\ balTreasury = 0
+/\ escrowBuyer = 0
+/\ pool_sufficient = FALSE
+/\ t_now = 0
+/\ payout_count = 0
+/\ seller_delivered = FALSE
+/\ escrowAppeal = 0
+/\ submit_time = -1
+/\ escrowSeller = 0
+/\ escrowDispute = 0
+/\ trappedFunds = 0
+/\ votesA = 0
+/\ votesB = 0
+/\ voted = FALSE
+/\ buyer_honest = FALSE
+/\ resolve_time = -1
+/\ round = 0
+/\ burnedFunds = 0
+/\ escrowArbStake = 0
+
+State 2: <Accept line 127, col 3 to line 140, col 75 of module NoKingLiteral>
+/\ balA = 190
+/\ balB = 100
+/\ panel_formed = FALSE
+/\ doublePayoutErr = FALSE
+/\ dispute_open_t = -1
+/\ votesAbstain = 0
+/\ balArb = 100
+/\ state = "LOCKED"
+/\ balTreasury = 0
+/\ escrowBuyer = 100
+/\ pool_sufficient = FALSE
+/\ t_now = 0
+/\ payout_count = 0
+/\ seller_delivered = FALSE
+/\ escrowAppeal = 0
+/\ submit_time = -1
+/\ escrowSeller = 10
+/\ escrowDispute = 0
+/\ trappedFunds = 0
+/\ votesA = 0
+/\ votesB = 0
+/\ voted = FALSE
+/\ buyer_honest = FALSE
+/\ resolve_time = -1
+/\ round = 0
+/\ burnedFunds = 0
+/\ escrowArbStake = 0
+
+State 3: <Start line 174, col 3 to line 181, col 75 of module NoKingLiteral>
+/\ balA = 190
+/\ balB = 100
+/\ panel_formed = FALSE
+/\ doublePayoutErr = FALSE
+/\ dispute_open_t = -1
+/\ votesAbstain = 0
+/\ balArb = 100
+/\ state = "IN_PROGRESS"
+/\ balTreasury = 0
+/\ escrowBuyer = 100
+/\ pool_sufficient = FALSE
+/\ t_now = 0
+/\ payout_count = 0
+/\ seller_delivered = FALSE
+/\ escrowAppeal = 0
+/\ submit_time = -1
+/\ escrowSeller = 10
+/\ escrowDispute = 0
+/\ trappedFunds = 0
+/\ votesA = 0
+/\ votesB = 0
+/\ voted = FALSE
+/\ buyer_honest = FALSE
+/\ resolve_time = -1
+/\ round = 0
+/\ burnedFunds = 0
+/\ escrowArbStake = 0
+
+State 4: <SubmitHonest line 201, col 3 to line 210, col 75 of module NoKingLiteral>
+/\ balA = 190
+/\ balB = 100
+/\ panel_formed = FALSE
+/\ doublePayoutErr = FALSE
+/\ dispute_open_t = -1
+/\ votesAbstain = 0
+/\ balArb = 100
+/\ state = "REVIEW"
+/\ balTreasury = 0
+/\ escrowBuyer = 100
+/\ pool_sufficient = FALSE
+/\ t_now = 0
+/\ payout_count = 0
+/\ seller_delivered = TRUE
+/\ escrowAppeal = 0
+/\ submit_time = 0
+/\ escrowSeller = 10
+/\ escrowDispute = 0
+/\ trappedFunds = 0
+/\ votesA = 0
+/\ votesB = 0
+/\ voted = FALSE
+/\ buyer_honest = FALSE
+/\ resolve_time = -1
+/\ round = 0
+/\ burnedFunds = 0
+/\ escrowArbStake = 0
+
+State 5: <Tick line 116, col 3 to line 123, col 75 of module NoKingLiteral>
+/\ balA = 190
+/\ balB = 100
+/\ panel_formed = FALSE
+/\ doublePayoutErr = FALSE
+/\ dispute_open_t = -1
+/\ votesAbstain = 0
+/\ balArb = 100
+/\ state = "REVIEW"
+/\ balTreasury = 0
+/\ escrowBuyer = 100
+/\ pool_sufficient = FALSE
+/\ t_now = 1
+/\ payout_count = 0
+/\ seller_delivered = TRUE
+/\ escrowAppeal = 0
+/\ submit_time = 0
+/\ escrowSeller = 10
+/\ escrowDispute = 0
+/\ trappedFunds = 0
+/\ votesA = 0
+/\ votesB = 0
+/\ voted = FALSE
+/\ buyer_honest = FALSE
+/\ resolve_time = -1
+/\ round = 0
+/\ burnedFunds = 0
+/\ escrowArbStake = 0
+
+State 6: <Tick line 116, col 3 to line 123, col 75 of module NoKingLiteral>
+/\ balA = 190
+/\ balB = 100
+/\ panel_formed = FALSE
+/\ doublePayoutErr = FALSE
+/\ dispute_open_t = -1
+/\ votesAbstain = 0
+/\ balArb = 100
+/\ state = "REVIEW"
+/\ balTreasury = 0
+/\ escrowBuyer = 100
+/\ pool_sufficient = FALSE
+/\ t_now = 2
+/\ payout_count = 0
+/\ seller_delivered = TRUE
+/\ escrowAppeal = 0
+/\ submit_time = 0
+/\ escrowSeller = 10
+/\ escrowDispute = 0
+/\ trappedFunds = 0
+/\ votesA = 0
+/\ votesB = 0
+/\ voted = FALSE
+/\ buyer_honest = FALSE
+/\ resolve_time = -1
+/\ round = 0
+/\ burnedFunds = 0
+/\ escrowArbStake = 0
+
+157 states generated, 108 distinct states found, 42 states left on queue.
+The depth of the complete state graph search is 6.
+The average outdegree of the complete state graph is 2 (minimum is 0, the maximum 3 and the 95th percentile is 3).
+Finished in 02s at (2026-11-27 00:21:07)

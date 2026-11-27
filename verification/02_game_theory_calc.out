@@ -1,0 +1,62 @@
+=== 1. ASYMMETRIC FOCAL THRESHOLD (Sec 5.5 FOR_A vs FOR_B payout asymmetry) ===
+V=  100 USDC, D_disp=   5.0, R_arb= 0.10, S_arb= 10.0 => p* = 0.3786 (bias = +0.1214)
+V=  100 USDC, D_disp=   5.0, R_arb= 0.10, S_arb= 50.0 => p* = 0.4690 (bias = +0.0310)
+V=  100 USDC, D_disp=   5.0, R_arb= 0.10, S_arb=100.0 => p* = 0.4839 (bias = +0.0161)
+V= 1000 USDC, D_disp=  50.0, R_arb= 1.00, S_arb= 10.0 => p* = 0.1479 (bias = +0.3521)
+V= 1000 USDC, D_disp=  50.0, R_arb= 1.00, S_arb= 50.0 => p* = 0.3092 (bias = +0.1908)
+V= 1000 USDC, D_disp=  50.0, R_arb= 1.00, S_arb=100.0 => p* = 0.3786 (bias = +0.1214)
+V=10000 USDC, D_disp= 500.0, R_arb=10.00, S_arb= 10.0 => p* = 0.0652 (bias = +0.4348)
+V=10000 USDC, D_disp= 500.0, R_arb=10.00, S_arb= 50.0 => p* = 0.1063 (bias = +0.3937)
+V=10000 USDC, D_disp= 500.0, R_arb=10.00, S_arb=100.0 => p* = 0.1479 (bias = +0.3521)
+
+=== 2. DIRECT BRIBERY VS DEAL VALUE (Round 1 k + Appeal k'=3k+2) ===
+k=5, k'=17, S_arb= 10 => min_bribe_slots=3+9=12, p+eps_realized≈$12, conservative_direct_bribe=$64 (profitable for V > $68)
+k=5, k'=17, S_arb= 50 => min_bribe_slots=3+9=12, p+eps_realized≈$12, conservative_direct_bribe=$274 (profitable for V > $289)
+k=5, k'=17, S_arb=100 => min_bribe_slots=3+9=12, p+eps_realized≈$12, conservative_direct_bribe=$537 (profitable for V > $565)
+k=5, k'=17, S_arb=500 => min_bribe_slots=3+9=12, p+eps_realized≈$12, conservative_direct_bribe=$2637 (profitable for V > $2776)
+k=7, k'=23, S_arb= 10 => min_bribe_slots=4+12=16, p+eps_realized≈$16, conservative_direct_bribe=$86 (profitable for V > $91)
+k=7, k'=23, S_arb= 50 => min_bribe_slots=4+12=16, p+eps_realized≈$16, conservative_direct_bribe=$366 (profitable for V > $385)
+k=7, k'=23, S_arb=100 => min_bribe_slots=4+12=16, p+eps_realized≈$16, conservative_direct_bribe=$716 (profitable for V > $754)
+k=7, k'=23, S_arb=500 => min_bribe_slots=4+12=16, p+eps_realized≈$16, conservative_direct_bribe=$3516 (profitable for V > $3701)
+
+=== 3. HYPERGEOMETRIC SYBIL/COLLUSION CAPTURE PROBABILITY ===
+
+-- Panel size k = 5 (majority >= 3) --
+N= 15 | f=10%(M=2): 0.0000 | f=20%(M=3): 0.0220 | f=30%(M=4): 0.0769 | f=40%(M=6): 0.2867 | f=50%(M=8): 0.5734
+N= 30 | f=10%(M=3): 0.0025 | f=20%(M=6): 0.0413 | f=30%(M=9): 0.1432 | f=40%(M=12): 0.3043 | f=50%(M=15): 0.5000
+N= 51 | f=10%(M=5): 0.0045 | f=20%(M=10): 0.0457 | f=30%(M=15): 0.1442 | f=40%(M=20): 0.2962 | f=50%(M=26): 0.5192
+N=100 | f=10%(M=10): 0.0066 | f=20%(M=20): 0.0532 | f=30%(M=30): 0.1576 | f=40%(M=40): 0.3139 | f=50%(M=50): 0.5000
+N=300 | f=10%(M=30): 0.0079 | f=20%(M=60): 0.0564 | f=30%(M=90): 0.1613 | f=40%(M=120): 0.3163 | f=50%(M=150): 0.5000
+
+-- Panel size k = 7 (majority >= 4) --
+N= 15 | f=10%(M=2): 0.0000 | f=20%(M=3): 0.0000 | f=30%(M=4): 0.0256 | f=40%(M=6): 0.2308 | f=50%(M=8): 0.5952
+N= 30 | f=10%(M=3): 0.0000 | f=20%(M=6): 0.0157 | f=30%(M=9): 0.0962 | f=40%(M=12): 0.2665 | f=50%(M=15): 0.5000
+N= 51 | f=10%(M=5): 0.0007 | f=20%(M=10): 0.0212 | f=30%(M=15): 0.1021 | f=40%(M=20): 0.2614 | f=50%(M=26): 0.5228
+N=100 | f=10%(M=10): 0.0016 | f=20%(M=20): 0.0281 | f=30%(M=30): 0.1179 | f=40%(M=40): 0.2837 | f=50%(M=50): 0.5000
+N=300 | f=10%(M=30): 0.0023 | f=20%(M=60): 0.0316 | f=30%(M=90): 0.1234 | f=40%(M=120): 0.2878 | f=50%(M=150): 0.5000
+
+-- Panel size k = 17 (majority >= 9) --
+N= 30 | f=10%(M=3): 0.0000 | f=20%(M=6): 0.0000 | f=30%(M=9): 0.0017 | f=40%(M=12): 0.0999 | f=50%(M=15): 0.5000
+N= 51 | f=10%(M=5): 0.0000 | f=20%(M=10): 0.0001 | f=30%(M=15): 0.0121 | f=40%(M=20): 0.1326 | f=50%(M=26): 0.5396
+N=100 | f=10%(M=10): 0.0000 | f=20%(M=20): 0.0008 | f=30%(M=30): 0.0270 | f=40%(M=40): 0.1774 | f=50%(M=50): 0.5000
+N=300 | f=10%(M=30): 0.0000 | f=20%(M=60): 0.0019 | f=30%(M=90): 0.0358 | f=40%(M=120): 0.1923 | f=50%(M=150): 0.5000
+
+=== 4. RATIONAL IGNORANCE BOUND (R_arb + lam*S_arb >= c_e / min(q, 1-q)) ===
+c_e=$ 2.0, prior_q=0.5 => min (R_arb + 0.25*S_arb) >= $  4.00 (if R_arb=$1, need S_arb >= $  12.0)
+c_e=$ 2.0, prior_q=0.7 => min (R_arb + 0.25*S_arb) >= $  6.67 (if R_arb=$1, need S_arb >= $  22.7)
+c_e=$ 2.0, prior_q=0.8 => min (R_arb + 0.25*S_arb) >= $ 10.00 (if R_arb=$1, need S_arb >= $  36.0)
+c_e=$ 2.0, prior_q=0.9 => min (R_arb + 0.25*S_arb) >= $ 20.00 (if R_arb=$1, need S_arb >= $  76.0)
+c_e=$ 5.0, prior_q=0.5 => min (R_arb + 0.25*S_arb) >= $ 10.00 (if R_arb=$1, need S_arb >= $  36.0)
+c_e=$ 5.0, prior_q=0.7 => min (R_arb + 0.25*S_arb) >= $ 16.67 (if R_arb=$1, need S_arb >= $  62.7)
+c_e=$ 5.0, prior_q=0.8 => min (R_arb + 0.25*S_arb) >= $ 25.00 (if R_arb=$1, need S_arb >= $  96.0)
+c_e=$ 5.0, prior_q=0.9 => min (R_arb + 0.25*S_arb) >= $ 50.00 (if R_arb=$1, need S_arb >= $ 196.0)
+c_e=$10.0, prior_q=0.5 => min (R_arb + 0.25*S_arb) >= $ 20.00 (if R_arb=$1, need S_arb >= $  76.0)
+c_e=$10.0, prior_q=0.7 => min (R_arb + 0.25*S_arb) >= $ 33.33 (if R_arb=$1, need S_arb >= $ 129.3)
+c_e=$10.0, prior_q=0.8 => min (R_arb + 0.25*S_arb) >= $ 50.00 (if R_arb=$1, need S_arb >= $ 196.0)
+c_e=$10.0, prior_q=0.9 => min (R_arb + 0.25*S_arb) >= $100.00 (if R_arb=$1, need S_arb >= $ 396.0)
+
+=== 5. SYBIL ARBITRATOR COST (Sec 2.1 + 5.2 + 9) ===
+Per Sybil (v_min=$0.01, 10 deals): locked capital=$10.00, sunk fee+gas≈$0.30
+Pool N_honest=15 + 15 Sybils (f=50%): locked=$150, sunk≈$4.5, P(capture k=5)=0.5000, P(capture k'=17)=0.5000
+Pool N_honest=30 + 30 Sybils (f=50%): locked=$300, sunk≈$9.0, P(capture k=5)=0.5000, P(capture k'=17)=0.5000
+Pool N_honest=50 + 50 Sybils (f=50%): locked=$500, sunk≈$15.0, P(capture k=5)=0.5000, P(capture k'=17)=0.5000
