@@ -608,6 +608,10 @@ body {
     }
 }
 
+.explainer-card--accent .explainer-card__num {
+    background: #0d7a70;
+}
+
 .explainer__verdict {
     margin-top: 24px;
     padding: 16px 20px;
