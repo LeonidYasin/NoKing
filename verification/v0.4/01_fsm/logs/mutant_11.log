@@ -1,0 +1,124 @@
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Warning: Please run the Java VM which executes TLC with a throughput optimized garbage collector by passing the "-XX:+UseParallelGC" property.
+(Use the -nowarning option to disable this warning.)
+Running breadth-first search Model-Checking with fp 91 and seed 6617389867172141415 with 2 workers on 2 cores with 2914MB heap and 64MB offheap memory [pid: 26471] (Linux 6.2.1-PRoot-Distro aarch64, Debian 17.0.21.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file /workspace/NoKing/verification/v0.4/01_fsm/NoKingV04_Mutants.tla
+Parsing file /workspace/NoKing/verification/v0.4/01_fsm/NoKingV04.tla
+Parsing file /tmp/Integers.tla
+Parsing file /tmp/FiniteSets.tla
+Parsing file /tmp/Naturals.tla
+Parsing file /tmp/Sequences.tla
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module NoKingV04
+Semantic processing of module NoKingV04_Mutants
+Starting... (2026-11-27 02:00:43)
+Implied-temporal checking--satisfiability problem has 3 branches.
+Computing initial states...
+Computed 2 initial states...
+Computed 4 initial states...
+Computed 8 initial states...
+Finished computing initial states: 16 distinct states generated at 2026-11-27 02:00:44.
+Error: Invariant Inv_M09CancelGraceAndDelay is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ escrowArbCurr = 0
+/\ r1_verdict = "NONE"
+/\ balKeeper = 0
+/\ balA = 190
+/\ balB = 200
+/\ panel_formed = FALSE
+/\ dispute_open_t = -1
+/\ attempt_open_t = -1
+/\ f4_keeper_paid_dispute = FALSE
+/\ balArb = 400
+/\ state = "DRAFT"
+/\ escrowArbR1 = 0
+/\ esc_level = 0
+/\ f4_review_fee_to_keeper = FALSE
+/\ balTreasury = 0
+/\ escrowBuyer = 0
+/\ cancel_req_t = -1
+/\ t_now = 0
+/\ n04_delay_paid = FALSE
+/\ seats_drawn = 0
+/\ payout_count = 0
+/\ seller_delivered = FALSE
+/\ escrowAppeal = 0
+/\ submit_time = -1
+/\ votesUnrevealed = 0
+/\ escrowSeller = 10
+/\ pool_l2_ok = FALSE
+/\ escrowDispute = 0
+/\ failed_attempts = 0
+/\ deadline_defaults = 0
+/\ tally_sealed = TRUE
+/\ curr_reward = 0
+/\ votesA = 0
+/\ votesB = 0
+/\ committed = FALSE
+/\ voted = FALSE
+/\ buyer_honest = FALSE
+/\ resolve_time = -1
+/\ pool_l1_ok = FALSE
+/\ tally_leaked = FALSE
+/\ round = 0
+/\ verdict = "NONE"
+/\ escrowArbReward = 0
+/\ escReserve = 50
+/\ attempt = 0
+/\ pool_l0_ok = FALSE
+
+State 2: <MutantNext line 322, col 6 to line 322, col 75 of module NoKingV04_Mutants>
+/\ escrowArbCurr = 0
+/\ r1_verdict = "NONE"
+/\ balKeeper = 0
+/\ balA = 200
+/\ balB = 200
+/\ panel_formed = FALSE
+/\ dispute_open_t = -1
+/\ attempt_open_t = -1
+/\ f4_keeper_paid_dispute = FALSE
+/\ balArb = 400
+/\ state = "EXPIRED"
+/\ escrowArbR1 = 0
+/\ esc_level = 0
+/\ f4_review_fee_to_keeper = FALSE
+/\ balTreasury = 0
+/\ escrowBuyer = 0
+/\ cancel_req_t = -1
+/\ t_now = 0
+/\ n04_delay_paid = FALSE
+/\ seats_drawn = 0
+/\ payout_count = 1
+/\ seller_delivered = FALSE
+/\ escrowAppeal = 0
+/\ submit_time = -1
+/\ votesUnrevealed = 0
+/\ escrowSeller = 0
+/\ pool_l2_ok = FALSE
+/\ escrowDispute = 0
+/\ failed_attempts = 0
+/\ deadline_defaults = 0
+/\ tally_sealed = TRUE
+/\ curr_reward = 0
+/\ votesA = 0
+/\ votesB = 0
+/\ committed = FALSE
+/\ voted = FALSE
+/\ buyer_honest = FALSE
+/\ resolve_time = -1
+/\ pool_l1_ok = FALSE
+/\ tally_leaked = FALSE
+/\ round = 0
+/\ verdict = "NONE"
+/\ escrowArbReward = 0
+/\ escReserve = 50
+/\ attempt = 0
+/\ pool_l0_ok = FALSE
+
+22 states generated, 22 distinct states found, 18 states left on queue.
+The depth of the complete state graph search is 2.
+Finished in 02s at (2026-11-27 02:00:44)

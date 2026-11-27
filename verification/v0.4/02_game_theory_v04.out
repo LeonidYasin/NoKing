@@ -1,0 +1,44 @@
+
+==============================================================================
+X3.1: F1 ESCALATION INCENTIVES (4 PARTY TYPES + ARBITRATOR FARMING)
+==============================================================================
+Delay cost over 6.0d at 8.0% APR: 0.1315% V
+1. Honest Seller   (omega=A): honest=+1.0900V, F1_split=+0.5487V, gain=-0.5413V
+2. Honest Buyer    (omega=B): honest=+1.1000V, F1_split=+0.4487V, gain=-0.6513V
+3. Dishonest Buyer (omega=A): honest=-0.0500V, F1_split=+0.4487V, gross_gain=+0.4987V
+4. Dishonest Seller(omega=B): honest=+0.0000V, F1_split=+0.5487V, gross_gain=+0.5487V
+  Tier 1 (3 levels x 2 att = 6): break/att=3, C_sab/V(uncapped)=0.90V, C_sab_max=$9,000, deters +0.55V up to V=$16,403
+  Tier 2 (3 levels x 2 att = 6): break/att=4, C_sab/V(uncapped)=1.20V, C_sab_max=$12,000, deters +0.55V up to V=$21,870
+  Tier 3 (3 levels x 2 att = 6): break/att=5, C_sab/V(uncapped)=1.50V, C_sab_max=$15,000, deters +0.55V up to V=$27,338
+
+--- X3.1a Arbitrator Reward-Farming Condition ---
+  V=$ 100, S_arb=$   10, N=20: q_redraw=0.250, max safe step DeltaR (if unrev penalty applies) = $  20.00; if decline is UNSLASHED & pool stalls: safe DeltaR = $0.00!
+  V=$ 100, S_arb=$   10, N=40: q_redraw=0.125, max safe step DeltaR (if unrev penalty applies) = $  40.00; if decline is UNSLASHED & pool stalls: safe DeltaR = $0.00!
+  V=$ 100, S_arb=$   10, N=80: q_redraw=0.062, max safe step DeltaR (if unrev penalty applies) = $  80.00; if decline is UNSLASHED & pool stalls: safe DeltaR = $0.00!
+  V=$1000, S_arb=$  100, N=20: q_redraw=0.250, max safe step DeltaR (if unrev penalty applies) = $ 200.00; if decline is UNSLASHED & pool stalls: safe DeltaR = $0.00!
+  V=$1000, S_arb=$  100, N=40: q_redraw=0.125, max safe step DeltaR (if unrev penalty applies) = $ 400.00; if decline is UNSLASHED & pool stalls: safe DeltaR = $0.00!
+  V=$1000, S_arb=$  100, N=80: q_redraw=0.062, max safe step DeltaR (if unrev penalty applies) = $ 800.00; if decline is UNSLASHED & pool stalls: safe DeltaR = $0.00!
+  V=$5000, S_arb=$  500, N=20: q_redraw=0.250, max safe step DeltaR (if unrev penalty applies) = $1000.00; if decline is UNSLASHED & pool stalls: safe DeltaR = $0.00!
+  V=$5000, S_arb=$  500, N=40: q_redraw=0.125, max safe step DeltaR (if unrev penalty applies) = $2000.00; if decline is UNSLASHED & pool stalls: safe DeltaR = $0.00!
+  V=$5000, S_arb=$  500, N=80: q_redraw=0.062, max safe step DeltaR (if unrev penalty applies) = $4000.00; if decline is UNSLASHED & pool stalls: safe DeltaR = $0.00!
+
+==============================================================================
+X3.2: DIRECT BRIBERY & p+eps WITH S_arb_max AND OVERSAMPLE=2x
+==============================================================================
+
+S_arb_max = $500:
+  Tier 1 (k=5,k'=17, 2x minPool=10/34): m1+m2*lam= 5.25, V_safe_max=$   2,625, DarkDAO_escrow=$    4,625, p+eps_actual~=$12
+  Tier 2 (k=7,k'=23, 2x minPool=14/46): m1+m2*lam= 7.00, V_safe_max=$   3,500, DarkDAO_escrow=$    6,375, p+eps_actual~=$16
+  Tier 3 (k=9,k'=29, 2x minPool=18/58): m1+m2*lam= 8.75, V_safe_max=$   4,375, DarkDAO_escrow=$    8,125, p+eps_actual~=$20
+
+S_arb_max = $1,000:
+  Tier 1 (k=5,k'=17, 2x minPool=10/34): m1+m2*lam= 5.25, V_safe_max=$   5,250, DarkDAO_escrow=$    9,250, p+eps_actual~=$12
+  Tier 2 (k=7,k'=23, 2x minPool=14/46): m1+m2*lam= 7.00, V_safe_max=$   7,000, DarkDAO_escrow=$   12,750, p+eps_actual~=$16
+  Tier 3 (k=9,k'=29, 2x minPool=18/58): m1+m2*lam= 8.75, V_safe_max=$   8,750, DarkDAO_escrow=$   16,250, p+eps_actual~=$20
+
+==============================================================================
+X3.3: F3 SEALED TALLY VS LEAKED REDRAW BRIBERY COST
+==============================================================================
+  Prior valid=0, missing=5: worst-case guarantee under F3 needs vB_new >= 3 (cost 3 bribes) vs under leaked v0.3 (0A,0B) only 3 bribes!
+  Prior valid=1, missing=4: worst-case guarantee under F3 needs vB_new >= 3 (cost 3 bribes) vs under leaked v0.3 (0A,1B) only 2 bribes!
+  Prior valid=2, missing=3: worst-case guarantee under F3 needs vB_new >= 3 (cost 3 bribes) vs under leaked v0.3 (0A,2B) only 1 bribes!

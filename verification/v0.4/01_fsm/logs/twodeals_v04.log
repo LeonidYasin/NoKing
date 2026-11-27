@@ -1,0 +1,367 @@
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Warning: Please run the Java VM which executes TLC with a throughput optimized garbage collector by passing the "-XX:+UseParallelGC" property.
+(Use the -nowarning option to disable this warning.)
+Running breadth-first search Model-Checking with fp 20 and seed 6606287309037479518 with 2 workers on 2 cores with 2914MB heap and 64MB offheap memory [pid: 8999] (Linux 6.2.1-PRoot-Distro aarch64, Debian 17.0.21.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file /workspace/NoKing/verification/v0.4/01_fsm/NoKingV04_TwoDeals.tla
+Parsing file /tmp/Integers.tla
+Parsing file /tmp/FiniteSets.tla
+Parsing file /tmp/Naturals.tla
+Parsing file /tmp/Sequences.tla
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module NoKingV04_TwoDeals
+Starting... (2026-11-27 11:40:20)
+Implied-temporal checking--satisfiability problem has 1 branches.
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-11-27 11:40:21.
+Checking temporal properties for the current state space with 2658 total distinct states at (2026-11-27 11:40:24)
+Finished checking temporal properties in 00s at 2026-11-27 11:40:24
+Progress(13) at 2026-11-27 11:40:24: 4,117 states generated (4,117 s/min), 2,736 distinct states found (2,736 ds/min), 1,078 states left on queue.
+Progress(29) at 2026-11-27 11:41:10: 232,854 states generated, 141,314 distinct states found, 0 states left on queue.
+Checking temporal properties for the complete state space with 141314 total distinct states at (2026-11-27 11:41:10)
+Finished checking temporal properties in 08s at 2026-11-27 11:41:19
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = 7.0E-10
+  based on the actual fingerprints:  val = 1.2E-8
+The coverage statistics at 2026-11-27 11:41:19
+<Init line 83, col 1 to line 83, col 4 of module NoKingV04_TwoDeals>: 1:1
+  line 84, col 3 to line 108, col 34 of module NoKingV04_TwoDeals: 1
+<Tick line 110, col 1 to line 110, col 4 of module NoKingV04_TwoDeals>: 40743:61101
+  line 111, col 6 to line 111, col 20 of module NoKingV04_TwoDeals: 61101
+  |line 111, col 6 to line 111, col 10 of module NoKingV04_TwoDeals: 141315
+  |line 111, col 14 to line 111, col 20 of module NoKingV04_TwoDeals: 141315
+  line 112, col 6 to line 112, col 18 of module NoKingV04_TwoDeals: 202416
+  |line 112, col 7 to line 112, col 18 of module NoKingV04_TwoDeals: 141315
+  ||line 81, col 17 to line 81, col 79 of module NoKingV04_TwoDeals: 141315
+  |||line 81, col 34 to line 81, col 79 of module NoKingV04_TwoDeals: 232305
+  |||line 81, col 26 to line 81, col 30 of module NoKingV04_TwoDeals: 141315
+  line 114, col 11 to line 114, col 56 of module NoKingV04_TwoDeals: 289972
+  |line 114, col 13 to line 114, col 55 of module NoKingV04_TwoDeals: 167770
+  ||line 114, col 14 to line 114, col 31 of module NoKingV04_TwoDeals: 167770
+  ||line 114, col 38 to line 114, col 54 of module NoKingV04_TwoDeals: 143
+  line 115, col 11 to line 115, col 57 of module NoKingV04_TwoDeals: 289869
+  |line 115, col 13 to line 115, col 56 of module NoKingV04_TwoDeals: 167667
+  ||line 115, col 14 to line 115, col 32 of module NoKingV04_TwoDeals: 167667
+  ||line 115, col 39 to line 115, col 55 of module NoKingV04_TwoDeals: 585
+  line 116, col 11 to line 116, col 62 of module NoKingV04_TwoDeals: 289611
+  |line 116, col 13 to line 116, col 61 of module NoKingV04_TwoDeals: 167409
+  ||line 116, col 14 to line 116, col 37 of module NoKingV04_TwoDeals: 167409
+  ||line 116, col 44 to line 116, col 60 of module NoKingV04_TwoDeals: 585
+  line 117, col 11 to line 117, col 99 of module NoKingV04_TwoDeals: 289353
+  |line 117, col 13 to line 117, col 98 of module NoKingV04_TwoDeals: 167151
+  ||line 117, col 13 to line 117, col 58 of module NoKingV04_TwoDeals: 167151
+  |||line 117, col 14 to line 117, col 32 of module NoKingV04_TwoDeals: 167151
+  |||line 117, col 39 to line 117, col 57 of module NoKingV04_TwoDeals: 872
+  ||line 117, col 64 to line 117, col 97 of module NoKingV04_TwoDeals: 872
+  line 118, col 11 to line 118, col 105 of module NoKingV04_TwoDeals: 288808
+  |line 118, col 13 to line 118, col 104 of module NoKingV04_TwoDeals: 166606
+  ||line 118, col 13 to line 118, col 63 of module NoKingV04_TwoDeals: 166606
+  |||line 118, col 14 to line 118, col 36 of module NoKingV04_TwoDeals: 166606
+  |||line 118, col 43 to line 118, col 62 of module NoKingV04_TwoDeals: 12698
+  ||line 118, col 69 to line 118, col 103 of module NoKingV04_TwoDeals: 12698
+  line 119, col 11 to line 119, col 111 of module NoKingV04_TwoDeals: 282238
+  |line 119, col 13 to line 119, col 110 of module NoKingV04_TwoDeals: 160036
+  ||line 119, col 13 to line 119, col 62 of module NoKingV04_TwoDeals: 160036
+  |||line 119, col 14 to line 119, col 33 of module NoKingV04_TwoDeals: 160036
+  |||line 119, col 40 to line 119, col 61 of module NoKingV04_TwoDeals: 83026
+  ||line 119, col 68 to line 119, col 109 of module NoKingV04_TwoDeals: 83026
+  line 113, col 15 to line 113, col 19 of module NoKingV04_TwoDeals: 91813
+  line 120, col 6 to line 120, col 23 of module NoKingV04_TwoDeals: 61101
+  line 121, col 6 to line 124, col 78 of module NoKingV04_TwoDeals: 61101
+<Accept line 126, col 1 to line 126, col 9 of module NoKingV04_TwoDeals>: 14:40
+  line 127, col 6 to line 127, col 23 of module NoKingV04_TwoDeals: 282670
+  |line 127, col 6 to line 127, col 13 of module NoKingV04_TwoDeals: 282630
+  line 127, col 28 to line 127, col 43 of module NoKingV04_TwoDeals: 40
+  |line 127, col 28 to line 127, col 32 of module NoKingV04_TwoDeals: 148
+  |line 127, col 36 to line 127, col 43 of module NoKingV04_TwoDeals: 148
+  line 128, col 6 to line 128, col 44 of module NoKingV04_TwoDeals: 40
+  line 129, col 6 to line 129, col 26 of module NoKingV04_TwoDeals: 40
+  line 130, col 6 to line 130, col 44 of module NoKingV04_TwoDeals: 40
+  line 131, col 6 to line 134, col 70 of module NoKingV04_TwoDeals: 40
+<CancelOrTimeoutDraft line 136, col 1 to line 136, col 23 of module NoKingV04_TwoDeals>: 61:108
+  line 137, col 6 to line 137, col 23 of module NoKingV04_TwoDeals: 282738
+  |line 137, col 6 to line 137, col 13 of module NoKingV04_TwoDeals: 282630
+  line 138, col 6 to line 138, col 28 of module NoKingV04_TwoDeals: 108
+  |line 138, col 6 to line 138, col 10 of module NoKingV04_TwoDeals: 148
+  |line 138, col 15 to line 138, col 28 of module NoKingV04_TwoDeals: 148
+  line 139, col 6 to line 139, col 45 of module NoKingV04_TwoDeals: 108
+  line 140, col 6 to line 140, col 30 of module NoKingV04_TwoDeals: 108
+  line 141, col 6 to line 141, col 41 of module NoKingV04_TwoDeals: 108
+  line 142, col 6 to line 142, col 55 of module NoKingV04_TwoDeals: 108
+  line 143, col 6 to line 146, col 69 of module NoKingV04_TwoDeals: 108
+<Start line 148, col 1 to line 148, col 8 of module NoKingV04_TwoDeals>: 109:336
+  line 149, col 6 to line 149, col 24 of module NoKingV04_TwoDeals: 282966
+  |line 149, col 6 to line 149, col 13 of module NoKingV04_TwoDeals: 282630
+  line 149, col 29 to line 149, col 44 of module NoKingV04_TwoDeals: 336
+  |line 149, col 29 to line 149, col 33 of module NoKingV04_TwoDeals: 614
+  |line 149, col 37 to line 149, col 44 of module NoKingV04_TwoDeals: 614
+  line 150, col 6 to line 150, col 49 of module NoKingV04_TwoDeals: 336
+  line 151, col 6 to line 154, col 78 of module NoKingV04_TwoDeals: 336
+<TimeoutSeller line 156, col 1 to line 156, col 16 of module NoKingV04_TwoDeals>: 177:556
+  line 157, col 6 to line 157, col 43 of module NoKingV04_TwoDeals: 283186
+  |line 157, col 6 to line 157, col 13 of module NoKingV04_TwoDeals: 282630
+  |line 157, col 19 to line 157, col 43 of module NoKingV04_TwoDeals: 282630
+  line 157, col 48 to line 157, col 64 of module NoKingV04_TwoDeals: 556
+  |line 157, col 48 to line 157, col 52 of module NoKingV04_TwoDeals: 1228
+  |line 157, col 57 to line 157, col 64 of module NoKingV04_TwoDeals: 1228
+  line 158, col 6 to line 158, col 45 of module NoKingV04_TwoDeals: 556
+  line 159, col 6 to line 159, col 61 of module NoKingV04_TwoDeals: 556
+  line 160, col 6 to line 160, col 53 of module NoKingV04_TwoDeals: 556
+  line 161, col 6 to line 161, col 42 of module NoKingV04_TwoDeals: 556
+  line 162, col 6 to line 162, col 39 of module NoKingV04_TwoDeals: 556
+  line 163, col 6 to line 163, col 39 of module NoKingV04_TwoDeals: 556
+  line 164, col 6 to line 164, col 41 of module NoKingV04_TwoDeals: 556
+  line 165, col 6 to line 165, col 55 of module NoKingV04_TwoDeals: 556
+  line 166, col 6 to line 168, col 61 of module NoKingV04_TwoDeals: 556
+<Submit line 170, col 1 to line 170, col 9 of module NoKingV04_TwoDeals>: 187:336
+  line 171, col 6 to line 171, col 29 of module NoKingV04_TwoDeals: 282966
+  |line 171, col 6 to line 171, col 13 of module NoKingV04_TwoDeals: 282630
+  line 171, col 34 to line 171, col 49 of module NoKingV04_TwoDeals: 336
+  |line 171, col 34 to line 171, col 38 of module NoKingV04_TwoDeals: 614
+  |line 171, col 42 to line 171, col 49 of module NoKingV04_TwoDeals: 614
+  line 172, col 6 to line 172, col 44 of module NoKingV04_TwoDeals: 336
+  line 173, col 6 to line 173, col 53 of module NoKingV04_TwoDeals: 336
+  line 174, col 6 to line 177, col 78 of module NoKingV04_TwoDeals: 336
+<CloseReview line 180, col 1 to line 180, col 14 of module NoKingV04_TwoDeals>: 566:910
+  line 181, col 6 to line 181, col 24 of module NoKingV04_TwoDeals: 283540
+  |line 181, col 6 to line 181, col 13 of module NoKingV04_TwoDeals: 282630
+  line 182, col 6 to line 182, col 44 of module NoKingV04_TwoDeals: 910
+  line 183, col 6 to line 183, col 58 of module NoKingV04_TwoDeals: 910
+  line 184, col 9 to line 184, col 41 of module NoKingV04_TwoDeals: 910
+  line 185, col 11 to line 186, col 35 of module NoKingV04_TwoDeals: 336
+  line 187, col 11 to line 188, col 39 of module NoKingV04_TwoDeals: 574
+  line 189, col 6 to line 189, col 39 of module NoKingV04_TwoDeals: 910
+  line 190, col 6 to line 190, col 41 of module NoKingV04_TwoDeals: 910
+  line 191, col 6 to line 191, col 55 of module NoKingV04_TwoDeals: 910
+  line 192, col 6 to line 194, col 87 of module NoKingV04_TwoDeals: 910
+<OpenDispute line 196, col 1 to line 196, col 14 of module NoKingV04_TwoDeals>: 200:336
+  line 197, col 6 to line 197, col 24 of module NoKingV04_TwoDeals: 282966
+  |line 197, col 6 to line 197, col 13 of module NoKingV04_TwoDeals: 282630
+  line 197, col 29 to line 197, col 61 of module NoKingV04_TwoDeals: 336
+  |line 197, col 29 to line 197, col 33 of module NoKingV04_TwoDeals: 910
+  |line 197, col 37 to line 197, col 61 of module NoKingV04_TwoDeals: 910
+  line 198, col 6 to line 198, col 45 of module NoKingV04_TwoDeals: 336
+  line 199, col 6 to line 199, col 37 of module NoKingV04_TwoDeals: 336
+  line 200, col 6 to line 200, col 45 of module NoKingV04_TwoDeals: 336
+  line 201, col 6 to line 201, col 59 of module NoKingV04_TwoDeals: 336
+  line 202, col 6 to line 202, col 46 of module NoKingV04_TwoDeals: 336
+  line 203, col 6 to line 203, col 34 of module NoKingV04_TwoDeals: 336
+  line 204, col 6 to line 204, col 56 of module NoKingV04_TwoDeals: 336
+  line 205, col 6 to line 205, col 45 of module NoKingV04_TwoDeals: 336
+  line 206, col 6 to line 206, col 53 of module NoKingV04_TwoDeals: 336
+  line 207, col 6 to line 208, col 97 of module NoKingV04_TwoDeals: 336
+<PanelFormAndVote line 211, col 1 to line 211, col 19 of module NoKingV04_TwoDeals>: 31753:37020
+  line 212, col 6 to line 212, col 25 of module NoKingV04_TwoDeals: 301140
+  |line 212, col 6 to line 212, col 13 of module NoKingV04_TwoDeals: 282630
+  line 213, col 6 to line 213, col 24 of module NoKingV04_TwoDeals: 103654
+  |line 213, col 6 to line 213, col 15 of module NoKingV04_TwoDeals: 85144
+  line 214, col 6 to line 214, col 46 of module NoKingV04_TwoDeals: 18510
+  |line 214, col 6 to line 214, col 10 of module NoKingV04_TwoDeals: 33568
+  |line 214, col 14 to line 214, col 46 of module NoKingV04_TwoDeals: 33568
+  line 215, col 6 to line 215, col 24 of module NoKingV04_TwoDeals: 18510
+  |line 215, col 6 to line 215, col 11 of module NoKingV04_TwoDeals: 23726
+  |line 215, col 16 to line 215, col 24 of module NoKingV04_TwoDeals: 23726
+  line 216, col 36 to line 216, col 71 of module NoKingV04_TwoDeals: 37020
+  line 216, col 15 to line 216, col 32 of module NoKingV04_TwoDeals: 18510:55530
+  line 217, col 6 to line 217, col 33 of module NoKingV04_TwoDeals: 37020
+  line 218, col 6 to line 218, col 51 of module NoKingV04_TwoDeals: 37020
+  line 219, col 6 to line 222, col 68 of module NoKingV04_TwoDeals: 37020
+<EscalateDeal line 225, col 1 to line 225, col 15 of module NoKingV04_TwoDeals>: 2075:2660
+  line 226, col 6 to line 226, col 25 of module NoKingV04_TwoDeals: 285290
+  |line 226, col 6 to line 226, col 13 of module NoKingV04_TwoDeals: 282630
+  line 226, col 30 to line 226, col 41 of module NoKingV04_TwoDeals: 87804
+  |line 226, col 30 to line 226, col 37 of module NoKingV04_TwoDeals: 85144
+  line 226, col 46 to line 226, col 61 of module NoKingV04_TwoDeals: 2660
+  |line 226, col 46 to line 226, col 57 of module NoKingV04_TwoDeals: 12480
+  line 227, col 6 to line 227, col 24 of module NoKingV04_TwoDeals: 12098
+  |line 227, col 6 to line 227, col 15 of module NoKingV04_TwoDeals: 9438
+  line 228, col 8 to line 228, col 25 of module NoKingV04_TwoDeals: 848
+  |line 228, col 8 to line 228, col 13 of module NoKingV04_TwoDeals: 4358
+  |line 228, col 17 to line 228, col 25 of module NoKingV04_TwoDeals: 4358
+  line 228, col 30 to line 228, col 70 of module NoKingV04_TwoDeals: 848
+  |line 228, col 30 to line 228, col 34 of module NoKingV04_TwoDeals: 1296
+  |line 228, col 38 to line 228, col 70 of module NoKingV04_TwoDeals: 1296
+  line 229, col 11 to line 229, col 52 of module NoKingV04_TwoDeals: 1812
+  |line 229, col 11 to line 229, col 15 of module NoKingV04_TwoDeals: 4358
+  |line 229, col 20 to line 229, col 52 of module NoKingV04_TwoDeals: 4358
+  line 230, col 6 to line 230, col 49 of module NoKingV04_TwoDeals: 2660
+  line 231, col 6 to line 231, col 40 of module NoKingV04_TwoDeals: 2660
+  line 232, col 6 to line 232, col 52 of module NoKingV04_TwoDeals: 2660
+  line 233, col 6 to line 236, col 69 of module NoKingV04_TwoDeals: 2660
+<ResolveR1 line 238, col 1 to line 238, col 12 of module NoKingV04_TwoDeals>: 5821:6360
+  line 239, col 6 to line 239, col 25 of module NoKingV04_TwoDeals: 288990
+  |line 239, col 6 to line 239, col 13 of module NoKingV04_TwoDeals: 282630
+  line 239, col 30 to line 239, col 41 of module NoKingV04_TwoDeals: 91504
+  |line 239, col 30 to line 239, col 37 of module NoKingV04_TwoDeals: 85144
+  line 239, col 46 to line 239, col 78 of module NoKingV04_TwoDeals: 18840
+  |line 239, col 46 to line 239, col 55 of module NoKingV04_TwoDeals: 12480
+  |line 239, col 61 to line 239, col 78 of module NoKingV04_TwoDeals: 12480
+  line 240, col 6 to line 240, col 48 of module NoKingV04_TwoDeals: 6360
+  line 241, col 6 to line 241, col 55 of module NoKingV04_TwoDeals: 6360
+  line 242, col 6 to line 242, col 56 of module NoKingV04_TwoDeals: 6360
+  line 243, col 6 to line 243, col 49 of module NoKingV04_TwoDeals: 6360
+  line 244, col 6 to line 244, col 43 of module NoKingV04_TwoDeals: 6360
+  line 245, col 6 to line 245, col 34 of module NoKingV04_TwoDeals: 6360
+  line 246, col 6 to line 246, col 41 of module NoKingV04_TwoDeals: 6360
+  line 247, col 6 to line 249, col 63 of module NoKingV04_TwoDeals: 6360
+<Appeal line 251, col 1 to line 251, col 9 of module NoKingV04_TwoDeals>: 5844:6360
+  line 252, col 6 to line 252, col 28 of module NoKingV04_TwoDeals: 288990
+  |line 252, col 6 to line 252, col 13 of module NoKingV04_TwoDeals: 282630
+  line 252, col 33 to line 252, col 44 of module NoKingV04_TwoDeals: 19580
+  |line 252, col 33 to line 252, col 40 of module NoKingV04_TwoDeals: 13220
+  line 252, col 49 to line 252, col 82 of module NoKingV04_TwoDeals: 6360
+  |line 252, col 49 to line 252, col 53 of module NoKingV04_TwoDeals: 13220
+  |line 252, col 57 to line 252, col 82 of module NoKingV04_TwoDeals: 13220
+  line 253, col 6 to line 253, col 45 of module NoKingV04_TwoDeals: 6360
+  line 254, col 6 to line 254, col 37 of module NoKingV04_TwoDeals: 6360
+  line 255, col 6 to line 255, col 45 of module NoKingV04_TwoDeals: 6360
+  line 256, col 6 to line 256, col 59 of module NoKingV04_TwoDeals: 6360
+  line 257, col 6 to line 257, col 46 of module NoKingV04_TwoDeals: 6360
+  line 258, col 9 to line 258, col 31 of module NoKingV04_TwoDeals: 6360
+  line 259, col 11 to line 260, col 25 of module NoKingV04_TwoDeals: 3180
+  line 261, col 11 to line 262, col 25 of module NoKingV04_TwoDeals: 3180
+  line 263, col 6 to line 263, col 53 of module NoKingV04_TwoDeals: 6360
+  line 264, col 6 to line 266, col 69 of module NoKingV04_TwoDeals: 6360
+<FinalizeOrResolveR2 line 268, col 1 to line 268, col 22 of module NoKingV04_TwoDeals (269 8 287 102)>: 5858:6860
+  line 269, col 11 to line 269, col 33 of module NoKingV04_TwoDeals: 289490
+  |line 269, col 11 to line 269, col 18 of module NoKingV04_TwoDeals: 282630
+  line 269, col 38 to line 269, col 72 of module NoKingV04_TwoDeals: 6860
+  |line 269, col 38 to line 269, col 42 of module NoKingV04_TwoDeals: 13220
+  |line 269, col 47 to line 269, col 72 of module NoKingV04_TwoDeals: 13220
+  line 270, col 11 to line 270, col 51 of module NoKingV04_TwoDeals: 6860
+  line 271, col 11 to line 271, col 60 of module NoKingV04_TwoDeals: 6860
+  line 272, col 14 to line 272, col 36 of module NoKingV04_TwoDeals: 6860
+  line 273, col 16 to line 276, col 60 of module NoKingV04_TwoDeals: 3430
+  line 277, col 16 to line 280, col 71 of module NoKingV04_TwoDeals: 3430
+  line 281, col 11 to line 281, col 44 of module NoKingV04_TwoDeals: 6860
+  line 282, col 11 to line 282, col 46 of module NoKingV04_TwoDeals: 6860
+  line 283, col 11 to line 283, col 48 of module NoKingV04_TwoDeals: 6860
+  line 284, col 11 to line 284, col 46 of module NoKingV04_TwoDeals: 6860
+  line 285, col 11 to line 285, col 44 of module NoKingV04_TwoDeals: 6860
+  line 286, col 11 to line 287, col 102 of module NoKingV04_TwoDeals: 6860
+<FinalizeOrResolveR2 line 268, col 1 to line 268, col 22 of module NoKingV04_TwoDeals (288 8 308 95)>: 40463:45216
+  line 288, col 11 to line 288, col 30 of module NoKingV04_TwoDeals: 327846
+  |line 288, col 11 to line 288, col 18 of module NoKingV04_TwoDeals: 282630
+  line 288, col 35 to line 288, col 46 of module NoKingV04_TwoDeals: 130360
+  |line 288, col 35 to line 288, col 42 of module NoKingV04_TwoDeals: 85144
+  line 288, col 51 to line 288, col 83 of module NoKingV04_TwoDeals: 117880
+  |line 288, col 51 to line 288, col 60 of module NoKingV04_TwoDeals: 72664
+  |line 288, col 66 to line 288, col 83 of module NoKingV04_TwoDeals: 72664
+  line 290, col 14 to line 290, col 54 of module NoKingV04_TwoDeals: 45216
+  line 291, col 14 to line 291, col 63 of module NoKingV04_TwoDeals: 45216
+  line 292, col 17 to line 292, col 36 of module NoKingV04_TwoDeals: 45216
+  line 293, col 22 to line 293, col 115 of module NoKingV04_TwoDeals: 22608
+  |line 293, col 30 to line 293, col 115 of module NoKingV04_TwoDeals: 22608
+  ||line 293, col 30 to line 293, col 74 of module NoKingV04_TwoDeals: 22608
+  ||line 293, col 79 to line 293, col 114 of module NoKingV04_TwoDeals: 22608
+  |||line 293, col 82 to line 293, col 91 of module NoKingV04_TwoDeals: 22608
+  |||line 293, col 98 to line 293, col 107 of module NoKingV04_TwoDeals: 11304
+  line 294, col 22 to line 294, col 33 of module NoKingV04_TwoDeals: 22608
+  line 295, col 22 to line 295, col 61 of module NoKingV04_TwoDeals: 22608
+  line 296, col 22 to line 296, col 118 of module NoKingV04_TwoDeals: 22608
+  |line 296, col 32 to line 296, col 118 of module NoKingV04_TwoDeals: 22608
+  ||line 296, col 32 to line 296, col 77 of module NoKingV04_TwoDeals: 22608
+  ||line 296, col 82 to line 296, col 117 of module NoKingV04_TwoDeals: 22608
+  |||line 296, col 85 to line 296, col 94 of module NoKingV04_TwoDeals: 22608
+  |||line 296, col 108 to line 296, col 117 of module NoKingV04_TwoDeals: 11304
+  line 297, col 22 to line 297, col 110 of module NoKingV04_TwoDeals: 22608
+  |line 297, col 30 to line 297, col 110 of module NoKingV04_TwoDeals: 22608
+  ||line 297, col 30 to line 297, col 69 of module NoKingV04_TwoDeals: 22608
+  ||line 297, col 74 to line 297, col 109 of module NoKingV04_TwoDeals: 22608
+  |||line 297, col 77 to line 297, col 86 of module NoKingV04_TwoDeals: 22608
+  |||line 297, col 93 to line 297, col 102 of module NoKingV04_TwoDeals: 11304
+  line 298, col 22 to line 298, col 33 of module NoKingV04_TwoDeals: 22608
+  line 299, col 22 to line 299, col 47 of module NoKingV04_TwoDeals: 22608
+  line 300, col 22 to line 300, col 129 of module NoKingV04_TwoDeals: 22608
+  |line 300, col 32 to line 300, col 129 of module NoKingV04_TwoDeals: 22608
+  ||line 300, col 32 to line 300, col 88 of module NoKingV04_TwoDeals: 22608
+  ||line 300, col 93 to line 300, col 128 of module NoKingV04_TwoDeals: 22608
+  |||line 300, col 96 to line 300, col 105 of module NoKingV04_TwoDeals: 22608
+  |||line 300, col 119 to line 300, col 128 of module NoKingV04_TwoDeals: 11304
+  line 301, col 14 to line 301, col 47 of module NoKingV04_TwoDeals: 45216
+  line 302, col 14 to line 302, col 49 of module NoKingV04_TwoDeals: 45216
+  line 303, col 14 to line 303, col 51 of module NoKingV04_TwoDeals: 45216
+  line 304, col 14 to line 304, col 49 of module NoKingV04_TwoDeals: 45216
+  line 305, col 14 to line 305, col 47 of module NoKingV04_TwoDeals: 45216
+  line 306, col 14 to line 306, col 51 of module NoKingV04_TwoDeals: 45216
+  line 307, col 14 to line 308, col 95 of module NoKingV04_TwoDeals: 45216
+<TimeoutDispute line 310, col 1 to line 310, col 17 of module NoKingV04_TwoDeals>: 7442:15154
+  line 311, col 6 to line 311, col 25 of module NoKingV04_TwoDeals: 290660
+  |line 311, col 6 to line 311, col 13 of module NoKingV04_TwoDeals: 282630
+  line 311, col 30 to line 311, col 48 of module NoKingV04_TwoDeals: 93174
+  |line 311, col 30 to line 311, col 39 of module NoKingV04_TwoDeals: 85144
+  line 311, col 53 to line 311, col 94 of module NoKingV04_TwoDeals: 8030
+  |line 311, col 53 to line 311, col 57 of module NoKingV04_TwoDeals: 33568
+  |line 311, col 62 to line 311, col 94 of module NoKingV04_TwoDeals: 33568
+  line 312, col 7 to line 312, col 18 of module NoKingV04_TwoDeals: 16966
+  |line 312, col 7 to line 312, col 14 of module NoKingV04_TwoDeals: 9842
+  line 312, col 23 to line 312, col 38 of module NoKingV04_TwoDeals: 17872
+  |line 312, col 23 to line 312, col 34 of module NoKingV04_TwoDeals: 9842
+  line 313, col 6 to line 313, col 46 of module NoKingV04_TwoDeals: 15154
+  line 314, col 6 to line 314, col 55 of module NoKingV04_TwoDeals: 15154
+  line 315, col 9 to line 315, col 20 of module NoKingV04_TwoDeals: 15154
+  line 316, col 11 to line 321, col 43 of module NoKingV04_TwoDeals: 906
+  line 322, col 14 to line 322, col 59 of module NoKingV04_TwoDeals: 14248
+  line 323, col 17 to line 323, col 39 of module NoKingV04_TwoDeals: 14248
+  line 324, col 19 to line 327, col 90 of module NoKingV04_TwoDeals: 7124
+  line 328, col 19 to line 331, col 101 of module NoKingV04_TwoDeals: 7124
+  line 332, col 14 to line 332, col 35 of module NoKingV04_TwoDeals: 14248
+  line 333, col 6 to line 333, col 39 of module NoKingV04_TwoDeals: 15154
+  line 334, col 6 to line 334, col 41 of module NoKingV04_TwoDeals: 15154
+  line 335, col 6 to line 335, col 43 of module NoKingV04_TwoDeals: 15154
+  line 336, col 6 to line 336, col 41 of module NoKingV04_TwoDeals: 15154
+  line 337, col 6 to line 337, col 39 of module NoKingV04_TwoDeals: 15154
+  line 338, col 6 to line 338, col 43 of module NoKingV04_TwoDeals: 15154
+  line 339, col 6 to line 339, col 41 of module NoKingV04_TwoDeals: 15154
+  line 340, col 6 to line 341, col 58 of module NoKingV04_TwoDeals: 15154
+<TerminalStutter line 343, col 1 to line 343, col 15 of module NoKingV04_TwoDeals>: 0:49502
+  line 81, col 34 to line 81, col 79 of module NoKingV04_TwoDeals: 331309
+  |line 81, col 34 to line 81, col 41 of module NoKingV04_TwoDeals: 232305
+  |line 81, col 47 to line 81, col 79 of module NoKingV04_TwoDeals: 232305
+  line 81, col 26 to line 81, col 30 of module NoKingV04_TwoDeals: 141315
+  line 343, col 36 to line 343, col 49 of module NoKingV04_TwoDeals: 49502
+<Inv_TwoDealConservation line 365, col 1 to line 365, col 23 of module NoKingV04_TwoDeals>
+  line 366, col 3 to line 370, col 44 of module NoKingV04_TwoDeals: 141314
+<Inv_TwoDealNonNeg line 372, col 1 to line 372, col 17 of module NoKingV04_TwoDeals>
+  line 373, col 3 to line 374, col 94 of module NoKingV04_TwoDeals: 141314
+  |line 373, col 6 to line 373, col 99 of module NoKingV04_TwoDeals: 141314
+  |line 374, col 6 to line 374, col 94 of module NoKingV04_TwoDeals: 141314
+  ||line 374, col 23 to line 374, col 94 of module NoKingV04_TwoDeals: 282628
+  ||line 374, col 15 to line 374, col 19 of module NoKingV04_TwoDeals: 141314
+<Inv_TwoDealNoDoublePayout line 376, col 1 to line 376, col 25 of module NoKingV04_TwoDeals>
+  line 376, col 30 to line 376, col 66 of module NoKingV04_TwoDeals: 141314
+  |line 376, col 47 to line 376, col 66 of module NoKingV04_TwoDeals: 282628
+  |line 376, col 39 to line 376, col 43 of module NoKingV04_TwoDeals: 141314
+<Inv_TwoDealCrossIsolation line 378, col 1 to line 378, col 25 of module NoKingV04_TwoDeals>
+  line 379, col 3 to line 384, col 68 of module NoKingV04_TwoDeals: 141314
+  |line 380, col 5 to line 384, col 68 of module NoKingV04_TwoDeals: 282628
+  ||line 380, col 9 to line 381, col 85 of module NoKingV04_TwoDeals: 282628
+  |||line 380, col 9 to line 380, col 81 of module NoKingV04_TwoDeals: 282628
+  |||line 381, col 14 to line 381, col 84 of module NoKingV04_TwoDeals: 100502
+  ||line 382, col 9 to line 384, col 67 of module NoKingV04_TwoDeals: 282628
+  |||line 382, col 9 to line 382, col 54 of module NoKingV04_TwoDeals: 282628
+  |||line 383, col 14 to line 384, col 66 of module NoKingV04_TwoDeals: 181980
+  |line 379, col 12 to line 379, col 16 of module NoKingV04_TwoDeals: 141314
+<Inv_TwoDealF1SplitOnlyAfterChain line 386, col 1 to line 386, col 32 of module NoKingV04_TwoDeals>
+  line 387, col 3 to line 387, col 110 of module NoKingV04_TwoDeals: 141314
+  |line 387, col 20 to line 387, col 110 of module NoKingV04_TwoDeals: 282628
+  ||line 387, col 21 to line 387, col 71 of module NoKingV04_TwoDeals: 282628
+  |||line 387, col 21 to line 387, col 41 of module NoKingV04_TwoDeals: 282628
+  |||line 387, col 46 to line 387, col 71 of module NoKingV04_TwoDeals: 172640
+  ||line 387, col 78 to line 387, col 109 of module NoKingV04_TwoDeals: 2308
+  |line 387, col 12 to line 387, col 16 of module NoKingV04_TwoDeals: 141314
+<Inv_TwoDealF5SellerOnly line 389, col 1 to line 389, col 23 of module NoKingV04_TwoDeals>
+  line 390, col 3 to line 390, col 94 of module NoKingV04_TwoDeals: 141314
+  |line 390, col 20 to line 390, col 94 of module NoKingV04_TwoDeals: 282628
+  ||line 390, col 21 to line 390, col 44 of module NoKingV04_TwoDeals: 282628
+  ||line 390, col 51 to line 390, col 93 of module NoKingV04_TwoDeals: 992
+  |line 390, col 12 to line 390, col 16 of module NoKingV04_TwoDeals: 141314
+End of statistics.
+232854 states generated, 141314 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 29.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 5 and the 95th percentile is 3).
+Finished in 01min 00s at (2026-11-27 11:41:19)
